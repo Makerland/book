@@ -17,6 +17,26 @@
 %% Colors
 \definecolor{SkyBlue}{HTML}{00A9E5}
 \definecolor{Black}{HTML}{000000}
+\definecolor{formalshade}{rgb}{0.95,0.95,1}
+
+%% Quote
+\usepackage[strict]{changepage}
+\usepackage{framed}
+\renewenvironment{quote}{%
+  \def\FrameCommand{%
+    \hspace{1pt}%
+    {\color{SkyBlue}\vrule width 2pt}%
+    {\color{formalshade}\vrule width 4pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}% disable indenting first paragraph
+  \begin{adjustwidth}{}{7pt}%
+  \vspace{2pt}\vspace{2pt}%
+}
+{%
+  \vspace{7pt}\end{adjustwidth}\endMakeFramed%
+}
 
 %% Set Sans font in headings
 \allsectionsfont{\sffamily}
@@ -46,6 +66,7 @@
 \setlength{\parskip}{3pt}
 
 %% Start sections from new page
+\newcommand{\sectionbreak}{\clearpage}
 %\let\stdsection\section
 %\renewcommand\section{\newpage\stdsection}
 

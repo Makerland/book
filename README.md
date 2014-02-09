@@ -27,3 +27,22 @@ Fonts:
 ## Building the book
 
 Run `make makerland.pdf`
+
+Workshops
+==========
+- [ ] Arduino / Firmata (Mike Swift)
+- [ ] Home automation (Jon Gottfried)
+- [ ] Hacking Hens’ Hapiness
+- [ ] Design thinking
+- [ ] Underwater Robots
+- [ ] Java Robots (Stephen Chin)
+- [ ] Building IoT Applications in Node-RED and Javascript (Charalompos)
+- [ ] Dancing Drones
+- [ ] Dancing Robot
+- [x] 3D Modeling
+- [ ] Arduino Yun (@suda @meal)
+- [ ] Bricks and Bots
+- [ ] Sumobot Jr
+- [ ] Interaction Interfaces
+- [ ] Wearable Lilypad
+- [ ] Soldering & wiring

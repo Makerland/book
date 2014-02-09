@@ -1,0 +1,86 @@
+\documentclass{book}
+
+% Fonts and typography
+
+%% Typography
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Mapping = tex-text, Scale = MatchLowercase}
+
+%% Fonts
+\usepackage{sectsty, xcolor}
+\usepackage[compact]{titlesec}
+\setmainfont{Minion Pro}
+\setsansfont{Bebas Neue}
+\setmonofont[Mapping=tex-ansi]{Monaco}
+\newfontfamily\sectionfont[Color=Black]{Bebas}
+
+%% Colors
+\definecolor{SkyBlue}{HTML}{00A9E5}
+\definecolor{Black}{HTML}{000000}
+
+%% Set Sans font in headings
+\allsectionsfont{\sffamily}
+\titleformat*{\section}{\fontsize{30}{35}\centering\sectionfont}
+\titleformat*{\subsection}{\fontsize{25}{25}\sffamily}
+\titleformat*{\subsubsection}{\fontsize{22}{22}\sffamily}
+
+%% Set polyglossia language
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+% Page
+\usepackage[a5paper]{geometry}
+
+%% Use full page in book style
+\usepackage[cm]{fullpage}
+
+%% Set line spacing
+\usepackage{setspace}
+\setstretch{1.1}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*2}{*0}
+\titlespacing{\subsubsection}{0pt}{*1}{*0}
+
+%% Disable paragraph indentation
+\usepackage{parskip}
+\setlength{\parskip}{3pt}
+
+%% Start sections from new page
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+
+% Links
+
+%% Hyperref
+\usepackage[colorlinks, breaklinks, bookmarks, xetex]{hyperref}
+
+\hypersetup {
+  linkcolor = SkyBlue,
+  citecolor = SkyBlue,
+  filecolor = SkyBlue,
+  urlcolor = SkyBlue
+}
+
+%% Don’t use Mono font for URLs
+\urlstyle{same}
+
+% Images
+
+\usepackage{graphicx}
+
+
+% Pandoc hacks
+
+%% Normal enumerates processing
+\usepackage{enumerate}
+
+%% Disable section numbers
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+  % Book contents
+  $body$
+
+\end{document}

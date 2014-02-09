@@ -1,9 +1,11 @@
 Makerland book
 ==============
 
-This is a repo containing first Makerland book and resouces to build it. 
+This is a repo containing first Makerland book and resouces to build it. [List of workshops is available here](https://github.com/olasitarska/makerland-book/issues/1). 
 
 The book is written in [Markdown](http://daringfireball.net/projects/markdown/) and converted to PDF using [Pandoc](http://johnmacfarlane.net/pandoc/).
+
+__Deadline for printing house:__ 28.02.2014
 
 Generating books
 ===============
@@ -25,3 +27,4 @@ Fonts:
 ## Building the book
 
 Run `make makerland.pdf`
+

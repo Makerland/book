@@ -21,8 +21,8 @@ Packages:
 
 Fonts:
 
-- [`Bebas`](http://www.dafont.com/bebas.font)
-- `Minion Pro`
+- [`Bebas`](https://github.com/olasitarska/makerland-book/blob/master/fonts/BEBAS___.TTF)
+- [`Minion Pro`](https://github.com/olasitarska/makerland-book/blob/master/fonts/Minion%20Pro.zip)
 
 ## Building the book
 

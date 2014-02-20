@@ -12,7 +12,6 @@ You'll think: a yet another breadboard and plenty of tangled wires. Far from it.
 
 ![](workshops/Soldering/1.jpg)
 
-
 In order to be able to focus on your work, you should prepare your workspace. You need:
 1. a soldering iron
 2. solder

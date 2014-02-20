@@ -10,5 +10,8 @@ PDF_BUILDER_FLAGS = \
 makerland.pdf:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BOOK_FILE_NAME).pdf
 
+dancebot:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
+
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

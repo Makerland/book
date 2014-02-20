@@ -12,6 +12,12 @@ makerland.pdf:
 
 dancebot:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
+	
+home:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home_automation.md" -o "home_automation.pdf"
+
+underwater:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater_robots.md" -o "underwater_robots.pdf"
 
 pythonruby:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/python_ruby.md -o python_ruby.pdf	

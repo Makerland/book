@@ -110,8 +110,9 @@ Connect the sharp GP2D12 sensor to the breadboard using the remaining three pins
 
 ![](workshops/underwater_robots/8.png)
 
-3. ![](workshops/underwater_robots/9.png)
-4. Similarly attach the Sharp GP2D12 to the bottom of the AUV 
+![](workshops/underwater_robots/9.png)
+
+3. Similarly attach the Sharp GP2D12 to the bottom of the AUV 
 
 ![](workshops/underwater_robots/10.png)
 

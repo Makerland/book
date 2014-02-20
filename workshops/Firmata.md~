@@ -23,7 +23,7 @@ You can download the latest version of the Arduino IDE (Version 1.0.5) and drive
 We’re going to be using a serial connection to communicate with the Arduino using one of  your favorite languages.  In order to do this, you need to have a working environment setup on your computer.
 
 Python
-If you’re going to be using python, make sure you have Python 2.7 and PIP installed.  The library we’ll be using, BreakfastSerial does have Windows support.  You can download a copy of python on the official website ([http://www.python.org/getit/](http://www.python.org/getit/)).
+If you’re going to be using python, make sure you have Python 2.7 and PIP installed.  The library we’ll be using, BreakfastSerial does have Windows support.  You can download a copy of python on the official website (http://www.python.org/getit/).
 
 Once you have Python installed, make sure you can install the BreakfastSerial library:
 
@@ -89,15 +89,13 @@ There are implementations of Firmata in a bunch of languages and flashing it on 
 
 This should open up a new window that contains the code we need to upload to your Arduino so it “speaks” Firmata.  Click “Upload” to compile the code and push it to the board.  
 
-_Hint: You should see the LED flash a few times and then it should stop._
-
+Hint: You should see the LED flash a few times and then it should stop.
 ### 4. “Hello World” in your favorite language.
 Goal: Blink an LED using either Javascript, Python, or Ruby.
 
 Now that we have Firmata running on our Arduino board, we can start using our favorite scripting language to control it.  Let’s rewrite our “Hello World” example in either Python, Javascript, or Ruby.  We already have the LED wired up, so no need to worry about that.
 
-#### __Python__
-
+Python
 To communicate with the Arduino in Python, we’ll be using a library called BreakfastSerial.  You should already have it installed when you setup your python environment.   Using BreakfastSerial is really simple.  The library gives us objects that represent the real world components in our circuit.  For example, there is an Arduino object which represents an arduino and an Led object which represents an LED.  Here’s how you import them:
 
 	from BreakfastSerial import Arduino, Led
@@ -113,7 +111,7 @@ The led object has methods that we can call to effect the state of the real worl
 
 There are also methods for off, toggle, and blink.  Make the led blink every second and then move on to the next step.
 
-#### __Node.js__
+Node.js
 To communicate with the Arduino in Node.js, we’ll be using a library called Johnny-Five.  You should already have it installed when you setup your node environment.   Using Johnny-Five is really simple.  The library gives us objects that represent the real world components in our circuit.  For example, there is a Board object which represents an arduino and an Led object which represents an LED.  Here’s how you create a board:
 
 	var five = require("johnny-five")
@@ -131,7 +129,7 @@ The led object has methods that we can call to effect the state of the real worl
 
 There are also methods for off, toggle, and blink.  Make the led blink every second and then move on to the next step.
 
-#### __Ruby__
+Ruby
 To communicate with the Arduino in Ruby, we’ll be using a library called Artoo.  You should already have it installed when you setup your ruby environment.   Using Artoo is really simple.  The library gives us devices that represent the real world components in our circuit.  For example, there is a board device which represents an arduino and an led device which represents an LED.  In order to connect to the board, you’ll need to know what Serial Port it is connected to.  You can get this from the Arduino IDE by clicking on Tools > Serial Port and seeing what is checked.
 
 Here’s how you create a board and led:
@@ -157,7 +155,7 @@ So far we’ve only seen how to write data to the Arduino, but the Arduino is ca
 
 
 
-#### __Python__
+Python
 
 Just like the Led, we need to import a Button object from BreakfastSerial to be able to use it.  You instantiate a new button by passing it a reference to the board and the pin number that the button is connected to.  In our diagram, the pin number is “8”.
 
@@ -173,11 +171,11 @@ When ever someone presses and holds the button down, a function called “play_s
 
 Now write a program that prints out “Button Pressed” whenever someone presses your button.
 
-_Hint: If you python program exits immediately after you start it, that’s because there are no other actions on the stack and it’s exiting by default. You can solve this by starting your program with the “-i” flag or manually adding a REPL at the end of your program._
+Hint: If you python program exits immediately after you start it, that’s because there are no other actions on the stack and it’s exiting by default. You can solve this by starting your program with the “-i” flag or manually adding a REPL at the end of your program.
 
-_Stuck?  Check out this example: https://github.com/theycallmeswift/BreakfastSerial/tree/sw-update-examples#push-a-button_
+Hint: Stuck?  Check out this example: https://github.com/theycallmeswift/BreakfastSerial/tree/sw-update-examples#push-a-button
 
-#### __Node.js__
+Node.js
 Just like the Led, we need to instantiate a new five.Button object within our “ready” loop to be able to use it.  Instantiating a new button takes one argument, which is the associate pin number. In our diagram, the pin number is “8”.
 
 	var button = new five.Button(8);
@@ -190,9 +188,9 @@ button.on(“hold”, function() {
 
 Now write a program that prints out “Button Pressed” whenever someone presses your button.
 
-_Hint: Stuck?  Check out this example: https://github.com/rwaldron/johnny-five/blob/master/docs/button.md_
+Hint: Stuck?  Check out this example: https://github.com/rwaldron/johnny-five/blob/master/docs/button.md
 
-#### __Ruby__
+Ruby
 
 Just like the Led, we need to tell our program that there is a button device to be able to use it.  We need to indicate which pin it lives on to be able to use it.  In our diagram, the pin number is “8”.
 
@@ -206,34 +204,30 @@ Now in our work loop, we can create a new listener for a “push” event on our
 
 Now write a program that prints out “Button Pressed” whenever someone presses your button.
 
-_Hint: Does your button seem a bit slow to react to you pushing it?  This is a know issue with the Artoo library, just press and hold the button a little longer than you would expect to._
+Hint: Does your button seem a bit slow to react to you pushing it?  This is a know issue with the Artoo library, just press and hold the button a little longer than you would expect to.
 
-_Hint: Stuck?  Check out this example: http://artoo.io/documentation/examples/ruby/firmata_button/_
+Hint: Stuck?  Check out this example: http://artoo.io/documentation/examples/ruby/firmata_button/
 
 6. Connect the dots - Make a lightswitch!
 Goal: Build a functional light switch. When you press the button, the light should come on. When you press the button again, the light should go off.
 
 Now that we’ve managed to turn an LED on and off and we can read data from a button, how do we combine the two concepts to create a simple light switch?
 
-_Hint: You can reuse a lot of the code we wrote for the previous exercises.  Each library has a “toggle” method that we can use to make things easier._
+Hint: You can reuse a lot of the code we wrote for the previous exercises.  Each library has a “toggle” method that we can use to make things easier.
 
-## Additional tasks
+Additional tasks
 Do you feel good with your skills? If so let’s get to the next step if not keep on experimenting or ask us for some help.
 
-- Build a simple web interface for your Light Switch.
+1. Build a simple web interface for your Light Switch.
 Using a simple server, create a web interface for your light switch.  You should display the current state of the light (on vs off) and be able to toggle between them from both the web and the button on the Arduino. 
-
 
 If you’re looking for a simple server, here are some that you might want to check out:
 
-[Flask (Python) - http://flask.pocoo.org/](http://flask.pocoo.org/)
+Flask (Python) - http://flask.pocoo.org/
+Express (Node.js) - http://expressjs.com/
+Sinatra (Ruby) - http://www.sinatrarb.com/
 
-[Express (Node.js) - http://expressjs.com/](http://expressjs.com/)
+Bonus: Integrate either SendGrid or Twilio’s API so you can control you light via email or SMS message.
 
-[Sinatra (Ruby) - http://www.sinatrarb.com/](http://www.sinatrarb.com/)
-
-
-__Bonus: Integrate either SendGrid or Twilio’s API so you can control you light via email or SMS message__
-
-- Explore interacting with some of the other available components
+2. Explore interacting with some of the other available components
 Ask one of the workshop leaders for some advanced components and practice working with them in your language of choice.  You may have to refer to the documentation for the library you’re using to find out what components are available.

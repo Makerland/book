@@ -12,6 +12,9 @@ makerland.pdf:
 
 dancebot:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
+	
+home:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home_automation.md" -o "home_automation.pdf"
 
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

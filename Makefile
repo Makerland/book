@@ -16,5 +16,8 @@ dancebot:
 home:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home_automation.md" -o "home_automation.pdf"
 
+underwater:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater_robots.md" -o "underwater_robots.pdf"
+
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

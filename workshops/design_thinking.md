@@ -13,15 +13,15 @@ We will try to learn the basics and a little bit more of interaction design appr
  
 There are three main areas that should be taken into consideration when designing the device (interface, service, almost anything):
  
-Users – Who is going to use the device?
+	Users – Who is going to use the device?
  
 (Is it a man, women or a child? How old is he or she? Is he or she familiar with technology? Motivated?)
   
-Tasks (and needs) - Why is the device being used?
+	Tasks (and needs) - Why is the device being used?
  
 (Is it for fun or work? What kind of goal is user going to accomplish? Why? Is the task complex? Repetitive? Important?)
  
-Context (and situation) – When and where does the interaction take place?
+	Context (and situation) – When and where does the interaction take place?
  
 (When the device is going to be used – inside or outside? Is the situation stressful? Is the device connected? What are the default parameters? Will user wear gloves? Is there a lot of sun? Is it noisy?)
   

@@ -22,5 +22,8 @@ underwater:
 pythonruby:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/python_ruby.md -o python_ruby.pdf	
 
+soldering:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
+
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

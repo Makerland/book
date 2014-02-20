@@ -1,10 +1,13 @@
-# Solder workshop
+# Soldier, wire, glue!
 
-![image](workshops/Soldering/17.jpg)
+![](workshops/Soldering/17.jpg)
 
 ## Overview
+
 Imagine your Arduino or RaspberryPi.  Imagine you are building your dream project and there comes a moment when you have to compromise with the device's functionalities because you have run out of ports in the microcontroller.
+
 During this workshop you'll solve your problem. Your task will be to create a board with a MCP23017 port expander.
+
 You'll think: a yet another breadboard and plenty of tangled wires. Far from it. During the next hour you'll create something lasting. You'll solder the expander and other elements onto the universal PCB board. And maybe you'll create a completely new shield for the Arduino Uno?
 
 
@@ -13,63 +16,66 @@ You'll think: a yet another breadboard and plenty of tangled wires. Far from it.
 ![](workshops/Soldering/1.jpg)
 
 In order to be able to focus on your work, you should prepare your workspace. You need:
-1. a soldering iron
-2. solder
-3. side cutters
-4. handles
-5. a small bottle of spirit + a cloth
-6. a universal board (PCB)
-7. a MCP23017 port expander and other elements that your imagination dictates (LEDs, buttons etc).
-8. the MCP23017 Datasheet
+
+- a soldering iron
+- solder
+- side cutters
+- handles
+- a small bottle of spirit + a cloth
+- a universal board (PCB)
+- a MCP23017 port expander and other elements that your imagination dictates (LEDs, buttons etc).
+- the MCP23017 Datasheet
 
 
 ## Main flow
+
 Your task is to create a port expander for the Arduino Uno. 
+
 The expander has 16 I/O ports. Add LEDs and buttons to 8 of them. You will be able to read the states of the buttons and control the LEDs through the Arduino Uno, which will communicate with the expander through the I2C bus.
+
 You should solder all the elements onto the PCB.
 
-### 1. Plan your work.
+### Plan your work
 
-![image](workshops/Soldering/2.jpg)
+![](workshops/Soldering/2.jpg)
 
 If you don't know MCP23017, you must get acquainted with the datasheet. You'll learn from it about the capabilities of the circuit and the distribution of pins.
+
 Knowing the distribution of pins and the way of communicating with the expander, you should plan the arrangement of components: the expander, the connectors, LEDs and buttons.
+
 If you want to make a shield for the Arduino Uno, you must think of how to deploy the connectors by which you will connect your shield with the Arduino (go to **Additional Tasks**).
 
-### 2. Preparation for soldering.
+### Preparation for soldering
 
-![image](workshops/Soldering/11.jpg)
+![](workshops/Soldering/11.jpg)
 
 Put the first elements into the board. You should solder the elements from below. The most frequent mistake at this stage is to put in too many elements, which are going to fall out of the board when you turn it upside down for soldering.
 
-### 3. Soldering.
+### Soldering
+
 Solder the following way:
+
 - apply the hot tip of the soldering iron to the leg of the element and the pad on the PCB
 - heat this spot up for about 3 seconds
-
-![image](workshops/Soldering/4.jpg)
-
 - quickly apply solder and flux to the soldered elements. Don't apply solder directly to the iron!
 
-![image](workshops/Soldering/6.jpg)
+![](workshops/Soldering/4.jpg) \ ![](workshops/Soldering/6.jpg)
+
 
 - solder melts, flux removes oxides from metal surfaces, the elements are joined together with a joint
-
-![image](workshops/Soldering/7.jpg)
-
 - withdraw the iron and solder
 - solder solidifies to form a firm joint of the elements
 
-![image](workshops/Soldering/8.jpg)
+![](workshops/Soldering/7.jpg) \ ![](workshops/Soldering/8.jpg)
 
 - cut the ends of long legs (LEDs) right at the joint
 
 
-#### Tips & tricks
+### Tips & tricks
+
 1. A well made solder should be shiny and have a nice shape. Holes in the joint or a matte color are signs of a poorly made soldering. The elements were probably dirty (dust or glue) or greasy. Before you start soldering, it's a good idea to clean the elements with a spirit-soaked cloth.
 
-![image](workshops/Soldering/13.jpg)
-
+![](workshops/Soldering/13.jpg)
 
 2. Not to overheat the components, try not to heat the legs of the elements up for too long. You'll come up with an optimum time as you practice.
 
@@ -79,29 +85,32 @@ Solder the following way:
 
 5. Put the soldered elements into the PCB and then turn it upside down for soldering. If you do not want such items as a resistor or a LED to fall out, you can gently bend their legs out when you insert them into the board.
 
-![image](workshops/Soldering/12.jpg)
+![](workshops/Soldering/12.jpg)
 
 
 ## Additional tasks
+
 Do you feel good with your skills? If so let’s get to the next step if not keep on experimenting or ask us for some help.
 
 1. To connect the Arduino Uno with your PCB as you would do with a shield, you have to:
+
 - plan the location of connectors through which you will connect to the Arduino Uno board. You should push your shield into the Arduino Uno.
 - connect the MCP23017 expander with the appropriate pin connectors to the Arduino Uno. Pay attention to: power supply and the I2C bus.
 
-![image](workshops/Soldering/10.jpg)
+![](workshops/Soldering/10.jpg)
 
 
 2. A port expander is used to ensure that your microprocessor system has more available ports than a microcontroller does. It is not only LEDs and buttons that you can connect to the system plugs. You can connect any other element which works with the digital (two-state) port of the microcontroller. Through the expander you can control a transistor, a buzzer, a tilt sensor, a servo driver. You can even connect an LCD display.
+
 You can get out of the box!
 
-![image](workshops/Soldering/15.jpg)
+![](workshops/Soldering/15.jpg)
 
 
 ## Additional sources
 Want to learn from masters? Check this links below.
 
-http://www.youtube.com/watch?v=vIT4ra6Mo0s
-http://www.aaroncake.net/electronics/solder.htm
-http://www.sciencebuddies.org/science-fair-projects/project_ideas/Elec_primer-solder.shtml
-http://www.wikihow.com/Solder-(Electronics)
+- <http://www.youtube.com/watch?v=vIT4ra6Mo0s>
+- <http://www.aaroncake.net/electronics/solder.htm>
+- <http://www.sciencebuddies.org/science-fair-projects/project_ideas/Elec_primer-solder.shtml>
+- <http://www.wikihow.com/Solder-(Electronics)>

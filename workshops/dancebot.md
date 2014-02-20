@@ -1,4 +1,4 @@
-# Dancebot - The Dancing Robot
+# Dancebot: The Dancing Robot
 
 ## Overview
 

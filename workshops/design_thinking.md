@@ -1,5 +1,4 @@
-# Thermostat easy as pie
-# - designing physical interfaces 
+# Thermostat easy as pie: designing physical interfaces 
  
 ## Overview
  

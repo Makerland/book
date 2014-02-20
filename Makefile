@@ -24,6 +24,9 @@ pythonruby:
 
 soldering:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
+	
+magic:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/magic_lights.md" -o "magic_lights.pdf"
 
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

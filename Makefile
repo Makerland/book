@@ -13,5 +13,8 @@ makerland.pdf:
 dancebot:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
 
+pythonruby:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/python_ruby.md -o python_ruby.pdf	
+
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

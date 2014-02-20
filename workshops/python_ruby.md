@@ -1,49 +1,62 @@
-# Overview
-During this workshop you will learn how to load prepared program onto Arduino and use it with PC/Mac running Python or Ruby. You’ll blink a LED, check temperature/humidity/light intensity, measure distance or detect motion. All this using only couple lines of code!
+# Python and Ruby sitting in a tree (K-I-S-S-I-N-G!)
 
-# Preparations
+## Overview
 
-## Arduino IDE installation
+During this workshop you will learn how to load prepared program onto Arduino and use it with PC or Mac running Python or Ruby. You’ll blink a LED, check temperature/humidity/light intensity, measure distance or detect motion. All this using only couple lines of code!
+
+## Preparations
+
+### Arduino IDE installation
+
 To install Arduino IDE, follow guides for your operating system:
-* Windows: http://arduino.cc/en/guide/windows
- * OS X: http://arduino.cc/en/Guide/MacOSX
-* Linux: http://playground.arduino.cc/Learning/Linux
 
-## Connecting the wires and sensors
-Along with Arduino you will need:
-* a breadboard (white board with holes ;))
-* DHT11 temperature/humidity sensor (the small blue box with holes)
-* BH1750 light sensor module
-* HC-SR04 ultrasonic ranging module (which looks a lot like Wall-E)
-* HC-SR501 PIR motion detector (looks like a dome)
-* pack of colorful wires
+- Windows: <http://arduino.cc/en/guide/windows>
+- OS X: <http://arduino.cc/en/Guide/MacOSX>
+- Linux: <http://playground.arduino.cc/Learning/Linux>
+
+### Connecting the wires and sensors
 
 At the end of this workshop, your breadboard will look like this:
-![Complete board](http://cl.ly/image/0w1i0D3J3d1j/complete_bb.png)
+
+![](workshops/python_ruby/complete_bb.png)
+
+Along with Arduino you will need:
+
+- a breadboard (white board with holes ;))
+- DHT11 temperature/humidity sensor (the small blue box with holes)
+- BH1750 light sensor module
+- HC-SR04 ultrasonic ranging module (which looks a lot like Wall-E)
+- HC-SR501 PIR motion detector (looks like a dome)
+- pack of colorful wires
+
+
 You don’t have to connect all the wires right now, as we’ll explain everything step by step in later parts of this workshop.
 
 If you never used a breadboard before, you may wonder how all those holes are connected with each other. Here is a small cheat sheet for you:
-![Breadboard Cheat Sheet](http://f.cl.ly/items/440c3v2C3Z3X1h1t2z2y/breadboard_connections.jpg)
 
-## Installation of Python or Ruby
+![Breadboard Cheat Sheet](workshops/python_ruby/breadboard_connections.jpg)
+
+### Installation of Python or Ruby
 
 ### Ruby
+
 To install Ruby you should, depending on your operating system:
-* Windows: download and install RubyInstaller from http://rubyinstaller.org/downloads/
-* OS X: if you have Mountain Lion (10.8) or Mavericks (10.9) you already have it
-* Linux: install ruby with your distribution package manager
+
+- Windows: download and install RubyInstaller from <http://rubyinstaller.org/downloads/>
+- OS X: if you have Mountain Lion (10.8) or Mavericks (10.9) you already have it
+- Linux: install ruby with your distribution package manager
 
 ### Python
 
-Python comes out of the box with both OS X and Linux. If you’re Windows user, you can follow this guide: http://docs.python-guide.org/en/latest/starting/install/win/
+Python comes out of the box with both OS X and Linux. If you’re Windows user, you can follow this guide: <http://docs.python-guide.org/en/latest/starting/install/win/>
 
-# Main flow
+## Main flow
 
-## Setting up your Arduino
+### Setting up your Arduino
 
 You won’t actually program Arduino using Ruby or Python. You can do it but it’s a lot of hustle, so we chose more popular and easier way: communicate with Arduino using serial port. For this to work, you need to load Arduino with our small code which listens for commands and takes action like turning a LED on and of, or returns a value from one of our many sensors.
 
-If you followed Arduino guide (which we hope you did), you should know how to upload a program to the board. Download ZIP file for this workshop: https://github.com/meal/makerland-workshop/archive/master.zip
+If you followed Arduino guide (which we hope you did), you should know how to upload a program to the board. Download ZIP file for this workshop: <https://github.com/meal/makerland-workshop/archive/master.zip>
 
 In *ArduinoSensors* directory you’ll find *ArduinoSensors.ino* file. Open it in Arduino IDE and upload to the board.
 
@@ -66,11 +79,14 @@ Firstly you have to install some packages which you’ll need in this workshop. 
 	cd PATH_TO_PYTHON_DIRECTORY_FROM_ZIP
 	sudo pip install -r requirements.txt
 
+# 
+
 
 > What did you just installed? You’ve installed three libraries:
-> PySerial - library for communicating using serial port. Essential in our workshop :)
-> PyAudio - library for handling audio. You’ll use it to play a WAV sound file
-> request - great library for making HTTP requests in easiest manner possible
+> 
+> - PySerial - library for communicating using serial port. Essential in our workshop :)
+> - PyAudio - library for handling audio. You’ll use it to play a WAV sound file
+> - request - great library for making HTTP requests in easiest manner possible
 
 Great! Now type in terminal:
 
@@ -79,7 +95,6 @@ Great! Now type in terminal:
 This should print a list of available ports like this:
 
 	Available ports:
-
 		/dev/cu.Bluetooth-Serial-1
 		/dev/cu.Bluetooth-Serial-2
 		/dev/cu.Bluetooth-Modem
@@ -118,7 +133,6 @@ Now lets blink some LEDs:
 		# Wait one second
 		time.sleep(1)
 		
-
 > If this is your first time with Python: you see the indentation? It’s very important in Python. You have to be consistent to use Tab or Spaces in your code.
 
 **BTW:** you should find source to this exercise in `Python/2_blink.py` file.
@@ -132,8 +146,7 @@ But this is child's play. Lets try something more advanced.
 
 First thing before writing code is to connect HC-SR04 ultrasonic ranging module with Arduino. Grab your breadboard, some cables and connect them like this:
 
-![Sonar](http://cl.ly/image/040h190e1437/3_sonar_bb.png)
-
+![Sonar](workshops/python_ruby/3_sonar_bb.png)
 
 
 Colors are not important, but be concise when using them. This way you won’t make silly mistakes like connecting wrong wire to wrong hole.
@@ -163,10 +176,12 @@ Along our sensors, you have DHT11 which can measure two things: temperature and 
 
 But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it will be required later):
 
-![DHT11](http://cl.ly/image/2B2w3C1p111u/4_meteo_dht_bb.png)
+![DHT11](workshops/python_ruby/4_meteo_dht_bb.png)
+
 Now connect BH1750:
 
-![BH1750](http://cl.ly/image/1e3s3G2O0D3T/4_meteo_bh_bb.png)
+![BH1750](workshops/python_ruby/4_meteo_bh_bb.png)
+
 **Important:** connecting BH1750 requires restart of Arduino, so just unplug and plug USB cable again.
 
 It’s Python time:
@@ -209,7 +224,9 @@ You have one sensor left: HC-SR501 PIR motion detector. This sensor detects moti
 Other quirk of this sensor is long lag after detecting motion. There’s potentiometer on a back of it which allows to change it, but event with minimal setting it’s about 3 seconds.
 
 Connect the wires like this:
-![HC-SR501](http://cl.ly/image/1v2r3G401j3o/5_alarm_bb.png)
+
+![HC-SR501](workshops/python_ruby/5_alarm_bb.png)
+
 Your PIR may have wires with different colors or don’t have wires at all, so just hold it like in the picture above and number pins from left to right.
 
 Supporting code is easy as pie:
@@ -240,16 +257,17 @@ Downloaded sources contain `5_alarm.py` file which is even cooler as it plays a 
 
 Now you know how to use all the sensors, you can use it to create a beautiful web dashboard with all the data.
 
-To make it easier, we’ve prepared custom dashboard using [Dashing](http://shopify.github.io/dashing/). It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
+To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![Dashboard](http://cl.ly/image/021K0M1a2O2U/dashboard.png)
+![Dashboard](workshops/python_ruby/dashboard.png)
+
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 
 Now start Python script which sends data to the dashboard:
 
 	python 6_dashboard.py YOUR_PORT ID
 
-If there’s no error, visit your dashboard at http://makerland-dashboard.herokuapp.com/ID
+If there’s no error, visit your dashboard at <http://makerland-dashboard.herokuapp.com/ID>
 
 Dig into `6_dashboard.py` to see how to send data to Dashing.
 
@@ -345,7 +363,8 @@ You’ve just used your code to play with something already built, lets get to s
 
 Before you write anything lets have fun with wires. Grab HC-SR04 ultrasonic ranging module, Arduino, your breadboard, some wires and connect them all together this way:
 
-![Sonar_rb](http://cl.ly/image/040h190e1437/3_sonar_bb.png)
+![Sonar_rb](workshops/python_ruby/3_sonar_bb.png)
+
 You don’t have to use the same colors as we do, but be meticulous while using them. By doing so you will avoid mistakes like connecting ground pin from module to Arduino power pin.
 
 Check two or even three times if everything is set up properly and go back to ruby shell:
@@ -374,10 +393,12 @@ Among sensors you can find DHT11 which can measure temperature and humidity. Tog
 
 Start with the wires. Don’t disconnect sonar, it will be required late. First lets connect the DHT11:
 
-![DHT11](http://cl.ly/image/2B2w3C1p111u/4_meteo_dht_bb.png)
+![DHT11](workshops/python_ruby/4_meteo_dht_bb.png)
+
 Now connect BH1750:
 
-![BH1750](http://cl.ly/image/1e3s3G2O0D3T/4_meteo_bh_bb.png)
+![BH1750](workshops/python_ruby/4_meteo_bh_bb.png)
+
 **Important:** connecting BH1750 requires restart of Arduino, so just unplug and plug USB cable again.
 
 Now in Ruby shell:
@@ -420,7 +441,8 @@ Now you have your own meteo station, hooray!
 There is one sensor left: HC-SR501 PIR motion detector. Based on infrared light, this sensor, similar to those used in public bathrooms to turn the lights on, detects moves. As it works with infrared it only detects objects which exude heat (i.e. human body, running car). What is important, it detects **motion** not presence. So if you’ll hold still in front of it, it won’t detect you
 
 Connect wires this way:
-![HC-SR501](http://cl.ly/image/1v2r3G401j3o/5_alarm_bb.png)
+
+![HC-SR501](workshops/python_ruby/5_alarm_bb.png)
 
 Be sure to hold it like on the picture, so you won’t connect it in the wrong way.
 
@@ -452,25 +474,26 @@ In downloaded file, `5_alarm.rb` code is more interesting, dig into it!
 ### All in one place
 Now you know how to use all the sensors, you can use it to create a beautiful web dashboard with all the data.
 
-To make it easier, we’ve prepared custom dashboard using [Dashing](http://shopify.github.io/dashing/). It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
+To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![Dashboard](http://cl.ly/image/021K0M1a2O2U/dashboard.png)
+![Dashboard](workshops/python_ruby/dashboard.png)
+
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 
 Now start Ruby script which sends data to the dashboard:
 
 	ruby 6_dashboard.rb YOUR_PORT ID
 
-If there’s no error, visit your dashboard at http://makerland-dashboard.herokuapp.com/ID
+If there’s no error, visit your dashboard at <http://makerland-dashboard.herokuapp.com/ID>
 
 Dig into `6_dashboard.rb` to see how to send data to Dashing.
 
 > Code for web dashboard is also in ZIP you’ve downloaded, so feel free to modify it and host wherever you want!
 
 ## Additional tasks
-* Add new commands to ArduinoSensors sketch, like wait certain period of time or read the state of button (ask us for a button ;))
-* Open python interactive shell by typing `python` and play with serial live
-*  Play live with serial using ruby
+- Add new commands to ArduinoSensors sketch, like wait certain period of time or read the state of button (ask us for a button ;))
+- Open python interactive shell by typing `python` and play with serial live
+-  Play live with serial using ruby
 
 ## Additional resources
-* https://github.com/meal/makerland-workshop
+* <https://github.com/meal/makerland-workshop>

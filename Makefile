@@ -44,7 +44,7 @@ lilypad:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lilypad.md" -o "lilypad.pdf"
 
 pythonruby:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/python_ruby.md -o python_ruby.pdf	
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/pythonruby.md -o pythonruby.pdf	
 
 soldering:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
@@ -53,7 +53,7 @@ thermostat:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/thermostat.md" -o "thermostat.pdf"
 
 underwater:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater_robots.md" -o "underwater_robots.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "underwater.pdf"
 
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

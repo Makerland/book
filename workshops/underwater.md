@@ -2,7 +2,7 @@
 
 ### Requirements
 
-![](workshops/underwater_robots/1.png)
+![](workshops/underwater/1.png)
 
 1. 1 x 1litre Lock & lock container pre drilled
 2. 1 x Arduino Nano V3.0
@@ -55,7 +55,7 @@ Lets get started by assembling the servo motors, dive planes and rudder this wil
 
 1. Assemble dive planes / rudder into container with provided spacers, washers and 13mm nuts. Take care not to over tighten the nut as this will distort the O-ring and be a possible point of water entry.
 
-![](workshops/underwater_robots/2.png)
+![](workshops/underwater/2.png)
 
 2. At this stage it is important to test for leaks. Place the lid on the container and gently lower the complete assembly into the pool. Check carefully for any leaks of water. If leaks are found they can be cured by injecting a small amount of silicone sealant into the end of the rudder shafts. After adding any silicone sealant repeat the test for water tightness. Keep testing until you have a watertight container.
 3. Attach the dive plane horns to the dive plane shafts.
@@ -67,7 +67,7 @@ Lets get started by assembling the servo motors, dive planes and rudder this wil
 9. Tighten screws on dive planes.
 10. Connect dive planes together with short metal rod.
 
-![](workshops/underwater_robots/3.png)
+![](workshops/underwater/3.png)
 
 11. Test movement of dive planes using servo motor tester.
 12. Install rudder into AUV body using spacer, washer and nut.
@@ -76,7 +76,7 @@ Lets get started by assembling the servo motors, dive planes and rudder this wil
 15. Fit servo horn to servo, see picture below for orientation.
 16. Add link between servo and rudder assembly using paperclip.
 
-![](workshops/underwater_robots/4.png)
+![](workshops/underwater/4.png)
 
 17. Test rudder assembly using servo tester.
 
@@ -87,7 +87,7 @@ Now that we have the mechanical components assembled we can move onto adding the
 1. Place breadboard with the Arduino Nano installed at the front of the AUV
 2. Connect IR LED’s and IR receiver to the breadboard. See picture below and circuit diagram.
 
-![](workshops/underwater_robots/5.png)
+![](workshops/underwater/5.png)
 
 3. Connect the two servos to the breadboard using the piece of IDE header
 
@@ -97,24 +97,24 @@ We are next going to add a sensor to detect when the AUV is near the bottom of t
 
 Connect the sharp GP2D12 sensor to the breadboard using the remaining three pins on the IDE header and use the male jumpers to connect to the Arduino Nano. Use the circuit diagram from below for reference. With the distance sensor wired up we can now move onto fixing the IR LED’s, IR receiver and the Sharp GP2D12 to the box for this we are going to use plasticine which is readily mouldable but adheres nicely to the plastic.
 
-![](workshops/underwater_robots/6.png)
+![](workshops/underwater/6.png)
 
 ### AUV Schematic
 
-![](workshops/underwater_robots/7.png)
+![](workshops/underwater/7.png)
 
 ### Attaching the IR Sensors
 
 1. Take a small piece of plasticine and mould it round the lens of each LED leaving a hole at the front then press onto the plastic container.
 2. Do the same for the IR receiver
 
-![](workshops/underwater_robots/8.png)
+![](workshops/underwater/8.png)
 
-![](workshops/underwater_robots/9.png)
+![](workshops/underwater/9.png)
 
 3. Similarly attach the Sharp GP2D12 to the bottom of the AUV 
 
-![](workshops/underwater_robots/10.png)
+![](workshops/underwater/10.png)
 
 The last thing we need to add to the inside of the AUV is the battery pack this connects to the Vin and GND of the Arduino Nano.
 
@@ -141,7 +141,7 @@ To make the AUV move through the water we are going to use a submarine motor as 
 1. Attach the rubber suction cap to the submarine motor.
 2. Stick it to the bottom of the AUV lining up the propeller with the rudder.
 
-![](workshops/underwater_robots/11.png)
+![](workshops/underwater/11.png)
 
 That is the main parts of the AUV completed but if you place it into the pool you will notice it is nicely buoyant and will float quite happily on top of the water. We want a vehicle that can go underwater so we need to add ballast to make it very slightly positively buoyant. 
 

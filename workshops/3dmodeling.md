@@ -67,7 +67,7 @@ Ok, so we have a cylinder with the dimensions set in the previous step. Now lets
 
 4. Copy & paste the thin cylinder and again select all object and center align them in all dimensions. Rotate one of the thin cylinders 90 degrees.
 
-![](workshops/3d-modeling/image02.jpg) \ ![](workshops/3d-modeling/image01.jpg)
+![](workshops/3dmodeling/image02.jpg) \ ![](workshops/3dmodeling/image01.jpg)
 
 5. Select the horizontal thin cylinder and the big one and group* them together using either keyboard shortcut or command from the top menu bar. 
 
@@ -81,7 +81,7 @@ Ok, so we have a cylinder with the dimensions set in the previous step. Now lets
 
 9. Group all objects together and congrats you have your first 3D model ready!
 
-![](workshops/3d-modeling/image00.jpg) \ ![](workshops/3d-modeling/image03.jpg)
+![](workshops/3dmodeling/image00.jpg) \ ![](workshops/3dmodeling/image03.jpg)
 
 ### 6. Use the basic modeling techniques you learned to create a gaming dice
 Use the predefined dice model from the right menu bar & the numbers also found there. Feel free to experiment.

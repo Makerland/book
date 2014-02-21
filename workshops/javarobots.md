@@ -1,6 +1,6 @@
 # Raspberry Pi HOL: Mocha Raspberry Pi Cooking Class
 
-## Overview: 
+## Overview
 
 We will bring the ingredients, and you get to do the baking!
 

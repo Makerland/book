@@ -48,12 +48,18 @@ pythonruby:
 
 soldering:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
+	
+bricks:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
 
 thermostat:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/thermostat.md" -o "thermostat.pdf"
 
 underwater:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "underwater.pdf"
+	
+javarobots:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/javarobots.md" -o "javarobots.pdf"
 
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

@@ -259,7 +259,7 @@ Now you know how to use all the sensors, you can use it to create a beautiful we
 
 To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![Dashboard](workshops/pythonruby/dashboard.png)
+![](workshops/pythonruby/dashboard.png)
 
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 
@@ -395,6 +395,8 @@ Start with the wires. Don’t disconnect sonar, it will be required late. First 
 
 ![DHT11](workshops/pythonruby/4_meteo_dht_bb.png)
 
+#
+
 Now connect BH1750:
 
 ![BH1750](workshops/pythonruby/4_meteo_bh_bb.png)
@@ -476,7 +478,7 @@ Now you know how to use all the sensors, you can use it to create a beautiful we
 
 To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![Dashboard](workshops/pythonruby/dashboard.png)
+![](workshops/pythonruby/dashboard.png)
 
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 

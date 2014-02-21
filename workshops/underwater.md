@@ -1,51 +1,51 @@
 # Autonomous AUV Workshop
 
-### Requirements
-
-![](workshops/underwater/1.png)
-
-1. 1 x 1litre Lock & lock container pre drilled
-2. 1 x Arduino Nano V3.0
-3. 2 x Micro servo motors with horns
-4. 3 x Micro rudder assemblies
-5. 1 x submarine motor
-6. 1 x 400 breadboard
-7. Selection Male to Male jumper leads
-8. 1 x IDE header 9 pins
-9. 2 x Large paper clips
-10. 3 x Plastic spacers
-11. 2 x Vishay IR LED’s TSAL6400
-12. 1 x Vishay IR detector TSOP4838
-13. 1 x Sharp GP2D12 distance sensor with connector
-14. 1 x thin rod 2mm diameter
-15. 1 x Battery pack holder 4AA batteries
-16. Bags of coins for ballast
-
-### Consumables
-
-1. Silicon sealant
-2. Coloured wires 0.7mm single strand
-3. Heat shrink
-4. Plasticine
-5. Double sided tape
-6. AA batteries (5 per AUV)
-
-### Tools / Equipment
-
-1. Laptops with Arduino IDE installed
-2. Mini-USB cables to load sketches onto Arduino Nano
-3. Servo motor tester
-4. Small flat screw driver
-5. Snips 
-6. Wire strippers
-7. 13mm Spanner
-8. Multimeter
-
 ## Introduction
 
 In this workshop we are going to build an AUV, the main body is a Lock & Lock container normally usually used for keeping food in. Propulsion to drive our vehicle will be provided by a submarine motor capable of being submerged to  shallow depths. An Arduino Nano will control navigation. Dive planes will be used to regulate depth and a rudder for turning. Infrared sensors will act as the eyes of the AUV and will be used for obstacle avoidance and bottom of the pool detection.
 
-## The build
+## Requirements
+
+![](workshops/underwater/1.png)
+
+- 1 x 1litre Lock & lock container pre drilled
+- 1 x Arduino Nano V3.0
+- 2 x Micro servo motors with horns
+- 3 x Micro rudder assemblies
+- 1 x submarine motor
+- 1 x 400 breadboard
+- Selection Male to Male jumper leads
+- 1 x IDE header 9 pins
+- 2 x Large paper clips
+- 3 x Plastic spacers
+- 2 x Vishay IR LED’s TSAL6400
+- 1 x Vishay IR detector TSOP4838
+- 1 x Sharp GP2D12 distance sensor with connector
+- 1 x thin rod 2mm diameter
+- 1 x Battery pack holder 4AA batteries
+- Bags of coins for ballast
+
+### Consumables
+
+- Silicon sealant
+- Coloured wires 0.7mm single strand
+- Heat shrink
+- Plasticine
+- Double sided tape
+- AA batteries (5 per AUV)
+
+### Tools / Equipment
+
+- Laptops with Arduino IDE installed
+- Mini-USB cables to load sketches onto Arduino Nano
+- Servo motor tester
+- Small flat screw driver
+- Snips 
+- Wire strippers
+- 13mm Spanner
+- Multimeter
+
+## Main flow
 
 The main body of the AUV is going to use a Lock & Lock container normally used for storing food. It has a built in seal and is both airtight and watertight. Three holes have been pre-drilled into the container for installation of the dive planes and rudder. The dive planes allow the AUV to submerge very much like the fins on a shark and the rudder controls the direction of travel. 
 
@@ -54,10 +54,10 @@ Lets get started by assembling the servo motors, dive planes and rudder this wil
 ### Assembling Servo motors, dive planes and rudder
 
 1. Assemble dive planes / rudder into container with provided spacers, washers and 13mm nuts. Take care not to over tighten the nut as this will distort the O-ring and be a possible point of water entry.
+2. At this stage it is important to test for leaks. Place the lid on the container and gently lower the complete assembly into the pool. Check carefully for any leaks of water. If leaks are found they can be cured by injecting a small amount of silicone sealant into the end of the rudder shafts. After adding any silicone sealant repeat the test for water tightness. Keep testing until you have a watertight container.
 
 ![](workshops/underwater/2.png)
 
-2. At this stage it is important to test for leaks. Place the lid on the container and gently lower the complete assembly into the pool. Check carefully for any leaks of water. If leaks are found they can be cured by injecting a small amount of silicone sealant into the end of the rudder shafts. After adding any silicone sealant repeat the test for water tightness. Keep testing until you have a watertight container.
 3. Attach the dive plane horns to the dive plane shafts.
 4. Line up the dive planes parallel to the bottom of the AUV.
 5. Centre servo body and stick down with double sided tape.
@@ -108,9 +108,7 @@ Connect the sharp GP2D12 sensor to the breadboard using the remaining three pins
 1. Take a small piece of plasticine and mould it round the lens of each LED leaving a hole at the front then press onto the plastic container.
 2. Do the same for the IR receiver
 
-![](workshops/underwater/8.png)
-
-![](workshops/underwater/9.png)
+![](workshops/underwater/8.png) \ ![](workshops/underwater/9.png)
 
 3. Similarly attach the Sharp GP2D12 to the bottom of the AUV 
 
@@ -166,7 +164,7 @@ That completes the build process it’s now time to try the AUV on its maiden vo
 
 Congratulations you have built your underwater AUV, it should be moving around the pool avoiding obstacles and slowly moving up and down in the water.
 
-## References
+## Aditional resources
 
 1. How to use infrared receiver sensors for collision avoidance <http://letsmakerobots.com/node/29634>
 2. Arduino <http://arduino.cc>

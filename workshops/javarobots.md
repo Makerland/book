@@ -14,7 +14,9 @@ Lab will include hardware for attendee use and projects that demonstrate how to 
 
 ### Setting up your Raspberry Pi
 
-In your lab kit, we have already provided everything you need to create a mini-computer for developing your first JavaFX Game, including setting up and installing all the software on the SD Cards.  However, if you are doing this on your own after the event, please refer to the following setup guide: <http://steveonjava.com/javafx-on-raspberry-pi-3-easy-steps/>
+In your lab kit, we have already provided everything you need to create a mini-computer for developing your first JavaFX Game, including setting up and installing all the software on the SD Cards.  However, if you are doing this on your own after the event, please refer to the following setup guide:
+
+<http://steveonjava.com/javafx-on-raspberry-pi-3-easy-steps/>
 
 Also, before we get started a few words about electrical and computer safety: 
 
@@ -75,11 +77,11 @@ Next we will use Apache Ant (a build system for Java) in order to compile and ru
 * Run the build script
  * `ant`
 
-> Note: If you are doing this from home you can find the code in GitHub here: <https://github.com/steveonjava/MaryHadALittleLambda>
+> Note: If you are doing this from home you can find the code in GitHub here:
+>
+> <https://github.com/steveonjava/MaryHadALittleLambda>
 
 This may take a couple minutes the first time, but once it finishes compiling you will have your first JavaFX Game running on the Raspberry Pi!
-
-![](workshops/javarobots/1.png)
 
 Some things to try include:
 
@@ -204,7 +206,6 @@ Pi4J Features:
 * SPI Communication
 * Extensible GPIO Provider interface to add GPIO capacity via expansion boards
 * Access system information and network information from the Raspberry Pi
-
 
 Please make sure you notice the difference in pin numbering used by Pi4J (next image), compare with the default Raspberry Pi numbering (previous image).
 

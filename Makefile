@@ -49,9 +49,6 @@ pythonruby:
 soldering:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
 	
-lights:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lights.md" -o "lights.pdf"
-	
 bricks:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
 
@@ -60,6 +57,9 @@ thermostat:
 
 underwater:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "underwater.pdf"
+	
+javarobots:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/javarobots.md" -o "javarobots.pdf"
 
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

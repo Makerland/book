@@ -48,7 +48,7 @@ __Assembly tools:__
 
 ![](workshops/dancebot/image002.png)
 
-#
+
 
 
 ## Let's build a Dancebot!

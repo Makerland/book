@@ -1,4 +1,4 @@
-# Autonomous AUV Workshop
+# Dive! Dive! Dive! 
 
 ## Introduction
 

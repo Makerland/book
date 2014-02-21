@@ -78,23 +78,23 @@ Making the LED blink is pretty simple.  The Arduino IDE actually has the code pr
 
 The code is pretty well documented, so read it and get a feel for how it works.  When you’re ready click the “Upload” button and watch your very first LED blink!
 
-### 3. Introduction to Firmata.
-####Goal: Understand what Firmata is an how to upload it to our Arduino.
+### 3. Introduction to firmata.
+####Goal: Understand what firmata is an how to upload it to our Arduino.
 
-Firmata is a generic protocol for communicating with a microcontroller using software on a computer over a serial connection. You can think of it like an API for talking to Arduinos. We compile the firmata program and push it to our board.  Then a program can send and receive commands to/from the Arduino.
+firmata is a generic protocol for communicating with a microcontroller using software on a computer over a serial connection. You can think of it like an API for talking to Arduinos. We compile the firmata program and push it to our board.  Then a program can send and receive commands to/from the Arduino.
 
-There are implementations of Firmata in a bunch of languages and flashing it on to our Arduino is super easy using the Arduino IDE.  Open up the IDE again and click on:
+There are implementations of firmata in a bunch of languages and flashing it on to our Arduino is super easy using the Arduino IDE.  Open up the IDE again and click on:
 
-	File > Examples > Firmata > StandardFirmata
+	File > Examples > firmata > Standardfirmata
 
-This should open up a new window that contains the code we need to upload to your Arduino so it “speaks” Firmata.  Click “Upload” to compile the code and push it to the board.  
+This should open up a new window that contains the code we need to upload to your Arduino so it “speaks” firmata.  Click “Upload” to compile the code and push it to the board.  
 
 _Hint: You should see the LED flash a few times and then it should stop._
 
 ### 4. “Hello World” in your favorite language.
 Goal: Blink an LED using either Javascript, Python, or Ruby.
 
-Now that we have Firmata running on our Arduino board, we can start using our favorite scripting language to control it.  Let’s rewrite our “Hello World” example in either Python, Javascript, or Ruby.  We already have the LED wired up, so no need to worry about that.
+Now that we have firmata running on our Arduino board, we can start using our favorite scripting language to control it.  Let’s rewrite our “Hello World” example in either Python, Javascript, or Ruby.  We already have the LED wired up, so no need to worry about that.
 
 #### __Python__
 

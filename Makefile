@@ -10,26 +10,56 @@ PDF_BUILDER_FLAGS = \
 makerland.pdf:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BOOK_FILE_NAME).pdf
 
+3dmodeling:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/3dmodeling.md -o 3dmodeling.pdf
+
+bricksbots:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
+
+buildbot:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/buildbot.md" -o "buildbot.pdf"
+
+cirqoid:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/cirqoid.md -o cirqoid.pdf
+
 dancebot:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
+
+drones:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/drones.md -o drones.pdf
+
+firmata:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/firmata.md -o firmata.pdf
+
+hens:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/hens.md -o hens.pdf
 	
 home:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home_automation.md" -o "home_automation.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home.md" -o "home.pdf"
 
-underwater:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater_robots.md" -o "underwater_robots.pdf"
+lights:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lights.md" -o "lights.pdf"
+
+lilypad:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lilypad.md" -o "lilypad.pdf"
 
 pythonruby:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/python_ruby.md -o python_ruby.pdf	
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/pythonruby.md -o pythonruby.pdf	
 
 soldering:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
 	
-magic:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/magic_lights.md" -o "magic_lights.pdf"
+lights:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lights.md" -o "lights.pdf"
 	
 bricks:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricks_and_bots.md" -o "bricks_and_bots.pdf"
-	
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
+
+thermostat:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/thermostat.md" -o "thermostat.pdf"
+
+underwater:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "underwater.pdf"
+
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

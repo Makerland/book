@@ -30,6 +30,6 @@ magic:
 	
 bricks:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricks_and_bots.md" -o "bricks_and_bots.pdf"
-
+	
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf

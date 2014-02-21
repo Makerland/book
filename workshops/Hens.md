@@ -20,7 +20,8 @@ So here, if you’re a beginner we’ll set up our RPI & remotely control it to 
 
 ![](workshops/hens/3.jpg)
 
-#
+
+
 
 All we need is easily available online and we’ve put much of it on the USB Stick to speed things up a bit. Copy the contents of our USB stick to your laptop (see the *Appendix* at the end for full list of sources and links).
 

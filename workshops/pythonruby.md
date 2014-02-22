@@ -1,4 +1,4 @@
-# Python and Ruby sitting in a tree (K-I-S-S-I-N-G!)
+# Python and Ruby sitting in a tree
 
 ## Overview
 
@@ -78,8 +78,6 @@ Firstly you have to install some packages which you’ll need in this workshop. 
 
 	cd PATH_TO_PYTHON_DIRECTORY_FROM_ZIP
 	sudo pip install -r requirements.txt
-
-# 
 
 
 > What did you just installed? You’ve installed three libraries:
@@ -394,8 +392,6 @@ Among sensors you can find DHT11 which can measure temperature and humidity. Tog
 Start with the wires. Don’t disconnect sonar, it will be required late. First lets connect the DHT11:
 
 ![DHT11](workshops/pythonruby/4_meteo_dht_bb.png)
-
-#
 
 Now connect BH1750:
 

@@ -1,4 +1,4 @@
-# buildbot Workshop
+# Build-a-bot
 
 ## Overview
 

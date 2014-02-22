@@ -1,70 +1,53 @@
-# So smart watch 
+# Build a smart watch with Lilypad
 
 ## Overview
 
-Create your own multifunctional smart watch. The LilyPad Arduino is a microcontroller board designed for wearables and e-textiles. It can be sewn to fabric and similarly mounted power supplies, sensors and actuators with conductive thread.
+Create your own multifunctional smart watch with the LilyPad Arduino, a microcontroller board designed for wearables and e-textiles. It can be sewn to fabric and similarly mounted power supplies, sensors and actuators with conductive thread.
 
 During this workshop you will learn how to sew and connect whole elements. 
-Check how to use basic controllers to create various functionality. 
 
 Have you ever heard about pomodoro technique? When whole leds are bright, that means you are very busy and nobody should disturb you. When leds are off, buzzer sound tells you that this is brake time. This management method uses a timer to break down work into intervals and it is based on the idea that frequent breaks can improve mental agility. 
 
-Blinking leds measuring our time is the first goal.
-Secondly we will upgrade our circuit to create light piano instrument and memory game.
+Blinking leds measuring our time is the first goal. Then we will upgrade our circuit to create light piano instrument and memory game.
 
 ## Preparations
 
-> We have two different Lilypad boards available: Arduino LilyPad FTDI and Arduino LilyPad USB. The difference is that Arduino LilyPad USB is simpler: it connects directly with computer by micro-USB cable and have less pins. Arduino LilyPad FTDI  needs to be connected through FTDI Breakout (drivers are needed). > Feel free to choose one of them and follow appropriate instruction.
+We have two different Lilypad boards available: Arduino LilyPad FTDI and Arduino LilyPad USB. The difference is that Arduino LilyPad USB is simpler: it connects directly with computer by micro-USB cable and have less pins. Arduino LilyPad FTDI  needs to be connected through FTDI Breakout (drivers are needed). Feel free to choose one of them and follow appropriate instruction.
 
-Make sure that you have collected:
+__Make sure that you have collected:__
 
-- Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
+Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
 
-![](workshops/lilypad/1.png)
+![](workshops/lilypad/1.png) \
 
-- or Arduino LilyPad USB and micro USB cable
+or Arduino LilyPad USB and micro USB cable
 
-![](workshops/lilypad/2.png)
+![](workshops/lilypad/2.png) \
 
-- Battery Holder
+Battery Holder and Cell batery
 
-![](workshops/lilypad/3.jpg)
+![](workshops/lilypad/3.jpg) \ ![](workshops/lilypad/4.jpg)
 
-- Cell Battery 
+Buzzer
 
-![](workshops/lilypad/4.jpg)
+![](workshops/lilypad/5.jpg) \
 
-- Buzzer
+3 LEDs and 3 Photoresitors 
 
-![](workshops/lilypad/5.jpg)
+![](workshops/lilypad/6.jpg) \ ![](workshops/lilypad/7.png)
 
-- LED - 3 pcs
+Conductive thread, normal thread, needle and prepared material base
 
-![](workshops/lilypad/6.jpg)
+![](workshops/lilypad/8.jpg) \
 
-- Photoresistor - 3 pcs
+2 Press-studs
 
-![](workshops/lilypad/7.png)
+![](workshops/lilypad/9.jpg) \
 
-- Conductive thread
 
-![](workshops/lilypad/8.jpg)
+**Arduino LilyPad FTDI** and **Arduino LilyPad USB**
 
-- Normal thread
-- Needle
-- Press-stud 2 pcs
-
-![](workshops/lilypad/9.jpg)
-
-- prepared material base
-
-**Arduino LilyPad FTDI**
-
-![](workshops/lilypad/10.jpg)
-
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/11.jpg)
+![](workshops/lilypad/10.jpg) \ ![](workshops/lilypad/11.jpg)
 
 ## Installing and configuring the arduino software
 
@@ -72,40 +55,31 @@ Make sure that you have collected:
 
 ### Launching the LilyPad Arduino application on Windows
 
-Get the latest version of arduino environment from the <http://arduino.cc/en/Main/Software>
+Get the latest version of arduino environment from the [Arduino website: http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software)
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer.
 
 ![](workshops/lilypad/12.jpg)
 
-Select your board. You'll need to select the entry in the **Tools > Board** menu – *Lilypad Arduino w/ ATmega328*
+### Select your board
 
-### Install the drivers
+You'll need to select the entry in the *Tools > Board* menu: **Lilypad Arduino w/ ATmega328**
 
-You will need to install the drivers for the FTDI board that enables you to program the LilyPad Arduino. You need to download the latest version of the drivers from the <http://www.ftdichip.com/Drivers/VCP.htm>
+### Select your serial port
 
-If your computer is using Windows 7, Windows Vista, Windows XP, or an earlier operating system, see this website to determine whether you should use the x86 (32 bit) or x64 (64 bit) drivers. If your computer is using Windows 8 or a later operating system, you should download the x64 (64 bit drivers).
-When the download is finished, extract all of the contents of the *.zip* file to a location you will remember.
+Select the serial device of the Arduino board from the *Tools > Serial Port* menu. This is likely to be **COM3** or higher (**COM1** and **COM2** are usually reserved for hardware serial ports).
 
-Follow the guide on the FTDI website: <http://www.ftdichip.com/Support/Documents/InstallGuides.htm>, that corresponds to your operating system to complete the installation process.
+### Upload the program
 
-You'll need to restart your computer after installing the drivers.
+Open the LED blink example sketch: *File > Examples > 1.Basics > Blink*. 
 
-![](workshops/lilypad/13.png)
-
-**Select your serial port.** Select the serial device of the Arduino board from the Tools > Serial Port menu. This is likely to be **COM3** or higher (**COM1** and **COM2** are usually reserved for hardware serial ports).
-
-**Upload the program.** Open the LED blink example sketch: **File > Examples > 1.Basics > Blink**. 
-
-Now, simply click the "Upload" button in the environment (arrow ->). Wait a few seconds - you should see the leds on the board flashing. If the upload is successful, the message "Done uploading." will appear in the status bar. 
-
-![](workshops/lilypad/14.png)
+Now, simply click the *Upload* button in the environment (arrow ->). Wait a few seconds - you should see the leds on the board flashing. If the upload is successful, the message "Done uploading." will appear in the status bar. 
 
 A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You've gotten LilyPad up-and-running. 
 
-### Launching the Arduino application on Mac OSx
+### Launching the Arduino application on Mac OS X
 
-Get the latest version of LilyPad Arduino environment from the <http://arduino.cc/en/Main/Software>
+Get the latest version of LilyPad Arduino environment from the [Arduino website: http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software)
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer. 
 
@@ -113,23 +87,21 @@ Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB c
 
 ### Install the FTDI Drivers
 
-You will need to install the drivers for the FTDI board that enables you to program the LilyPad Arduino. You need to download the latest version of the drivers from the FTDI website: <http://www.ftdichip.com/Drivers/VCP.htm>
+You will need to install the drivers for the FTDI board that enables you to program the LilyPad Arduino. You need to download the latest version of the drivers from the [FTDI website: http://www.ftdichip.com/Drivers/VCP.htm](http://www.ftdichip.com/Drivers/VCP.htm)
 
 Scroll down to the middle of this page, where there is a table listing drivers for different computers. Click on the most recent driver that is compatible with your computer. If your computer is running OS 10.5 or higher you should use the x64 (64-bit) drivers. If you're running OS 10.4 you should use the x32 (32-bit) drivers. Otherwise, you should use the PPC (PowerPC) drivers. To determine which OS your computer has, click on the apple icon in the upper right hand corner of your screen and click on "About This Mac" menu item.
 
 ### Select your board
 
-You'll need to select the entry in the **Tools > Board** menu that corresponds to your LilyPad Arduino.
-
-![](workshops/lilypad/16.png)
+You'll need to select the entry in the *Tools > Board* menu that corresponds to your LilyPad Arduino.
 
 ### Select your serial port
 
-Select the correct serial port from the **Tools > Serial Port** menu.
+Select the correct serial port from the *Tools > Serial Port* menu.
 
-![](workshops/lilypad/17.png)
+### Upload the program
 
-Upload the program. Open the LED blink example sketch: **File > Examples > 1.Basics > Blink**.
+Open the LED blink example sketch: *File > Examples > 1.Basics > Blink*.
 
 Now, simply click the "Upload" button in the environment (arrow ->). Wait a few seconds - you should see the leds on the board flashing. If the upload is successful, the message "Done uploading." will appear in the status bar. 
 
@@ -137,55 +109,39 @@ Now, simply click the "Upload" button in the environment (arrow ->). Wait a few 
 
 Lets start with stop-watch function. 
 
-First of all we have to prepare our circuit. We will sew a bit, but don’t worry – everything is prepared, there is not much left.
-
-This is our basis.
+First of all we have to prepare our circuit. We will sew a bit, but don’t worry – everything is prepared, there is not much left. This is our basis.
  
- **Arduino LilyPad FTDI**
- 
-![](workshops/lilypad/18.jpg)
+![Arduino LilyPad FTDI](workshops/lilypad/18.jpg)
 
-**Arduino LilyPad USB**
+![Arduino LilyPad USB](workshops/lilypad/19.jpg)
 
-![](workshops/lilypad/19.jpg)
+Whole elements and thread paths are printed on. All you have to do is to follow the instructions. Each piece of LilyPad have adhesive tape at the back side to help you place Lilypad elements on the material. 
 
-Whole elements and thread paths are printed on. All you have to do is to follow the instructions. Each piece of LilyPad have adhesive tape at the back side to help you place Lilypad elements on the material. Before you sew anything, stick it.
+To make your watch durable, sew elements using normal thread and then use conductive thread to connect pins. When sewing, it is very important that the different threads never overlap one another. 
 
-To make your watch durable, sew elements using normal thread and then use conductive thread to connect pins. When sewing, it is very important that the different threads never overlap one another.
+To make sawing easier, whole thread paths are dotted. Just to help you a bit, LilyPad board and battery holder are already sewed and connected.
 
-To make sawing easier, whole thread paths are dotted. 
 
-Just to help you a bit, LilyPad board and battery holder are already sewed and connected.
+*Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-**Arduino LilyPad FTDI**
+![Arduino LilyPad FTDI](workshops/lilypad/20.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/21.jpg) 
 
-![](workshops/lilypad/20.jpg)
 
-**Arduino LilyPad USB**
+Stick first LED on the proper place (start from the top one).  Sew (+) with pin 9 (blue line) on LilyPad board and (-) with ground (-) (green line). 
 
-![](workshops/lilypad/21.jpg)
+> Note the POSITIVE (+) and NEGATIVE (-) ends of the LED lights. To keep the sewing clean, make sure the negative ends are all pointed leftwards, and the positive ends are pointed rightwards.
 
-Stick first LED on the proper place (start from the top one). Note the POSITIVE (+) and NEGATIVE (-) ends of the LED lights. To keep the sewing clean, make sure the negative ends are all pointed leftwards, and the positive ends are pointed rightwards. Sew (+) with pin 9 (blue line) on LilyPad board and (-) with ground (-) (green line). 
+*Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-**Arduino LilyPad FTDI**
-
-![](workshops/lilypad/22.jpg)
-
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/23.jpg)
+![Arduino LilyPad FTDI](workshops/lilypad/22.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/23.jpg)
 
 Congratulation! Your first circuit is done! Lets test it. Upload again Blink programme. Don’t forget to change pin number to 9. Does it work?
 
 Let’s go further. Sew another two leds. Connect positive ends to pins 10 and 11. Don’t forget to ground them (green line) – you can sew whole negative ends together. 
 
-**Arduino LilyPad FTDI**
+*Arduino LilyPad FTDI* and *Arduino LilyPad USB*
 
-![](workshops/lilypad/24.jpg)
-
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/25.jpg)
+![a](workshops/lilypad/24.jpg) \ ![b](workshops/lilypad/25.jpg)
 
 Try to test it now. Modificate “Blink” program by adding new leds. (If you need help, go to SmartWatch folder and run “Blink_three leds” file).
 
@@ -194,9 +150,7 @@ Let’s add sound. Stick buzzer in the right bottom corner. Sew negative end wit
 - with pin 4 at FTDI board
 - with pin 3 at USB board
 
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/26.jpg)
+![Arduino LilyPad USB](workshops/lilypad/26.jpg)
 
 Check if it’s connected correctly. Go to SmartWatch folder and run `Simple_tone` file. If you hear tones, your buzzer is connected correctly.
 
@@ -267,19 +221,22 @@ void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMillisecon
 int time = 0;
 ~~~~~~~
 
-Next is the main loop method. Called over and over again by the Arduino framework.
+Next is the main loop method. Called over and over again by the Arduino framework. Each LED presents the passing of one third of the pomodoro cycle time. With time passing, each LED in order will dim down:
 
 ~~~~ {.numberLines}
 void loop() {
-  const int timePerLED = pomodoroCycleLenght / 3; /* each LED presents the passing of one third of the pomodoro cycle time. With time passing, each LED in order will dim down. */
+  const int timePerLED = pomodoroCycleLenght / 3; 
 ~~~~~~~
 
 For each led we first calculate the time relative to it's part of the pomodoro cylce and constrain it to the range `[0, timePerLED]`. We then map this value to a brightness level.
 
 ~~~~ {.numberLines} 
-  analogWrite(ledPin1, map(constrain(time, 0, timePerLED), 0, timePerLED, 255, 0)); //set LED1 (first part of pomodoro cycle)
-  analogWrite(ledPin2, map(constrain(time - timePerLED, 0, timePerLED), 0, timePerLED, 255, 0)); //set LED2 (second part of pomodoro cycle)
-  analogWrite(ledPin3, map(constrain(time - timePerLED*2, 0, timePerLED), 0, timePerLED, 255, 0)); //set LED3 (third part of pomodoro cycle)
+  //set LED1 (first part of pomodoro cycle)
+  analogWrite(ledPin1, map(constrain(time, 0, timePerLED), 0, timePerLED, 255, 0));
+  //set LED2 (second part of pomodoro cycle)  
+  analogWrite(ledPin2, map(constrain(time - timePerLED, 0, timePerLED), 0, timePerLED, 255, 0));
+  //set LED3 (third part of pomodoro cycle) 
+  analogWrite(ledPin3, map(constrain(time - timePerLED*2, 0, timePerLED), 0, timePerLED, 255, 0)); 
 ~~~~~~~
 
 We now need to wait for exactly one second.
@@ -307,18 +264,12 @@ It’s time to wear your new smart watch! Get things done, manage your time: pla
 
 If you still have some enthusiasm left, try to upgrade your smart stopwatch. We will create musical instrument by adding some analog inputs. For this purpose add photoresistors to our circuit. We will generate sound by fading out brightness.
 
-**Arduino LilyPad FTDI**
-
-![](workshops/lilypad/27.jpg)
-
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/28.jpg)
+![Arduino LilyPad FTDI](workshops/lilypad/27.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/28.jpg)
 
 Connect photoresistor to:
 
-– analog pin A0 at FTDI board
-– analog pin A2 at USB board
+- analog pin A0 at FTDI board
+- analog pin A2 at USB board
 
 Ground it and additionally sew with power pin (+) on Lilypad board as shown above. 
 
@@ -360,13 +311,7 @@ Finish keyboard for our smart watch instrument by Add two left photoresistor. Gr
 
 Our smart watch instrument keyboard is finished.
 
-**Arduino LilyPad FTDI**
-
-![](workshops/lilypad/29.jpg)
-
-**Arduino LilyPad USB**
-
-![](workshops/lilypad/30.jpg)
+![Arduino LilyPad FTDI](workshops/lilypad/29.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/30.jpg)
 
 Time to code:
 
@@ -427,7 +372,9 @@ void loop(void) {
   }
 }
 
-// Generates a tone (square wave) on the provided speakerPin. The tone will last for timeInMilliseconds and have the frequencyInHertz. The method will block for the output time
+// Generates a tone (square wave) on the provided speakerPin. 
+// The tone will last for timeInMilliseconds and have the frequencyInHertz. 
+//The method will block for the output time
 void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMilliseconds) {
   int x;
   long halfCycleDelay = (long) (1000000 / frequencyInHertz / 2);

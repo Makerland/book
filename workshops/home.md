@@ -20,7 +20,7 @@ Plug your LED power into pin 13 of your Arduino and ground into the GND pin next
 
 Plug your Arduino into your computer via USB.
 
-Open the Arduino IDE, select: File > Examples > 01.Basics > Blink and click the “Upload” button to install the Blink program on your board.
+Open the Arduino IDE, select: *File > Examples > 01.Basics > Blink* and click the *Upload* button to install the Blink program on your board.
 
 If you successfully uploaded your program, the LED that you plugged into your Arduino should be blinking on and off every second!
  
@@ -175,7 +175,7 @@ Take the provided battery, and re-wire the Servo to it. We connect all GND wires
 
 The Servo library documentation is available here if you would like to dive deeper into it: <http://arduino.cc/en/reference/servo>
 
-If you get stuck and would like to compare your code with the solution, you can see it here: <https://gist.github.com/jonmarkgo/9058657>
+If you get stuck, compare your code with the solution here: <https://gist.github.com/jonmarkgo/9058657>
 
 ### Step 5: Access Control
 
@@ -199,7 +199,7 @@ Attach the two metal rods to your servo with screws and washers.
 
 Now use a piece of cardboard (or other stiff material) to make a tighter bond between the servo and the lock:
 
-![](workshops/home/image07.jpg)
+![](workshops/home/image07.jpg) 
 
 ![](workshops/home/image10.jpg)
 
@@ -214,6 +214,7 @@ And last but not least, we will tape our servo’s arms to the deadbolt itself:
 Now you have your fully mounted (and fully impermanent) servo-controlled deadbolt:
 
 ![](workshops/home/image06.jpg)
+
 
 ## Second flow (optional)
 

@@ -6,11 +6,9 @@ We will bring the ingredients, and you get to do the baking!
 
 With an price tag of around $35, the Raspberry Pi is a credit-card sized computer that offers developers a springboard to quickly dive into the embedded world of programming. It includes an ARM chip that is powerful enough to run a full version of Java SE including JavaFX.  With the use of external libraries like Pi4J you can control the GPIO pins to interact with a wide array of hardware components.
 
-Attendees will each get a Raspberry Pi to hack on during this session, along with recipes for creating projects that demonstrate the power of Java on a very accessible embedded platform.
+You will get a Raspberry Pi to hack on during this session, along with recipes for creating projects that demonstrate the power of Java on a very accessible embedded platform.
 
-Lab will include hardware for attendee use and projects that demonstrate how to get started with Java SE development on the Raspberry Pi.  This will include use of sensors and inputs in Java SE Embedded.  Attendees will gain experience in the toolchain for embedded development by learning to build, deploy, and debug their applications.
-
-## Beginer Lab
+## Beginner Lab
 
 ### Setting up your Raspberry Pi
 
@@ -30,14 +28,11 @@ Now we are ready to get started with assembling all your parts.  In your lab kit
 * Touch Screen
 * SD Card
 * Keyboard
-* Yellow Box:
- * Power Adapter
- * LVDS Cable/Board
- * Raspberry Pi Model B
- * Mini-USB Cable (power)
- * Micro-USB Cable (keyboard)
-
-> Note: Please save all the packaging for later on when packing up!
+* Power Adapter
+* LVDS Cable/Board
+* Raspberry Pi Model B
+* Mini-USB Cable (power)
+* Micro-USB Cable (keyboard)
 
 To setup your Raspberry Pi, follow these instructions:
 
@@ -55,15 +50,16 @@ To setup your Raspberry Pi, follow these instructions:
  * Use the Mini USB cable (long one)
  
 After completing all the setup, verify your connections and plug in the power. Some good ways to tell if it is working are:
-* You should get a bunch of flashing LEDs to indicate booting
- * Boot takes approx 30 seconds
-* The LCD screen should light up
- * Might be dim if the light sensor is obstructed
-* And you will should see a Linux boot screen with lots of text
+
+- You should get a bunch of flashing LEDs to indicate booting
+- Boot takes approx 30 seconds
+- The LCD screen should light up
+- Might be dim if the light sensor is obstructed
+- And you will should see a Linux boot screen with lots of text
 
 If you run into any issues, check the wiring against the steps above.  Also, don’t hesitate to ask for help form one of the lab instructors. Now that you have the Raspberry Pi booted, time to run the game!
  
-### Running  your first Retro Game
+### Running your first Retro Game
 
 This section assumes that you have the Pi booted and are looking at the login prompt. To run software on the Raspberry Pi, you first need to login:
 
@@ -72,10 +68,8 @@ This section assumes that you have the Pi booted and are looking at the login pr
 
 Next we will use Apache Ant (a build system for Java) in order to compile and run the game that is already on your SD card:
 
-* Change directory to the project folder
- * `cd MaryHadALittleLambda`
-* Run the build script
- * `ant`
+* Change directory to the project folder: `cd MaryHadALittleLambda`
+* Run the build script: `ant`
 
 > Note: If you are doing this from home you can find the code in GitHub here:
 >
@@ -96,14 +90,10 @@ This retro game is fairly simple, comprised of only 3 source files and some imag
 
 You can hack the code directly on device by using the “nano” text editor and running the ant build script to recompile your changes.  Here are the steps you would take to edit the MapObject class:
 
-* Run the nano text editor:
- * `nano src/sample/MapObject.java`
-* Save your changes:
- * `Control-O Enter`
-* Exit Nano:
- * `Control-X`
-* Compile/Run:
- * `ant`
+* Run the nano text editor:  `nano src/sample/MapObject.java`
+* Save your changes: `Ctrl+O Enter`
+* Exit Nano: `Ctrl+X`
+* Compile/Run: `ant`
 
 ![](workshops/javarobots/2.png)
 
@@ -125,7 +115,7 @@ Please make sure you have Java SE 8 installed on your machine IDE for java devel
 
 Let's get some basic information before we go to the exercises. 
 
-#### Getting started with external hardware
+__Getting started with external hardware__:
 
 First lets have a look at the GPIO pins on the RPi.  
 
@@ -138,7 +128,7 @@ The GPIO connector has a number of different types of connection on them:
 * SPI interface pins
 * Serial Rx and Tx pins
 
-#### Devices to be used in the lab 
+__Devices to be used in the lab__:
 
 In this lab we are going to be using:
 
@@ -147,7 +137,7 @@ In this lab we are going to be using:
 * **Accelerometer:** An accelerometer is an electromechanical device that will measure acceleration forces. These forces may be static, like the constant force of gravity pulling at your feet, or they could be dynamic - caused by moving or vibrating the accelerometer.  In our lab we will be using the MPU9150 which includes an accelerometer
 * **Gyroscope:** A gyroscope is a device for measuring or maintaining orientation, based on the principles of angular momentum.  In our lab we will be using the MPU9150 which includes a gyroscope
 
-#### BMP180 Barometric Pressure/Temperature/Altitude Sensor
+__BMP180 Barometric Pressure/Temperature/Altitude Sensor__:
 
 ![](workshops/javarobots/4.png)
 
@@ -155,57 +145,21 @@ This precision sensor from Bosch is the best low-cost sensing solution for measu
 
 This board is 5V compliant - a 3.3V regulator and a i2c level shifter circuit is included so you can use this sensor safely with 5V logic and power.
 
-Complete data sheet can be found here (<http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf>)
+Complete data sheet can be found here: <http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf>
 
-#### 9 Degrees of Freedom - MPU-9150 Breakout
+___9 Degrees of Freedom - MPU-9150 Breakout__:
 
 ![](workshops/javarobots/5.png)
 
-Description: The 9DOF MPU-9150 is the world’s first 9-axis MotionTracking MEMS device designed for the low power, low cost, and high performance requirements of consumer electronics equipment including smartphones, tablets and wearable sensors. And guess what? You get to play with it.
+The 9DOF MPU-9150 is the world’s first 9-axis MotionTracking MEMS device designed for the low power, low cost, and high performance requirements of consumer electronics equipment including smartphones, tablets and wearable sensors. And guess what? You get to play with it.
 
 This breakout board makes it easy to prototype with the InvenSense MPU-9150 by breaking out all the pins you need to standard 0.1" spaced headers. The board also provides I2C pullup resistors and a solder jumper to switch the I2C address of the device.
 
 The MPU-9150 is a System in Package (SiP) that combines two chips: the MPU-6050, which contains a 3-axis gyroscope, and 3-axis accelerometer. The part is offered in a 4x4x1mm LGA package and is upgrade-compatible with the MPU-6050 integrated 6-axis MotionTracking device, providing a simple upgrade path and making it easy to fit on space constrained boards.
 
-Features:
-
-* Tri-Axis angular rate sensor (gyro) with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
-* Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
-* Tri-axis compass with a full scale range of ±1200µT
-* Reduced settling effects and sensor drift by elimination of board-level cross-axis alignment errors between accelerometer, gyroscope, and compass
-* VDD Supply voltage range of 2.4V–3.46V; VLOGIC of 1.8V±5% or VDD
-* Gyro operating current: 3.6mA (full power, gyro at all rates)
-* Gyro + Accel operating current: 3.8mA (full power, gyro at all rates, accel at 1kHz sample rate)
-* Gyro + Accel + Compass + DMP operating current: 4.25mA (full power, gyro at all rates, accel at 1kHz sample rate, compass at 8Hz rate)
-* Accel low power mode operating current: 10uA at 1Hz, 20uA at 5Hz, 70uA at 20Hz, 140uA at 40Hz
-* Full Chip Idle Mode Supply Current: 8µA
-* 400kHz Fast Mode I²C serial host interface
-* On-chip timing generator with ±1% frequency variation over full temperature range
-* 10,000g shock tolerant
-* I2C Pullup Resistors populated on board.
-* All Pins Broken Out to Standard 0.1" Spaced Headers
-* Solder Jumper for Switching LSB of I2C Address
-
-#### Software to be used : Java SE Embedded and Pi4J libraries
+__Software to be used: Java SE Embedded and Pi4J libraries__:
 
 Because we are going to be using Java SE Embedded, we don’t really have any library for connecting peripherals.  For this reason we are going to be using pi4j libraries.
-
-Pi4J Features:
-
-* Export & unexport GPIO pins
-* Configure GPIO pin direction
-* Configure GPIO pin edge detection
-* Control/write GPIO pin states
-* Pulse GPIO pin state
-* Read GPIO pin states
-* Listen for GPIO pin state changes (interrupt-based; not polling)
-* Automatically set GPIO states on program termination (GPIO shutdown)
-* Triggers for automation based on pin state changes
-* Send & receive data via RS232 serial communication
-* I2C Communication
-* SPI Communication
-* Extensible GPIO Provider interface to add GPIO capacity via expansion boards
-* Access system information and network information from the Raspberry Pi
 
 Please make sure you notice the difference in pin numbering used by Pi4J (next image), compare with the default Raspberry Pi numbering (previous image).
 
@@ -213,9 +167,9 @@ Please make sure you notice the difference in pin numbering used by Pi4J (next i
 
 ### Exercises
 
-#### Exercise 1: Turning on an off a LED
+__Exercise 1: Turning on an off a LED__
 
-**Objective: Get started with GPIO in the Raspeberry Pi.**
+Objective: Get started with GPIO in the Raspeberry Pi.
 
 In this exercise we are going to turn on and off the LED included in the lab kit.  For your convenience, copy the following code in your preferred IDE, compile and transfer the generated jar file to the pi.  Execute and make sure the lights goes on and off.
 
@@ -263,9 +217,9 @@ public class GPIOTest {
 }
 ~~~~~~~
 
-#### Exercise 2: Sensing Temperature
+__Exercise 2: Sensing Temperature__:
 
-**Objective: Getting started with I2C on the Raspberry Pi**
+Objective: Getting started with I2C on the Raspberry Pi
 
 In this exercise we are going to try I2C on the Raspberry Pi using the temperature sensor. 
 If you pay attention to the Raspberry Pi pins you will see that it has two pins for I2C, one for data's bus (SDA) and one for the clock (SCL).

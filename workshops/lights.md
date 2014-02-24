@@ -33,7 +33,7 @@ You will see many messages on your screen, many about missing modules, don’t w
 
 You should see something like on the image below. Now, you are ready to explore the world of Node-RED :)
 
-![](workshops/lights/1.png)
+![](workshops/lights/1.jpg)
 
 ## Main flow
 
@@ -53,7 +53,7 @@ Let’s build the first very simple Node-RED workflow!
 
 Notice the little grey square on the beginning of the **debug** node and the end of the **inject** node. These are the connection points for connecting the nodes together. Place your mouse on the connection point of the inject node, and as it becomes a cross, drag a connection to the debug node. You should have something like this:
 
-![](workshops/lights/2.png)
+![](workshops/lights/2.jpg)
 
 Double click the inject node. The property dialog opens where you can configure the node. Enter “Hello World!” at the *Payload* textfield and click OK. See how the inject node is now renamed to “Hello World!”.
 
@@ -61,7 +61,7 @@ Click *Deploy* button. On the right sidebar, switch to *debug* view.
 
 Now click the button on the left of the inject node as in the following picture and check the message on the debug window:
 
-![](workshops/lights/3.png)
+![](workshops/lights/3.jpg)
 
 Congratulations! You have deployed and executed your first Node-RED workflow!
 
@@ -103,7 +103,7 @@ The final step is to create a workflow that blinks the LED. While being on the N
 
 This is the way to import a workflow. Click **OK** and you will see the following workflow on your canvas:
 
-![](workshops/lights/5.png)
+![](workshops/lights/5.jpg)
 
 Click **Deploy** and see the LED flashing!
 
@@ -124,7 +124,7 @@ With this, you have all the external nodes copied into your local Node-RED insta
 
 Your Node.js environment will do the rest for you. Restart your Node-RED and refresh your browser. Check your node-palette, under the advanced group. You should see 2 new nodes!
 
-![](workshops/lights/6.png)
+![](workshops/lights/6.jpg)
 
 **Discover** node and **HueNode**. Click on each node and see on the information tab a brief description of what each node does. You can play with Discover node on your own, we will move directly to the HueNode for controlling the light!
 
@@ -137,11 +137,11 @@ Type in a number between 1-3 for the Lamp ID, select the Lamp status to ON.
 
 To enter a color value for changing the lamp’s color, you need to find the html code of the color you want. Go to <http://html-color-codes.info/> click on a color and copy the generated color value (starting with #). Paste the color value on the Select Color filed (without the #):
 
-![](workshops/lights/7.png)
+![](workshops/lights/7.jpg)
 
 Click OK and connect the inject node with the HueNode. Also, add a debug node and connect the output of the HueNode with the debug node:
 
-![](workshops/lights/8.png)
+![](workshops/lights/8.jpg)
 
 Click **Deploy** button. Now, click the button on the left on the inject node and see the light turning on and changing its color!
 
@@ -161,13 +161,13 @@ As soon as installation is complete, restart your Node-RED and refresh your brow
 
 Check the node-palette under the advance group. You should see the new scanBLE node. Click on it and check on the Info tab what it does and how it works.
 
-![](workshops/lights/9.png)
+![](workshops/lights/9.jpg)
 
 Import the following workflow into your canvas (Ctrl+I): <https://github.com/83tb/makerland-code/blob/master/workshops/lights/second_flow.json>
 
 You should have something like the following:
 
-![](workshops/lights/10.png)
+![](workshops/lights/10.jpg)
 
 Double click the **Check** node and edit it according to your BLE devices preferences. Then double click the **switch** node and change the Fitbit name to whatever the name of your BLE device is. Click the button on the inject node. When your BLE device is in proximity, it will be detected by the Check node. The output of the Check node will trigger the switch node that in turn will turn on the Hue Lamp!
 

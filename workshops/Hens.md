@@ -60,13 +60,13 @@ Many VNC applications are available. With Windows we’ll use TightVNC Viewer. W
 If we connect directly via our Ethernet cable, the IP address and port which we’re using (i.e. the directions to find the door to our Desktop) are indicated thus: __168.254.0.2:1__
 The current password (i.e. the key to get in the door) is: __funexpi__
 
-![TightVNC Viewer connection page](workshops/hens/1.png)
+![TightVNC Viewer connection page](workshops/hens/1.jpg)
 
 ### Take a look around.
 
 You should, at this point having entered your VNC password, find yourself in front of your desktop interface emblazoned with the bright Raspberry Pi logo.
 
-![](workshops/hens/4.png)
+![](workshops/hens/4.jpg)
 
 Now’s the time to familiarise yourself with this new world. Check out the menu from the bottom left corner to see the various program categories. Alongside is the File Manager.
 
@@ -82,7 +82,7 @@ The command line can be daunting if you’re not familiar with it. If you only k
 
 So double click LXTerminal Icon and off we go.
 
-![](workshops/hens/2.png)
+![](workshops/hens/2.jpg)
 
 Command line is in many ways a language just like many others. As you gradually learn the terms and translate what you want to say so the computer understands you’ll feel more and more at ease. We can’t cover many details in this document as this is not a Linux/Command line “primer” but a few useful basics follow, with few more in the “cheat sheet” to get you started.
 

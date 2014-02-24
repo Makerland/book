@@ -20,8 +20,7 @@ Next step is going to be putting some solder paste on the pads of the components
 
 Now go the components - you’ll guide Cirqoid pick and place head in placing the components on your board. This board isn’t heavily populated, so this won’t hold you for long.
 
-![](workshops/cirqoid/image.png) \ ![](workshops/cirqoid/image.png)
-
+![](workshops/cirqoid/image.jpg)
 
 ### Cooking time!
 
@@ -31,9 +30,7 @@ After that, it’s cooking time - the board goes to the oven. Several minutes an
 
 Now, the last thing that stands between you and the Knowledge (about the ambient temperature) is soldering though the hole components - we’ve got a sensor, a indicator and a header for power supply.
 
-![](workshops/cirqoid/image2.png) \ ![](workshops/cirqoid/image2.png)
-
-
+![](workshops/cirqoid/image2.jpg)
 
 When you are done with that the thermometer is your for taking! Now you’ll be always in control of your climate!
 

@@ -95,7 +95,7 @@ You can hack the code directly on device by using the “nano” text editor and
 * Exit Nano: `Ctrl+X`
 * Compile/Run: `ant`
 
-![](workshops/javarobots/2.png)
+![](workshops/javarobots/2.jpg)
 
 When looking at the MapObject class notice that it is organized by each of the game elements (e.g. Barn, Chicken Coop, Nest).  Some changes that are good to start with include:
 
@@ -119,7 +119,7 @@ __Getting started with external hardware__:
 
 First lets have a look at the GPIO pins on the RPi.  
 
-![](workshops/javarobots/3.png)
+![](workshops/javarobots/3.jpg)
 
 The GPIO connector has a number of different types of connection on them:
 
@@ -139,7 +139,7 @@ In this lab we are going to be using:
 
 __BMP180 Barometric Pressure/Temperature/Altitude Sensor__:
 
-![](workshops/javarobots/4.png)
+![](workshops/javarobots/4.jpg)
 
 This precision sensor from Bosch is the best low-cost sensing solution for measuring barometric pressure and temperature. Because pressure changes with altitude you can also use it as an altimeter! The sensor is soldered onto a PCB with a 3.3V regulator, I2C level shifter and pull-up resistors on the I2C pins. 
 
@@ -149,7 +149,7 @@ Complete data sheet can be found here: <http://www.adafruit.com/datasheets/BST-B
 
 ___9 Degrees of Freedom - MPU-9150 Breakout__:
 
-![](workshops/javarobots/5.png)
+![](workshops/javarobots/5.jpg)
 
 The 9DOF MPU-9150 is the world’s first 9-axis MotionTracking MEMS device designed for the low power, low cost, and high performance requirements of consumer electronics equipment including smartphones, tablets and wearable sensors. And guess what? You get to play with it.
 
@@ -163,7 +163,7 @@ Because we are going to be using Java SE Embedded, we don’t really have any li
 
 Please make sure you notice the difference in pin numbering used by Pi4J (next image), compare with the default Raspberry Pi numbering (previous image).
 
-![](workshops/javarobots/6.png)
+![](workshops/javarobots/6.jpg)
 
 ### Exercises
 
@@ -224,7 +224,7 @@ Objective: Getting started with I2C on the Raspberry Pi
 In this exercise we are going to try I2C on the Raspberry Pi using the temperature sensor. 
 If you pay attention to the Raspberry Pi pins you will see that it has two pins for I2C, one for data's bus (SDA) and one for the clock (SCL).
 
-![](workshops/javarobots/7.png)
+![](workshops/javarobots/7.jpg)
 
 I2C is not enabled by default on the RPi, and there are few steps you need to follow.
 
@@ -245,7 +245,7 @@ I2C is not enabled by default on the RPi, and there are few steps you need to fo
 
 Connecting the board and the RPi is pretty straightforward.  I2C requires pullup resistors,  but the RPi provide them, so we just need to connect the BMP180 directly to the Pi, following the next diagram:
 
-![](workshops/javarobots/8.png)
+![](workshops/javarobots/8.jpg)
 
 **Verifying the communication**
 
@@ -254,7 +254,7 @@ Once we connect the board to the RPi, we can continue to check if we can actuall
 * Try running on your pi: *sudo i2cdetect -y 1* or *sudo i2cdetect -y 0*.  (0 for the 256 Pi model B). 
 * You should be able to see your device on the table.  The following snapshot shows two I2C devices, one at address 40 and the second on address 70.
 
-![](workshops/javarobots/9.png)
+![](workshops/javarobots/9.jpg)
 
 * You should also see a couple of new entries under /dev:
  * `spidev0.0`

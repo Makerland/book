@@ -18,11 +18,11 @@ __Make sure that you have collected:__
 
 Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
 
-![](workshops/lilypad/1.png) \
+![](workshops/lilypad/1.jpg) \
 
 or Arduino LilyPad USB and micro USB cable
 
-![](workshops/lilypad/2.png) \
+![](workshops/lilypad/2.jpg) \
 
 Battery Holder and Cell batery
 
@@ -34,7 +34,7 @@ Buzzer
 
 3 LEDs and 3 Photoresitors 
 
-![](workshops/lilypad/6.jpg) \ ![](workshops/lilypad/7.png)
+![](workshops/lilypad/6.jpg) \ ![](workshops/lilypad/7.jpg)
 
 Conductive thread, normal thread, needle and prepared material base
 
@@ -395,7 +395,7 @@ But, it is not finished yet. Why not to add button to switch between two program
 
 We will use press-stud. Top part is already connected. Your job is to sew bottom part near pin 3 and connect it. 
 
-![](workshops/lilypad/31.png)
+![](workshops/lilypad/31.jpg)
 
 Try to modify code a bit – it’s simple! If little help is needed go to SmartWatch folder and run “Switch” file.
 

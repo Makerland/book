@@ -2,13 +2,15 @@
 
 ## Overview
 
-In this chapter we're going to assemble a small, humanoid robot designed to dance. The moving parts of the robot are called "Bitbeam". Bitbeam is LEGO Technic-compatible, but made with a 3D printer. 3D printing is a beginner-friendly, low-cost, open-source alternative for creating mechanical robot parts.Dancebot will have the following features:
+In this chapter we're going to assemble a small, humanoid robot designed to dance. The moving parts of the robot are called "Bitbeam". Bitbeam is LEGO Technic-compatible, but made with a 3D printer. 3D printing is a beginner-friendly, low-cost, open-source alternative for creating mechanical robot parts.
+
+Dancebot will have the following features:
 
 - Swivel head side to side. 
 - Rotate each arm up and down. 
 - Bust a move.
 
-![](workshops/dancebot/image001.png) 
+![](workshops/dancebot/image001.jpg) 
 
 ## Preparations
 
@@ -25,7 +27,8 @@ __Electronics:__
 
 __Printed parts:__
 
-- 1 Dancebot head- 2 Bitbeam Arduino mounting plate 
+- 1 Dancebot head
+- 2 Bitbeam Arduino mounting plate 
 - 4 Bitbeam servo mounts
 - 2 Bitbeam servo arms
 - 13 Bitbeam 1x9 beam
@@ -43,10 +46,13 @@ __Nuts and bolts:__
 
 __Assembly tools:__
 
-- 1 x 7/32 hex driver- 1 x 3/32 hex driver- 1 x 5/32 hex driver- 1 x Phillips #1 screwdriver
+- 1 x 7/32 hex driver
+- 1 x 3/32 hex driver
+- 1 x 5/32 hex driver
+- 1 x Phillips #1 screwdriver
 
 
-![](workshops/dancebot/image002.png)
+![](workshops/dancebot/image002.jpg)
 
 
 
@@ -57,39 +63,39 @@ __Assembly tools:__
 
 Parts you need to build first arm:
 
-![](workshops/dancebot/image003.png) 
+![](workshops/dancebot/image003.jpg) 
 
 
 Use 6-32 nuts and bolts to attach 2 Bitbeam servo mounts to the servo. After that, use 1-inch 10-32 nuts and bolts to attach 1x9 Bitbeam beams to Bitbeam servo mount.
 
 
-![](workshops/dancebot/image004.png) \ ![](workshops/dancebot/image005.png) 
+![](workshops/dancebot/image004.jpg) \ ![](workshops/dancebot/image005.jpg) 
 
 ## Arm number two
 
 Let's move on onto the next arm. You'll use the same parts you used for the first arm. Use 6-32 nuts and bolts to attach 2 Bitbeam servo mounts to the servo. After that, use 1-inch 10-32 nuts and bolts to attach 1x9 Bitbeam beams to Bitbeam servo mount.
 
-![](workshops/dancebot/image004.png) \ ![](workshops/dancebot/image006.png) 
+![](workshops/dancebot/image004.jpg) \ ![](workshops/dancebot/image006.jpg) 
 
 
 Two arms of Dancebot should look like that:
 
-![](workshops/dancebot/image007.png) 
+![](workshops/dancebot/image007.jpg) 
 
 
 ## Chest and Neck
 
 Parts you will need for this: 
 
-![](workshops/dancebot/image008.png) 
+![](workshops/dancebot/image008.jpg) 
 
 Attach the red, x-shaped servo horn to the 1x9 Bitbeam beam with 2 servo mounting screws. Then attach Arm 1 and one 1x9 Bitbeam beam to the Arduino mounting plate using a 3/4. The last step is to attach Arm 2 to the Arduino mounting plate.
 
-![](workshops/dancebot/image009.png) \ ![](workshops/dancebot/image010.png) \ ![](workshops/dancebot/image011.png)
+![](workshops/dancebot/image009.jpg) \ ![](workshops/dancebot/image010.jpg) \ ![](workshops/dancebot/image011.jpg)
 
 ## {TODO: Fill-in remaining steps}
 
-![Dancebot - Fully assembled](workshops/dancebot/image012.png) 
+![Dancebot - Fully assembled](workshops/dancebot/image012.jpg) 
 
 ## Teaching Dancebot to dance:
 
@@ -108,4 +114,4 @@ No. This workshop does not show you to design your own 3D printable parts.
 
 
 __How do I 3D print my own robot parts?__
-If you don't have a 3D printer, you have several options. You can visit a hackerspace like TechShop in your area that has a 3D printer you can use if you're a dues paying member. You can also use an online printing service such as Ponoko or Shapeways. Online services are perhaps the easiest way to obtain the parts for your own Dancebot, but they are also the slowest and most expensive. Your best option is to either get your own printer, or become friends with someone who does!
+If you don't have a 3D printer, you have several options. You can visit a hackerspace like TechShop in your area that has a 3D printer you can use if you're a dues paying member. You can also use an online printing service such as Ponoko or Shapeways. Online services are perhaps the easiest way to obtain the parts for your own Dancebot, but they are also the slowest and most expensive. Your best option is to either get your own printer, or become friends with someone who does!

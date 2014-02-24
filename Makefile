@@ -26,7 +26,7 @@ dancebot:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
 
 drones:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/drones.md -o drones.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/drones.md" -o drones.pdf
 
 firmata:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/firmata.md -o firmata.pdf

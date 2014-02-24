@@ -54,7 +54,7 @@ The last component is the *pynxc-0.1.6* itself, which can be downloaded from the
 
 If we do it all properly, after running the `pynxc.pyw` file we’ll see a window with this kind of contents:
 
-![](workshops/bricksbots/1.png)
+![](workshops/bricksbots/1.jpg)
 
 The environment is done!
 
@@ -239,7 +239,7 @@ To be able to download your own programs to the Brick, it is necessary to instal
 
 Remember not to delete a value of the PATH variable, but simply add the leJOS’s path after a semicolon instead. If everything is done correctly, you can test a software by compiling and downloading your very first program to the BRICK!
 
-![](workshops/bricksbots/2.png)
+![](workshops/bricksbots/2.jpg)
 
 ### First compilation and downloading to the Brick
 

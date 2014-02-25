@@ -8,58 +8,58 @@ PDF_BUILDER_FLAGS = \
 	--toc
 
 makerland.pdf:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BOOK_FILE_NAME).pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o pdf/$(BOOK_FILE_NAME).pdf
 
 3dmodeling:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/3dmodeling.md -o 3dmodeling.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/3dmodeling.md -o pdf/3dmodeling.pdf
 
 bricksbots:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "pdf/bricksbots.pdf"
 
 buildbot:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/buildbot.md" -o "buildbot.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/buildbot.md" -o "pdf/buildbot.pdf"
 
 cirqoid:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/cirqoid.md -o cirqoid.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/cirqoid.md -o pdf/cirqoid.pdf
 
 dancebot:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o dancebot.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/dancebot.md -o pdf/dancebot.pdf
 
 drones:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/drones.md" -o drones.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/drones.md" -o pdf/drones.pdf
 
 firmata:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/firmata.md -o firmata.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/firmata.md -o pdf/firmata.pdf
 
 hens:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/hens.md -o hens.pdf
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/hens.md -o pdf/hens.pdf
 	
 home:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home.md" -o "home.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/home.md" -o "pdf/home.pdf"
 
 lights:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lights.md" -o "lights.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lights.md" -o "pdf/lights.pdf"
 
 lilypad:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lilypad.md" -o "lilypad.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/lilypad.md" -o "pdf/lilypad.pdf"
 
 pythonruby:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/pythonruby.md -o pythonruby.pdf	
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/pythonruby.md -o pdf/pythonruby.pdf	
 
 soldering:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o soldering.pdf		
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/soldering.md -o pdf/soldering.pdf		
 	
 bricks:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "bricksbots.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/bricksbots.md" -o "pdf/bricksbots.pdf"
 
 thermostat:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/thermostat.md" -o "thermostat.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/thermostat.md" -o "pdf/thermostat.pdf"
 
 underwater:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "underwater.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/underwater.md" -o "pdf/underwater.pdf"
 	
 javarobots:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/javarobots.md" -o "javarobots.pdf"
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/javarobots.md" -o "pdf/javarobots.pdf"
 
 clean:
-	rm -f $(BOOK_FILE_NAME).pdf
+	rm -f pdf/$(BOOK_FILE_NAME).pdf

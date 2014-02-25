@@ -1,4 +1,4 @@
-# 3D Modeling Workshop
+# 3D Modeling
 
 ## Overview
 During this workshop you will learn how to use Tinkercad to create & customize 3D models. 
@@ -15,17 +15,17 @@ And at the end you will have a task to make an object that you can print later o
 
 ## Main flow
 
-### 1. Learn the layout
-Log in to your Tinkercad account, click on “Create new design” button & let's get started! 
+### Learn the layout
+Log in to your Tinkercad account, click on Create new design button & let's get started! 
 
 Take some time to know your way around Tinkercads layout. Basically all the tools you will need are located in the right menu bar. 
 
-### 2. Check your grid
-Near the bottom right corner of the workplane you have *"Edit grid"* options & *"Snap grid"* value. 
+### Check your grid
+Near the bottom right corner of the workplane you have *Edit grid* options & *Snap grid* value. 
 
 Leave the value as it is, but we need to adjust the grid size to those of the 3D printer bed. It will be easier for you to understand the dimensions you are working in.
 
-### 3. Learn the basics.
+### Learn the basics
 Drag the red Box to the workplane (close to middle is usually best).
 
 You can drag the box to any place on the workplane. Click & drag to move it in x & y axis, pull the black arrowhead on the top plane to move it in the "z" axis.
@@ -38,7 +38,7 @@ You can also scale the box freely in x&y axis while pulling one of four white do
 
 Notice that you can also rotate the objects in any direction. Holding Shift button while doing so will snap the rotation every 45 degrees.
 
-### 4. Working with dimensions
+### Working with dimensions
 First of all delete the object you were working on before.
 
 Ok, now get *Cylinder* on the plane.
@@ -53,7 +53,7 @@ Change the dimensions to:
 
 Apart from the object dimensions, you can also change the distance from the workplane & distance from the ruler axis. 
 
-### 5. 3D modelling: the basics
+### 3D modelling: the basics
 Ok, so we have a cylinder with the dimensions set in the previous step. Now lets get one more cylinder to the workplane. 
 
 1. Set the cylinder dimensions to 
@@ -61,29 +61,33 @@ Ok, so we have a cylinder with the dimensions set in the previous step. Now lets
 - height: 30mm 
 - diameter: 5mm. 
 
-2. Select both objects either by dragging a window over them, or by shift clicking both of them. Go to *“Adjust”* in the top bar on the right, and choose *“Align”* option.
+2. Select both objects either by dragging a window over them, or by shift clicking both of them. Go to *Adjust* in the top bar on the right, and choose *Align* option.
 
 3. Center align the cylinders in all three dimensions.
 
 4. Copy & paste the thin cylinder and again select all object and center align them in all dimensions. Rotate one of the thin cylinders 90 degrees.
 
+####
+
 ![](workshops/3dmodeling/image02.jpg) \ ![](workshops/3dmodeling/image01.jpg)
 
 5. Select the horizontal thin cylinder and the big one and group* them together using either keyboard shortcut or command from the top menu bar. 
 
-> Group command in Tinkercad “welds” the objects together, you can unweld them simply by ungrouping them.
+> Group command in Tinkercad welds the objects together, you can unweld them simply by ungrouping them.
 
 6. Change the color of the grouped object.
 
 7. Change the diameter of the thin vertical to 20mm. Realign the objects.
 
-8. Click on the thin cylinder and set it to “Hole” in the inspector. 
+8. Click on the thin cylinder and set it to Hole in the inspector. 
 
 9. Group all objects together and congrats you have your first 3D model ready!
 
+####
+
 ![](workshops/3dmodeling/image00.jpg) \ ![](workshops/3dmodeling/image03.jpg)
 
-### 6. Use the basic modeling techniques you learned to create a gaming dice
+### Use the basic modeling techniques you learned to create a gaming dice
 Use the predefined dice model from the right menu bar & the numbers also found there. Feel free to experiment.
 
 ## Additional tasks
@@ -98,8 +102,8 @@ Go to <https://docs.google.com/drawings> to start a new drawing.
 
 Here you can create custom shapes with curve tools or use some predefined shapes that are still much more than the ones in Tinkercad or even create custom text! 
 
-When you have your shape or text ready, go to *“File”* -> *“Download as”* -> *“.svg”*
-You can now import this file to Tinkercad using the *“Import”* command at the top of the right menu bar.
+When you have your shape or text ready, go to *File* -> *Download as* -> *.svg*
+You can now import this file to Tinkercad using the *Import* command at the top of the right menu bar.
 
 ### 1.2. Tips for designing the bottle opener.
 

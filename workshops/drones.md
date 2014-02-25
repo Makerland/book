@@ -1,4 +1,4 @@
-# Programming flying robots with JavaScript (or any language, really)
+# Flying robots
 
 ## Overview
 
@@ -414,34 +414,34 @@ Try out some of these more advanced nodecopter projects:
 
 ## FAQ
 
-* Help! I crashed my drone!
+* __Help! I crashed my drone!__
  
     Don’t worry, crashes will happen and the AR Drones are fairly rugged and easy to repair if they do break. Try not to fly the drones too close to other people or drones, in a big open space to avoid collisions and triple check your code before you do a test flight!
 
-* My drone won’t take off 
+* __My drone won’t take off__
 
     The most likely reason your drone won’t take off is because the battery is flat, swap it out with a freshly charged one. If it’s still not working try connecting to it using one of the official mobile apps as they often show more error messages, it could be that something is broken and needs repairing.
 
 
-* Where do I get the mobile app from?
+* __Where do I get the mobile app from?__
 
     You can get the mobile app for iOS from the App Store, it’s called *FreeFlight* and for Android the app is on Google Play and is called *AR.FreeFlight*, both are free.
 
-* How much can an AR Drone lift?
+* __How much can an AR Drone lift?__
 
     Not much, about 100g before it becomes unstable, just about enough for an Arduino.
 
-* What other programming languages can be used?
+* __What other programming languages can be used?__
 
     You don’t use have to use Node.js for controlling AR Drones, there are libraries in lots of other languages, here are a few we know of:
 
-    * Ruby: https://github.com/jimweirich/argus
-    * Python: https://github.com/venthur/python-ardrone
-    * Go: https://github.com/felixge/go-ardrone
-    * Clojure: https://github.com/gigasquid/clj-drone
-    * C#: https://github.com/Ruslan-B/AR.Drone
-    * Java: https://github.com/MahatmaX/YADrone
-    * PHP: https://github.com/jolicode/php-ar-drone
+    * Ruby: <https://github.com/jimweirich/argus>
+    * Python: <https://github.com/venthur/python-ardrone>
+    * Go: <https://github.com/felixge/go-ardrone>
+    * Clojure: <https://github.com/gigasquid/clj-drone>
+    * C#: <https://github.com/Ruslan-B/AR.Drone>
+    * Java: <https://github.com/MahatmaX/YADrone>
+    * PHP: <https://github.com/jolicode/php-ar-drone>
 
 ## Additional resources
 

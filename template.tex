@@ -40,21 +40,34 @@
 
 %% Set Sans font in headings
 \allsectionsfont{\sffamily}
-\titleformat*{\section}{\fontsize{34}{40}\centering\sectionfont}
-\titleformat*{\subsection}{\fontsize{28}{28}\sffamily}
+\titleformat*{\section}{\fontsize{40}{40}\centering\sectionfont}
+\titleformat*{\subsection}{\fontsize{32}{32}\sffamily}
 \titleformat*{\subsubsection}{\fontsize{24}{24}\sffamily}
-\titleformat*{\paragraph}{\fontsize{18}{18}\sffamily}
+\titleformat*{\paragraph}{\fontsize{16}{16}\sffamily}
 
 %% Set polyglossia language
 \usepackage{polyglossia}
 \setdefaultlanguage{english}
 
 % Page
-\usepackage[paperwidth=6.69in, paperheight=9.45in]{geometry}
+\usepackage[paperwidth=6.69in, paperheight=9.45in, top=0.5in, bottom=0.7in, left=1.1in, right=0.6in]{geometry}
 
+% Footer & Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
 
-%% Use full page in book style
-\usepackage[cm]{fullpage}
+\fancyfoot[RO,LE]{\thepage}
+\fancyfoot[RE]{\rightmark}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% URL break lines
+\usepackage[hyphens]{url}
+
+% TOC style
+\renewcommand\contentsname{\fontsize{40}{40}\centering\sectionfont}
 
 %% Set line spacing
 \usepackage{setspace}
@@ -79,17 +92,17 @@
 \usepackage[colorlinks, breaklinks, bookmarks, xetex]{hyperref}
 
 \hypersetup {
-  linkcolor = SkyBlue,
-  citecolor = SkyBlue,
-  filecolor = SkyBlue,
-  urlcolor = SkyBlue
+  linkcolor = Black,
+  citecolor = Black,
+  filecolor = Black,
+  urlcolor = Black
 }
 
 %% Don’t use Mono font for URLs
 \urlstyle{same}
+\def\UrlFont{\em}
 
 % Images
-
 \usepackage{graphicx}
 
 
@@ -103,6 +116,11 @@
 
 \begin{document}
 
+\begingroup
+\hypersetup{linkcolor=black}
+\tableofcontents
+\endgroup
+  
   % Book contents
   $body$
 

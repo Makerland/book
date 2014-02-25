@@ -20,9 +20,6 @@ So here, if you’re a beginner we’ll set up our RPI & remotely control it to 
 
 ![](workshops/hens/3.jpg)
 
-
-
-
 All we need is easily available online and we’ve put much of it on the USB Stick to speed things up a bit. Copy the contents of our USB stick to your laptop (see the *Appendix* at the end for full list of sources and links).
 
 It’s good to start with a “clean slate”, so let’s begin by formatting your SD card from your laptop:
@@ -171,29 +168,21 @@ __Why use the Pi Camera Module rather than a webcam?__
 
 Useful online tutorial resources used in the making of this workshop:
 
-- Headless Setup: Meltwater’s RPI Remote Connections - Without a Network - <http://pihw.wordpress.com/guides/direct-network-connection/in-a-nut-shell-direct-network-connection/>
-- Adafruit: Tutorial on VNC setup - <http://learn.adafruit.com/adafruit-raspberry-pi-lesson-7-remote-control-with-vnc/running-vncserver-at-startup>
-- Camera Tutorial - the Raspberry Pi Guy - <http://www.youtube.com/watch?v=T8T6S5eFpqE>
-
-See also: <http://www.theraspberrypiguy.com/tutorials/>
+- Adafruit: Tutorial on VNC setup: <http://learn.adafruit.com/adafruit-raspberry-pi-lesson-7-remote-control-with-vnc/running-vncserver-at-startup>
+- Camera Tutorial - the Raspberry Pi Guy: <http://www.youtube.com/watch?v=T8T6S5eFpqE>
+- Raspberry Pi Tutorials: <http://www.theraspberrypiguy.com/tutorials/>
 
 Surveillance Camera Tutorials:
 
 - <http://www.instructables.com/id/Raspberry-Pi-as-low-cost-HD-surveillance-camera/>
-- Triggering events from Motion using Python - <https://medium.com/p/2d5a2d61da3d>
-- RPi Twitter Bot - <http://www.makeuseof.com/tag/how-to-build-a-raspberry-pi-twitter-bot/>
-- Tweeting using Python (Twython application) - <https://twython.readthedocs.org/en/latest/>
-- Quick guide to Nano Text Editor on RPI - Raspberry Pi Spy - <http://www.raspberrypi-spy.co.uk/2013/11/quick-guide-to-nano-text-editor-on-the-raspberry-pi/>
+- Triggering events from Motion using Python: <https://medium.com/p/2d5a2d61da3d>
+- RPi Twitter Bot: <http://www.makeuseof.com/tag/how-to-build-a-raspberry-pi-twitter-bot/>
+- Tweeting using Python (Twython application): <https://twython.readthedocs.org/en/latest/>
+- Quick guide to Nano Text Editor on RPI - Raspberry Pi Spy: <http://www.raspberrypi-spy.co.uk/2013/11/quick-guide-to-nano-text-editor-on-the-raspberry-pi/>
 
-## Selected Bibliography
+Going Further:
 
-- Raspberry Pi User Guide (Second Edition) - Eben Upton & Gareth Halfacree
-- Programming the Raspberry Pi (Getting started with Python) - Simon Monk
-- Adventures in Raspberry Pi - Carrie-Anne Philbin
-- Raspberry Pi Projects for the Evil Genius - Donald Norris
-
-## Going Further
-- Python Picamera Module - Dave Jones : <http://www.raspberrypi.org/archives/5672> (latest version at: <https://pypi.python.org/pypi/picamera>)
+- Python Picamera Module - Dave Jones: <http://www.raspberrypi.org/archives/5672> (latest version at: <https://pypi.python.org/pypi/picamera>)
 - Documentation for Picamera V1.0: <http://picamera.readthedocs.org/en/release-1.0/>
 - Graphical interface for raspistill: <http://www.raspberrypi.org/phpBB3/viewtopic.php?p=374577>
 
@@ -201,10 +190,7 @@ Using Open CV for Object Recognition:
 
 - Raspberry Pi facial recognition - <http://www.raspberrypi.org/archives/4207>
 - OpenCV and Pi Camera Board - <http://thinkrpi.wordpress.com/2013/05/22/opencv-and-camera-board-csi/>
-
-Recognising other objects rather than faces (eg. Banana):
-
-- Train Your Own OpenCV Haar Classifier - Thorsten Ball (on the site of Robin Mehner...here present @Makerland!) - <http://coding-robin.de/2013/07/22/train-your-own-opencv-haar-classifier.html> 
+- Train Your Own OpenCV Haar Classifier - Thorsten Ball: <http://coding-robin.de/2013/07/22/train-your-own-opencv-haar-classifier.html> 
 
 ## Appendix
 

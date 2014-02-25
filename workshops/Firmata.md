@@ -173,7 +173,6 @@ When ever someone presses and holds the button down, a function called “play_s
 
 Now write a program that prints out “Button Pressed” whenever someone presses your button.
 
-
 > __Hint__: If you python program exits immediately after you start it, that’s because there are no  other actions on the stack and it’s exiting by default. You can solve this by starting your program with the “-i” flag or manually adding a REPL at the end of your program.
 
 > __Stuck?__  Check out this example: <https://github.com/theycallmeswift/BreakfastSerial/tree/sw-update-examples#push-a-button_>

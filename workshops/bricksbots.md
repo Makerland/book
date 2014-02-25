@@ -1,4 +1,4 @@
-# Programming robots in the Lego Mindstorms series
+# Bricks & Bots
 
 ## The Lego Mindstorms 
 
@@ -380,91 +380,4 @@ On the other hand, this example, illustrate how to write a program fora fully op
 
 What a stupid little robot! Programming a robot like this is much easier as long as we use one of the NXJ API implementations called Behavior. The Behavior interface represents an object embodying a specific behavior that belongs to a robot. Each behavior must define three things: the circumstances to make this behavior seize control of the robot, the action to perform when this behavior takes control, a way to quickly exit from the action when the Arbitrator selects a higher priority behavior to take control. If we insert a necessary code in this three sections, we can easily program our first robot scout.
 
-~~~~ {.numberLines}
-import lejos.nxt.Button;
-import lejos.nxt.Motor;
-import lejos.nxt.SensorPort;
-import lejos.nxt.UltrasonicSensor;
-import lejos.robotics.RegulatedMotor;
-import lejos.robotics.subsumption.Arbitrator;
-import lejos.robotics.subsumption.Behavior;
-
-public class Scout
-{
-  static RegulatedMotor leftMotor = Motor.A;
-  static RegulatedMotor rightMotor = Motor.C;
-
-  public static void main(String[] args)
-  {
-    leftMotor.setSpeed(400);
-    rightMotor.setSpeed(400);
-    Behavior b1 = new DriveForward();
-    Behavior b2 = new DetectEnemy();
-    Behavior[] behaviorList =
-    {
-      b1, b2
-    };
-    Arbitrator arbitrator = new Arbitrator(behaviorList);
-    Button.waitForAnyPress();
-    arbitrator.start();
-  }
-}
-
-class DriveForward implements Behavior
-{
-
-  private boolean _suppressed = false;
-
-  public boolean takeControl()
-  {
-    return true;  
-  }
-
-  public void suppress()
-  {
-    _suppressed = true;
-  }
-
-  public void action()
-  {
-    _suppressed = false;
-    Scout.leftMotor.forward();
-    Scout.rightMotor.forward();
-    while (!_suppressed)
-    {
-      Thread.yield(); 
-    }
-    Scout.leftMotor.stop(); 
-    Scout.leftMotor.stop();
-  }
-}
-
-
-class DetectEnemy implements Behavior
-{
-
-  public DetectEnemy()
-  {
-    sonar = new UltrasonicSensor(SensorPort.S3);
-  }
-
-  public boolean takeControl()
-  {
-    sonar.ping();
-    return sonar.getDistance() < 25;
-  }
-
-  public void suppress()
-  {
-     
-  }
-
-  public void action()
-  {
-    Scout.leftMotor.rotate(-180, true);
-    Scout.rightMotor.rotate(-360);  
-  }
-  
-  private UltrasonicSensor sonar;
-}
-~~~~~~~
+See the example code for the robot here: <https://github.com/Makerland/code/blob/master/workshops/bricksbots/robot.nxj>

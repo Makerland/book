@@ -1,3 +1,25 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/javarobots.jpg)
+
+# Retro Gaming on Raspberry Pi
+
+This tutorial uses low cost Raspberry Pis and displays as a platform for building simple, touch-enabled games.  For the user interface we will be using Java 8 with JavaFX, which is a modern UI framework that supports advanced visual effects, but runs extremely well in constrained embedded devices.  Kits will be provided with everything you need to build a bare-bones console from scratch.  A simple skeleton for the gaming software will be provided, limited only by your imagination!
+
+### Authors
+
+__Stephen Chin__ is a Java Ambassador at Oracle specializing in embedded and UI technology, co-author of the Pro JavaFX Platform 2 title, and the JavaOne Content Chair. He has been featured at Java conferences around the world including Devoxx, JFokus, OSCON, JFall, GeeCON, JustJava, and JavaOne, where he thrice received a Rock Star Award. 
+
+\newpage
+
 # Retro Gaming on Raspberry Pi
 
 ## Overview
@@ -148,9 +170,9 @@ In this lab we are going to be using:
 
 __BMP180 Barometric Pressure/Temperature/Altitude Sensor__:
 
-![](workshops/javarobots/4.jpg)
-
 This precision sensor from Bosch is the best low-cost sensing solution for measuring barometric pressure and temperature. Because pressure changes with altitude you can also use it as an altimeter! The sensor is soldered onto a PCB with a 3.3V regulator, I2C level shifter and pull-up resistors on the I2C pins. 
+
+![](workshops/javarobots/4.jpg)
 
 This board is 5V compliant - a 3.3V regulator and a i2c level shifter circuit is included so you can use this sensor safely with 5V logic and power.
 
@@ -280,5 +302,3 @@ Once we connect the board to the RPi, we can continue to check if we can actuall
 Download, study and run the following code on the Pi:
 
 <https://github.com/makerland/code/blob/master/workshops/javarobots/Sensor.java>
-
-Modify it if desired.

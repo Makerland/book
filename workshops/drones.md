@@ -1,3 +1,25 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/drones.jpg)
+
+# Flying robots
+
+In this tutorial you'll learn about the wonderful world of autonomous flying robots, specifically the AR Drone 2.0 provides a high level API to send commands, read data back and stream video from it's HD camera. We'll start writing basic programs to take off and land, and before you know it you'll be using feedback from a wealth of onboard sensors to perform more impressive maneuvers and behaviours. 
+
+### Authors
+
+__Andrew Nesbitt__ is a passionate full stack developer. He spends most of his days programming in Ruby, playing with Node.js, contributing to open source projects and organising local developer user groups. He also aspires to one day take over the world with a fleet of JavaScript powered quadcopters.
+
+__Felix Geisendörfer__ is a programmer and entrepreneur currently living in Berlin, Germany. He was one of the first core-contributors of node.js, co-founded [transloadit.com](http://transloadit.com/), and started the [nodecopter.com](http://nodecopter.com/) movement with some of his friends. His favourite programming language is Go at this point.
+
+__Robin Mehner__ is a freelance developer & consultant living in Berlin. He has a strong affection for robots and the web. He keeps himself busy teaching to code, organizing conferences and running meetups. Together with a few friends he started NodeCopter and is now on a mission to spread the flying robot love.
+
+\newpage
+
 # Flying robots
 
 ## Overview

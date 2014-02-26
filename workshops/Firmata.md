@@ -1,4 +1,16 @@
+\newpage
+
+![](workshop_images/firmata.jpg)
+
 # First steps with Arduino
+
+> lack of description! 
+
+### Authors
+
+__Meet Swift__ is a free-agent evangelist and mad scientist hacker. Swift has made it his personal mission to enable developers by helping them get the tools and resources they need to make awesome, creative stuff. He is the author of BreakfastSerial, a framework for interacting with Arduinos in Python, and the founder of Hacker League, the world's largest and premier platform for hackathons. Formerly, Swift was a developer evangelist at SendGrid, an engineer at Crowdtap, and a champion crab walker.
+
+\newpage
 
 ## Overview
 
@@ -8,6 +20,7 @@ We’ll start with the basics like blinking an LED and reading data from a butto
 
 This workshop is open to hackers of all skill levels.  Even if you’ve never touched an Arduino before, we’ll help you get from zero to “Hello World” in no time flat.
 
+# First steps with Arduino
 
 ## Preparations
 

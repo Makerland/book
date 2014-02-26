@@ -1,3 +1,5 @@
+\newpage
+
 # Dancebot: The Dancing Robot
 
 ## Overview

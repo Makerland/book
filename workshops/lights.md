@@ -1,3 +1,25 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/lights.jpg)
+
+# Magic Lights
+
+This tutorial involves using a RaspberryPi and Bluetooth 4.0 for automatically turning on a Philips Hue wireless lamp based on user proximity (using a smartphone or a device like the Fitbit). The tutorial will teach you how to use Node-RED for interacting with Objects/Smart Things. We will learn the basic elements of Node-RED, how to interface with hardware like the Arduino, how to write custom code and how to consume external services using APIs. 
+
+### Authors
+
+__Charalampos Doukas__ is a researcher and IoT Maker. He started playing with sensors and Arduinos in 2008 while trying to capture and transmit vital signs. He is passionate about combining different hardware systems with software and services using the Internet. He helps in spreading the knowledge about open source software and hardware by organising sessions in workshops and conferences. He has built many projects around home monitoring and automation, he is contributing hardware nodes for Node-RED and has also authored the book “Building Internet of Things with the Arduino”.
+
+\newpage
+
 # Magic Lights
 
 ## Overview

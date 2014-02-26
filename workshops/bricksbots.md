@@ -1,3 +1,21 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/bricksbots.jpg)
+
+# Bricks & Bots
+
+In this tutorial you will get a chance to learn how to build and program robots with Lego Mindstorms. Build your own arm, robot or car and program it without any programming knowledge or use language you already know as a weapon of choice! 
+
+### Authors
+
+__Krzysztof Bieńkowski__ is a Lego builder and the owner of [Roboty i Spółka](http://robotyispolka.pl/), Krzysztof organizes robots workshops for children, on which in cooperation with his friends he shows how to build and program Lego Mindstroms Robots. He gained professional experience during his studies at Warsaw University of Technology. Krzysztof is a young and ambitious person, who has a great contact with children and a huge knowledge he wants to share with them. Therefore he spends a lot of time constructing and programming robots with young people. He enjoys teaching and organizing events devoted to science, which capture children's imagination and develop their creativity. On the workshops everyone not only has a lot of fun and joy with Lego bricks but also discovers the world of robotics.
+
+\newpage
+
 # Bricks & Bots
 
 ## The Lego Mindstorms 

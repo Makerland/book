@@ -1,3 +1,17 @@
+\newpage
+
+![](workshop_images/home.jpg)
+
+# Hack Your House
+
+Have you ever wanted to live in a house like the Jetsons? We will be taking the first step into this inevitable future in our workshop! You will learn to build a system that notifies you immediately of an unexpected environmental change such as gas in the air or a strange loud noise in your house. We will teach you to make your home smarter by using just an Arduino, some awesome analog and digital sensors, and a set of powerful web APIs. 
+
+### Authors
+
+__Jon Gottfried__ has been hacking on hardware since 2005, where he built competitive autonomous firefighting robots with PIC boards. Lately, he has been working on some home automation projects and phone-controlled robots that he is turning into tutorials for Twilio DIY Home Automation using Twilio and Twilio Robot as well as some Google Glass-controlled robots for fun. He loves hacking and loves teaching.
+
+\newpage
+
 # Hack Your House
 
 ## Overview

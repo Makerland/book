@@ -1,3 +1,23 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/3dmodeling.jpg)
+
+# 3D Modeling
+
+Did you ever want to create something out of nothing? To create your own 3D designs or to easily customize the ones made by others. Seek no further, we will guide you through your first steps in 3D modeling. We will show you the basics and some cool tricks so you can start designing your FUTURE! Only thing you need is a laptop with webgl browser and some positive vibe. Be there or be square :) 
+
+### Authors
+
+__Miłosz Dąbrowski__ is a product and industrial designer at UAUproject & member of LOKO team. 3D tinkerer, maker & design adventurer. He will show you how to transform your 2D ideas into 3D.
+
+__Justyna Fałdzińska__ is a product and graphic designer at UAUproject. She loves both 2d and 3d prints. She will assist you during your first journey in the 3d modeling world. Fasten your seat belts it’s going to be an exiting ride.
+
+\newpage
+
 # 3D Modeling
 
 ## Overview

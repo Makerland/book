@@ -1,3 +1,18 @@
+\newpage
+
+![](workshop_images/lilypad.jpg)
+
+# Build a smart watch with Lilypad
+
+During Lilypad tutorial you will have a chance to create multifunctional smart watch. In few steps you will learn how to make interactive soft circuit and how to use basic controllers to create various function. Our fancy, smart bracelet will manage your time and communicate your busyness. Simple circuit upgrade will let you create even light piano instrument or memory game. Come, and develop your own functionalities! 
+
+### Authors
+
+__Karolina Chmiel__  is the lead UX designer in Polidea, where she creates mobile apps. She co-organized the Jitter hackathon and conducted a Lilypad workshop as a part of this event. Since Karolina discovered the possibilities of the Lilypad board, she's been spending her 
+spare time cutting, sewing, and experimenting with various materials to create interactive soft-circuits for wearables.
+
+\newpage
+
 # Build a smart watch with Lilypad
 
 ## Overview

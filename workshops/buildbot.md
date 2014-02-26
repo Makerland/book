@@ -1,4 +1,26 @@
-# Build-a-bot
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/buildabot.jpg)
+
+# Build a bot
+
+Learn everything you need to know to build and program a 2 wheeled battle-worthy sumobot! We’ll start by learning about the components that make up a robot, and you’ll assemble your custom bot from an assortment of parts on hand. Next we’ll look into the software side of things and figure out how to make them move. Not a great programmer? No problem! We have options including manual joystick control, a simple drag and drop lego-like programming environment and of course traditional code too. Finally, it’s time to put your bot to the test by battling it out in the sumo arena with other bots or navigating the timed obstacle course! 
+
+### Authors
+
+__Pawel Szymczykowski__ is a software engineer at Zappos Labs (but his business card says "King of Goblins") and a proud member of the awesome #VegasTech community. He is one of the board members of SYN Shop, a local hackerspace, and likes to tinker with a little bit of everything and make all sorts of things. He loves to organize, volunteer and participate in tech and maker community events. Recently, he was bitten by the robotics bug and designed an open source wooden robot kit called Sumobot Jr to share his passion with others via workshops. Would you like to build robots together?
+
+\newpage
+
+# Build a bot
 
 ## Overview
 

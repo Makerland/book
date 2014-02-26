@@ -1,3 +1,20 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/hens.jpg)
+
+# Hacking Hens’ Happiness
+
+Applying connected technology to improve your Hens' happiness & productivity. Remote laying surveillance to know when you can count your chickens before they've hatched. We will learn how to keep yourselves informed each time a feathery friend drops an "object" on a "nested loop". So which came first? The chicken or the egg? 
+
+### Authors
+
+__Alan McCullagh__ is Irish, from Kilkenny, and has been living in the Rhône Valley in Provence, France for the past ten years. He has been working in customer support for a software/tech solutions company for almost 6 years and before that helped teaching English while keeping very old computers on life support in a language training centre. He likes rowing and answering questions when people ask why he wears a Raspberry lapel-pin all the time. He's interested in environmental concerns & the welfare of various "feathered friends". A child of the BBC-Micro generation, he hopes to see ICT more and more in schools.
+
+\newpage
 
 # Hacking Hens’ Happiness
 

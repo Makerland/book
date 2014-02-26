@@ -1,3 +1,21 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/thermostat.jpg)
+
+# Thermostat easy as pie
+
+Have you ever tried to learn how to program advanced thermostat? That is a nice challenge. When it's possible to solve virtually any problem with technology, the real problem is how to adjust this solution to the minds, expectations and habits of people that will use it. With this tutorial you will analyze a few design problems with different modern tools like thermostat and similar common interfaces. You will also try to use User Centered Design process combined with some workshop methods to create another Nest. 
+
+### Authors
+
+__Hubert Turbaj__ is co-founder and UX Director at EDISONDA – design and research studio. Cognitive psychologist by education, he is interested in how people of different skills and age use technology in changing contexts. On the daily basis he tries to make interfaces easier and more fun to operate by asking additional questions and investigating mental models. In the future he will design the control room of nuclear plant.
+
+\newpage
+
 # Thermostat easy as pie
  
 ## Overview

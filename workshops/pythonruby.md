@@ -1,3 +1,27 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/pythonruby.jpg)
+
+# Python and Ruby sitting in a tree
+
+Don't think of Python and Ruby as something you only make websites in. We'll show you how to start with Arduino and communicate with it using your favorite language. Blink the light, check the temperature or detect if someone is trying to break into your home! All this with only few lines of code. 
+
+### Authors
+
+__Wojtek Siudzinski__ is a software developer and DIY hacker for more than a decade. Currently connects everything to the internet (including his washing machine) with his open-home project. Wojtek writes his code in Python and Objective C. You had a chance to catch his Arduino workshop at Maker Meetup.
+
+__Mateusz Kozak__ is a ruby developer and hardware hacker at Enyuka Studio. He wants to make your home listen and speak to you like Iron Man’s J.A.R.V.I.S. During latest researches he started to fall in love with python.
+
+\newpage
+
 # Python and Ruby sitting in a tree
 
 ## Overview

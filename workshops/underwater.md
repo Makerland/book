@@ -1,3 +1,21 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+
+![](workshop_images/underwater.jpg)
+
+# Dive! Dive! Dive! 
+
+Ever dreamt about having a mechanical fish or your own submarine? Now it's possible! Build a basic autonomous underwater robot, powered by a small electric motor, that's capable of navigating around a small paddling pool. Infrared sensors are used to provide inputs to an Arduino Nano development board which acts as the brain and controls a couple of servo's linked to a rudder and a dive plane to navigate the robot in the water. 
+
+### Authors
+
+__Martin Evans__ lives in the North East of Scotland.Lead author of “Arduino in Action” which was published by Manning Publications in June 2013 and is currently being translated into Portuguese, Polish, Simplified and Complex Chinese. Martin is passionate about robotics and Underwater remote operated vehicles. He has exhibited his underwater vehicles at numerous Maker Faires throughout the UK and Southern Ireland as well as presenting at the Scottish Ruby Conference. He currently runs a Code Club at his local primary School and is assisting a nearby secondary school with their entry to this years Mate underwater ROV competition.
+
+\newpage
+
 # Dive! Dive! Dive! 
 
 ## Introduction

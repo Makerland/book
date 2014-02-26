@@ -4,7 +4,7 @@
 
 # Electronic Factory
 
-Ever wonder where this awesome printed circut board come from? They are used in almost all electronic products. Today, thanks to machines like Cirqoid, you can do them yourself right on your desk. Cirqoid is a prototyping machine, aimed at electronics enthusiasts and hobbyists. In this workshop station you'll get a chance to see how circut board design is transformed into real, printed board. Introduce yourself to the world of PCB. 
+>Ever wonder where this awesome printed circut board come from? They are used in almost all electronic products. Today, thanks to machines like Cirqoid, you can do them yourself right on your desk. Cirqoid is a prototyping machine, aimed at electronics enthusiasts and hobbyists. In this workshop station you'll get a chance to see how circut board design is transformed into real, printed board. Introduce yourself to the world of PCB. 
 
 \newpage
 

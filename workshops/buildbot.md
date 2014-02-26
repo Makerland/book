@@ -12,7 +12,7 @@
 
 # Build a bot
 
-Learn everything you need to know to build and program a 2 wheeled battle-worthy sumobot! We’ll start by learning about the components that make up a robot, and you’ll assemble your custom bot from an assortment of parts on hand. Next we’ll look into the software side of things and figure out how to make them move. Not a great programmer? No problem! We have options including manual joystick control, a simple drag and drop lego-like programming environment and of course traditional code too. Finally, it’s time to put your bot to the test by battling it out in the sumo arena with other bots or navigating the timed obstacle course! 
+>Learn everything you need to know to build and program a 2 wheeled battle-worthy sumobot! We’ll start by learning about the components that make up a robot, and you’ll assemble your custom bot from an assortment of parts on hand. Next we’ll look into the software side of things and figure out how to make them move. Not a great programmer? No problem! We have options including manual joystick control, a simple drag and drop lego-like programming environment and of course traditional code too. Finally, it’s time to put your bot to the test by battling it out in the sumo arena with other bots or navigating the timed obstacle course! 
 
 ### Authors
 

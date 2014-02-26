@@ -8,7 +8,7 @@
 
 # Dive! Dive! Dive! 
 
-Ever dreamt about having a mechanical fish or your own submarine? Now it's possible! Build a basic autonomous underwater robot, powered by a small electric motor, that's capable of navigating around a small paddling pool. Infrared sensors are used to provide inputs to an Arduino Nano development board which acts as the brain and controls a couple of servo's linked to a rudder and a dive plane to navigate the robot in the water. 
+>Ever dreamt about having a mechanical fish or your own submarine? Now it's possible! Build a basic autonomous underwater robot, powered by a small electric motor, that's capable of navigating around a small paddling pool. Infrared sensors are used to provide inputs to an Arduino Nano development board which acts as the brain and controls a couple of servo's linked to a rudder and a dive plane to navigate the robot in the water. 
 
 ### Authors
 

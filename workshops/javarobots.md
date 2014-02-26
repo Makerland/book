@@ -12,7 +12,7 @@
 
 # Retro Gaming on Raspberry Pi
 
-This tutorial uses low cost Raspberry Pis and displays as a platform for building simple, touch-enabled games.  For the user interface we will be using Java 8 with JavaFX, which is a modern UI framework that supports advanced visual effects, but runs extremely well in constrained embedded devices.  Kits will be provided with everything you need to build a bare-bones console from scratch.  A simple skeleton for the gaming software will be provided, limited only by your imagination!
+>This tutorial uses low cost Raspberry Pis and displays as a platform for building simple, touch-enabled games.  For the user interface we will be using Java 8 with JavaFX, which is a modern UI framework that supports advanced visual effects, but runs extremely well in constrained embedded devices.  Kits will be provided with everything you need to build a bare-bones console from scratch.  A simple skeleton for the gaming software will be provided, limited only by your imagination!
 
 ### Authors
 

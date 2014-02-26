@@ -8,7 +8,7 @@
 
 # 3D Modeling
 
-Did you ever want to create something out of nothing? To create your own 3D designs or to easily customize the ones made by others. Seek no further, we will guide you through your first steps in 3D modeling. We will show you the basics and some cool tricks so you can start designing your FUTURE! Only thing you need is a laptop with webgl browser and some positive vibe. Be there or be square :) 
+>Did you ever want to create something out of nothing? To create your own 3D designs or to easily customize the ones made by others. Seek no further, we will guide you through your first steps in 3D modeling. We will show you the basics and some cool tricks so you can start designing your FUTURE! Only thing you need is a laptop with webgl browser and some positive vibe. Be there or be square :) 
 
 ### Authors
 

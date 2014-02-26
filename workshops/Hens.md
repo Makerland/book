@@ -8,7 +8,7 @@
 
 # Hacking Hens’ Happiness
 
-Applying connected technology to improve your Hens' happiness & productivity. Remote laying surveillance to know when you can count your chickens before they've hatched. We will learn how to keep yourselves informed each time a feathery friend drops an "object" on a "nested loop". So which came first? The chicken or the egg? 
+>Applying connected technology to improve your Hens' happiness & productivity. Remote laying surveillance to know when you can count your chickens before they've hatched. We will learn how to keep yourselves informed each time a feathery friend drops an "object" on a "nested loop". So which came first? The chicken or the egg? 
 
 ### Authors
 

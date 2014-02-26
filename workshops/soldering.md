@@ -4,7 +4,7 @@
 
 # Soldier, wire, glue!
 
-Thoughts about using a tool that melt metal can be a little scary, right? Not anymore! After this tutorial, soldering things will become your new hobby, we promise. You'll learn all different techniques of building and making things stick. Our workshop leaders will make sure nothing goes wrong and after a half an hour, you won't believe you didn't touch soldering iron before.
+>Thoughts about using a tool that melt metal can be a little scary, right? Not anymore! After this tutorial, soldering things will become your new hobby, we promise. You'll learn all different techniques of building and making things stick. Our workshop leaders will make sure nothing goes wrong and after a half an hour, you won't believe you didn't touch soldering iron before.
 
 ### Authors
 

@@ -4,7 +4,7 @@
 
 # Build a smart watch with Lilypad
 
-During Lilypad tutorial you will have a chance to create multifunctional smart watch. In few steps you will learn how to make interactive soft circuit and how to use basic controllers to create various function. Our fancy, smart bracelet will manage your time and communicate your busyness. Simple circuit upgrade will let you create even light piano instrument or memory game. Come, and develop your own functionalities! 
+>During Lilypad tutorial you will have a chance to create multifunctional smart watch. In few steps you will learn how to make interactive soft circuit and how to use basic controllers to create various function. Our fancy, smart bracelet will manage your time and communicate your busyness. Simple circuit upgrade will let you create even light piano instrument or memory game. Come, and develop your own functionalities! 
 
 ### Authors
 

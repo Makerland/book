@@ -8,7 +8,9 @@
 
 # Bricks & Bots
 
-In this tutorial you will get a chance to learn how to build and program robots with Lego Mindstorms. Build your own arm, robot or car and program it without any programming knowledge or use language you already know as a weapon of choice! 
+>In this tutorial you will get a chance to learn how to build and program robots with Lego Mindstorms. Build your own arm, robot or car and program it without any programming knowledge or use language you already know as a weapon of choice! 
+
+>__Following materials are for advanced only. For beginners flow - just attend the workshop :)__
 
 ### Authors
 

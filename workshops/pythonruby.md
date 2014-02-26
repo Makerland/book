@@ -24,7 +24,7 @@ Along with Arduino you will need:
 
 - a breadboard (white board with holes ;))
 - DHT11 temperature/humidity sensor (the small blue box with holes)
-- BH1750 light sensor module
+- VCNL4000 light sensor module
 - HC-SR04 ultrasonic ranging module (which looks a lot like Wall-E)
 - HC-SR501 PIR motion detector (looks like a dome)
 - pack of colorful wires
@@ -62,7 +62,7 @@ In *ArduinoSensors* directory you’ll find *ArduinoSensors.ino* file. Open it i
 
 > Feel free to dig into this code. It contains a lot of comments which explain how it works. You can add new sensors or output devices like servos or relays. Play around with it!
 
-After loading this sketch (BTW Arduino calls programs “sketches” and we’ll use both names in this workshop), open *Serial Monitor* in Arduino IDE (loupe button). Try sending: `D1` and watch LEDs on Arduino. Then send `D0` to see one of the LEDs to turn off. 
+After loading this sketch (BTW Arduino calls programs “sketches” and we’ll use both names in this workshop), open *Serial Monitor* in Arduino IDE (loupe button). Try sending: `D1` and watch LEDs on Arduino. Then send `D0` to see one of the LEDs to turn off.
 
 ## Python
 
@@ -81,7 +81,7 @@ Firstly you have to install some packages which you’ll need in this workshop. 
 
 
 > What did you just installed? You’ve installed three libraries:
-> 
+>
 > - PySerial - library for communicating using serial port. Essential in our workshop :)
 > - PyAudio - library for handling audio. You’ll use it to play a WAV sound file
 > - request - great library for making HTTP requests in easiest manner possible
@@ -130,7 +130,7 @@ Now lets blink some LEDs:
 
 		# Wait one second
 		time.sleep(1)
-		
+
 > If this is your first time with Python: you see the indentation? It’s very important in Python. You have to be consistent to use Tab or Spaces in your code.
 
 **BTW:** you should find source to this exercise in `Python/2_blink.py` file.
@@ -170,17 +170,17 @@ Press `Ctrl+C` to stop this code.
 
 ### Hot or not
 
-Along our sensors, you have DHT11 which can measure two things: temperature and humidity. Combining it with BH1750 light sensor, you can have a small meteo station, which provides information about current weather outside.
+Along our sensors, you have DHT11 which can measure two things: temperature and humidity. Combining it with VCNL4000 light sensor, you can have a small meteo station, which provides information about current weather outside.
 
 But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it will be required later):
 
 ![DHT11](workshops/pythonruby/4_meteo_dht_bb.jpg)
 
-Now connect BH1750:
+Now connect VCNL4000:
 
-![BH1750](workshops/pythonruby/4_meteo_bh_bb.jpg)
+![VCNL4000](workshops/pythonruby/4_meteo_bh_bb.jpg)
 
-**Important:** connecting BH1750 requires restart of Arduino, so just unplug and plug USB cable again.
+**Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
 It’s Python time:
 
@@ -202,7 +202,7 @@ It’s Python time:
 		serial.write("L")
 		# Store it
 		light = serial.readline().strip()
-		
+
 		# Print values
 		print "Temperature: %s°C" % temperature
 		print "Humidity: %s%%" % humidity
@@ -307,7 +307,7 @@ bundle install
 Okay! Now type in terminal: `ruby 1_ports.rb`
 
 This command should print a list of available serial ports:
-	
+
 	Available ports:
 
 		/dev/cu.Bluetooth-Serial-1
@@ -384,17 +384,17 @@ Stop your code by pressing `Ctrl+C`
 
 
 ### Hot or not
-Among sensors you can find DHT11 which can measure temperature and humidity. Together with BH1750 light sensor you can use them to build small meteo station that could provides information about weather outside.
+Among sensors you can find DHT11 which can measure temperature and humidity. Together with VCNL4000 light sensor you can use them to build small meteo station that could provides information about weather outside.
 
 Start with the wires. Don’t disconnect sonar, it will be required late. First lets connect the DHT11:
 
 ![DHT11](workshops/pythonruby/4_meteo_dht_bb.jpg)
 
-Now connect BH1750:
+Now connect VCNL4000:
 
-![BH1750](workshops/pythonruby/4_meteo_bh_bb.jpg)
+![VCNL4000](workshops/pythonruby/4_meteo_bh_bb.jpg)
 
-**Important:** connecting BH1750 requires restart of Arduino, so just unplug and plug USB cable again.
+**Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
 Now in Ruby shell:
 
@@ -416,12 +416,12 @@ Now in Ruby shell:
 		serial.write(“L”)
 		# Store it
 		light = serial.readline.strip
-		
+
 		# Print values
 		puts “Temperature: #{temperature} *C”
 		puts “Humidity: #{humidity}% “
 		puts “Light: #{light}lx “
-	
+
 		# Wait a second before the next cycle
 		sleep(1)
 	end
@@ -429,7 +429,7 @@ Now in Ruby shell:
 Now you have your own meteo station, hooray!
 
 **BTW:** you should find source to this exercise in `Python/4_meteo.py` file.
-		
+
 
 ### INTRUDER ALERT
 
@@ -464,7 +464,7 @@ Now, the code:
 
 Now swing your hand in front of the sensor.
 In downloaded file, `5_alarm.rb` code is more interesting, dig into it!
-			
+
 
 ### All in one place
 Now you know how to use all the sensors, you can use it to create a beautiful web dashboard with all the data.

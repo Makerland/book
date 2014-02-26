@@ -1,4 +1,4 @@
-# Raspberry Pi HOL: Mocha Raspberry Pi Cooking Class
+# Retro Gaming on Raspberry Pi
 
 ## Overview
 
@@ -37,17 +37,26 @@ Now we are ready to get started with assembling all your parts.  In your lab kit
 To setup your Raspberry Pi, follow these instructions:
 
 1. Insert the SD Card in to the Pi
- * Will appear upside down when looking at the top of your Pi
+
+    * Will appear upside down when looking at the top of your Pi
+
 2. Insert the HDMI board into the Pi's HDMI jack
 3. Connect the Pi power to the HDMI board
- * Use the Micro USB Cable (short one)
+
+    * Use the Micro USB Cable (short one)
+
 4. Slide the LCD cable into the back of the display
- * Side with gold connectors goes up
- * Be careful, the connector is fragile!
+
+    * Side with gold connectors goes up
+    * Be careful, the connector is fragile!
+
 5. Connect the USB end to one of the Pi's USB host ports
- * This provides touch input
+
+    * This provides touch input
+
 6. Hook up the USB keyboard
- * Use the Mini USB cable (long one)
+
+    * Use the Mini USB cable (long one)
  
 After completing all the setup, verify your connections and plug in the power. Some good ways to tell if it is working are:
 
@@ -230,16 +239,22 @@ I2C is not enabled by default on the RPi, and there are few steps you need to fo
 
 **Enabling I2C in the RPi**
 
-* First go to: `/etc/modules` and add the following lines:
- * `i2c-bcm2708`
- * `i2c-dev`
-* Install `i2c-tools`. This is not required, but it's very handy for detecting devices and making sure everything works properly.
- * `sudo apt-get install python-smbus`
- * `sudo apt-get install i2c-tools`
-* There is a file called `raspi-blacklist.conf`, and by default SPI and I2C are part of this black list! 
- * Edit `/etc/modprobe.d/raspi-blacklist.conf` and comment out the lines
-  * `blacklist spi-bcm2708`
-  * `blacklist i2c-bcm2708`
+* First go to: */etc/modules* and add the following lines:
+
+    * `i2c-bcm2708`
+    * `i2c-dev`
+
+* Install **i2c-tools**. This is not required, but it's very handy for detecting devices and making sure everything works properly.
+  
+    * `sudo apt-get install python-smbus`
+    * `sudo apt-get install i2c-tools`
+
+* There is a file called *raspi-blacklist.conf*, and by default SPI and I2C are part of this black list! 
+  
+    * Edit */etc/modprobe.d/raspi-blacklist.conf* and comment out the lines
+
+        * `blacklist spi-bcm2708`
+        * `blacklist i2c-bcm2708`
 
 **Connecting the Gyroscope/Accelerometer to the Pi**
 
@@ -251,21 +266,19 @@ Connecting the board and the RPi is pretty straightforward.  I2C requires pullup
 
 Once we connect the board to the RPi, we can continue to check if we can actually see it as a I2C device.
  
-* Try running on your pi: *sudo i2cdetect -y 1* or *sudo i2cdetect -y 0*.  (0 for the 256 Pi model B). 
-* You should be able to see your device on the table.  The following snapshot shows two I2C devices, one at address 40 and the second on address 70.
-
-![](workshops/javarobots/9.jpg)
-
+* Try running on your pi: `sudo i2cdetect -y 1` or `sudo i2cdetect -y 0`.  (0 for the 256 Pi model B). 
+* You should be able to see your device on the table.  It shows shows two I2C devices, one at address 40 and the second on address 70.
 * You should also see a couple of new entries under /dev:
- * `spidev0.0`
- * `spidev0.1`
- * `I2c-0`
- * `I2c-1`
-* If don't see any of these entries, try running:
- * `sudo modprobe i2c-dev`
+
+    * `spidev0.0`
+    * `spidev0.1`
+    * `I2c-0`
+    * `I2c-1`
+
+* If don't see any of these entries, try running: `sudo modprobe i2c-dev`
 
 Download, study and run the following code on the Pi:
 
-<https://github.com/makerland/makerland-code/blob/master/workshops/javarobots/Sensor.java>
+<https://github.com/makerland/code/blob/master/workshops/javarobots/Sensor.java>
 
 Modify it if desired.

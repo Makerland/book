@@ -113,4 +113,4 @@ Want to learn from masters? Check this links below.
 - <http://www.youtube.com/watch?v=vIT4ra6Mo0s>
 - <http://www.aaroncake.net/electronics/solder.htm>
 - <http://www.sciencebuddies.org/science-fair-projects/project_ideas/Elec_primer-solder.shtml>
-- <http://www.wikihow.com/Solder-(Electronics)>
+

@@ -262,8 +262,7 @@ To make it easier, we’ve prepared custom dashboard using Dashing: <http://shop
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 
 Now start Python script which sends data to the dashboard:
-
-	python 6_dashboard.py YOUR_PORT ID
+`python 6_dashboard.py YOUR_PORT ID`
 
 If there’s no error, visit your dashboard at <http://makerland-dashboard.herokuapp.com/ID>
 
@@ -305,9 +304,7 @@ bundle install
 >  serialport -  library that will let you communicate using serial port
 >  typhoeus  - library for making HTTP calls
 
-Okay! Now type in terminal:
-		
-		ruby 1_ports.rb
+Okay! Now type in terminal: `ruby 1_ports.rb`
 
 This command should print a list of available serial ports:
 	

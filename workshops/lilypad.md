@@ -24,6 +24,8 @@ or Arduino LilyPad USB and micro USB cable
 
 ![](workshops/lilypad/2.jpg) \
 
+###  
+
 Battery Holder and Cell batery
 
 ![](workshops/lilypad/3.jpg) \ ![](workshops/lilypad/4.jpg)
@@ -49,13 +51,10 @@ Conductive thread, normal thread, needle and prepared material base
 
 ![](workshops/lilypad/10.jpg) \ ![](workshops/lilypad/11.jpg)
 
-## Installing and configuring the arduino software
 
-**<http://arduino.cc/en/Guide/HomePage>**
+## Installing and configuring LilyPad Arduino on Windows
 
-### Launching the LilyPad Arduino application on Windows
-
-Get the latest version of arduino environment from the [Arduino website: http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software)
+Get the latest version of arduino environment from the Arduino website: <http://arduino.cc/en/Main/Software>
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer.
 
@@ -77,9 +76,10 @@ Now, simply click the *Upload* button in the environment (arrow ->). Wait a few 
 
 A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You've gotten LilyPad up-and-running. 
 
-### Launching the Arduino application on Mac OS X
 
-Get the latest version of LilyPad Arduino environment from the [Arduino website: http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software)
+## Installing and configuring LilyPad Arduino on Mac OS X
+
+Get the latest version of LilyPad Arduino environment from the Arduino website: <http://arduino.cc/en/Main/Software>
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer. 
 
@@ -87,7 +87,7 @@ Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB c
 
 ### Install the FTDI Drivers
 
-You will need to install the drivers for the FTDI board that enables you to program the LilyPad Arduino. You need to download the latest version of the drivers from the [FTDI website: http://www.ftdichip.com/Drivers/VCP.htm](http://www.ftdichip.com/Drivers/VCP.htm)
+You will need to install the drivers for the FTDI board that enables you to program the LilyPad Arduino. You need to download the latest version of the drivers from the FTDI website: <http://www.ftdichip.com/Drivers/VCP.htm>
 
 Scroll down to the middle of this page, where there is a table listing drivers for different computers. Click on the most recent driver that is compatible with your computer. If your computer is running OS 10.5 or higher you should use the x64 (64-bit) drivers. If you're running OS 10.4 you should use the x32 (32-bit) drivers. Otherwise, you should use the PPC (PowerPC) drivers. To determine which OS your computer has, click on the apple icon in the upper right hand corner of your screen and click on "About This Mac" menu item.
 
@@ -111,9 +111,9 @@ Lets start with stop-watch function.
 
 First of all we have to prepare our circuit. We will sew a bit, but don’t worry – everything is prepared, there is not much left. This is our basis.
  
-![Arduino LilyPad FTDI](workshops/lilypad/18.jpg)
+*Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-![Arduino LilyPad USB](workshops/lilypad/19.jpg)
+![Arduino LilyPad FTDI](workshops/lilypad/18.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/19.jpg)
 
 Whole elements and thread paths are printed on. All you have to do is to follow the instructions. Each piece of LilyPad have adhesive tape at the back side to help you place Lilypad elements on the material. 
 
@@ -203,7 +203,9 @@ void setup() {
 }
 ~~~~~~~
 
-Generates a tone (square wave) on the provided `speakerPin`. The tone will last for `timeInMilliseconds` and have the `frequencyInHertz`.
+Generates a tone (square wave) on the provided `speakerPin`. 
+
+The tone will last for `timeInMilliseconds` and have the `frequencyInHertz`.
 
 ~~~~ {.numberLines}
 void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMilliseconds) {
@@ -232,11 +234,16 @@ For each led we first calculate the time relative to it's part of the pomodoro c
 
 ~~~~ {.numberLines} 
   //set LED1 (first part of pomodoro cycle)
-  analogWrite(ledPin1, map(constrain(time, 0, timePerLED), 0, timePerLED, 255, 0));
+  analogWrite(ledPin1, map(constrain(time, 0, timePerLED), 0, timePerLED, 
+      255, 0));
+
   //set LED2 (second part of pomodoro cycle)  
-  analogWrite(ledPin2, map(constrain(time - timePerLED, 0, timePerLED), 0, timePerLED, 255, 0));
+  analogWrite(ledPin2, map(constrain(time - timePerLED, 0, timePerLED), 
+      0, timePerLED, 255, 0));
+
   //set LED3 (third part of pomodoro cycle) 
-  analogWrite(ledPin3, map(constrain(time - timePerLED*2, 0, timePerLED), 0, timePerLED, 255, 0)); 
+  analogWrite(ledPin3, map(constrain(time - timePerLED*2, 0, timePerLED), 
+      0, timePerLED, 255, 0)); 
 ~~~~~~~
 
 We now need to wait for exactly one second.
@@ -407,3 +414,4 @@ Here is a list of links to specifications, tutorials and inspirations:
 - Lilypad arduino specyfication <http://arduino.cc/en/Main/arduinoBoardLilyPad>
 - Lilypad tutorials  <http://lilypadarduino.org/>
 - Wearable inspirations <http://learn.adafruit.com/category/flora>
+

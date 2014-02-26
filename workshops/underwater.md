@@ -108,7 +108,7 @@ Connect the sharp GP2D12 sensor to the breadboard using the remaining three pins
 1. Take a small piece of plasticine and mould it round the lens of each LED leaving a hole at the front then press onto the plastic container.
 2. Do the same for the IR receiver
 
-![](workshops/underwater/8.jpg) \ ![](workshops/underwater/9.jpg)
+![](workshops/underwater/8.jpg)
 
 3. Similarly attach the Sharp GP2D12 to the bottom of the AUV 
 

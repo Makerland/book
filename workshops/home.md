@@ -107,7 +107,7 @@ Now we can move on to our `setup()` method. Most of our logic for the RFID reade
 
 ~~~~ {.numberLines}
   Serial.begin(2400);    // Hardware serial for Monitor 2400bps
-  pinMode(2,OUTPUT);     // Set digital pin 2 as OUTPUT to connect it to the RFID /ENABLE pin
+  pinMode(2,OUTPUT);     // Set pin 2 as OUTPUT to connect it to RFID 
   digitalWrite(2, LOW);  // Activate the RFID reader
   RFID.begin(2400);
 ~~~~~~~

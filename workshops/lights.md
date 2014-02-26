@@ -99,7 +99,7 @@ Next, connect a LED as your tutor will instruct you or as shown here:
 
 The final step is to create a workflow that blinks the LED. While being on the Node-RED webpage, click Ctrl+I and paste the following:
 
-<https://github.com/83tb/makerland-code/blob/master/workshops/lights/main_flow.json>
+<https://github.com/Makerland/code/blob/master/workshops/magic_lights/main_flow.json>
 
 This is the way to import a workflow. Click **OK** and you will see the following workflow on your canvas:
 
@@ -122,9 +122,9 @@ With this, you have all the external nodes copied into your local Node-RED insta
 
 `$ npm install node-hue-api`
 
-Your Node.js environment will do the rest for you. Restart your Node-RED and refresh your browser. Check your node-palette, under the advanced group. You should see 2 new nodes!
-
 ![](workshops/lights/6.jpg)
+
+Your Node.js environment will do the rest for you. Restart your Node-RED and refresh your browser. Check your node-palette, under the advanced group. You should see 2 new nodes!
 
 **Discover** node and **HueNode**. Click on each node and see on the information tab a brief description of what each node does. You can play with Discover node on your own, we will move directly to the HueNode for controlling the light!
 
@@ -163,7 +163,7 @@ Check the node-palette under the advance group. You should see the new scanBLE n
 
 ![](workshops/lights/9.jpg)
 
-Import the following workflow into your canvas (Ctrl+I): <https://github.com/83tb/makerland-code/blob/master/workshops/lights/second_flow.json>
+Import the following workflow into your canvas (Ctrl+I): <https://github.com/Makerland/code/blob/master/workshops/magic_lights/second_flow.json>
 
 You should have something like the following:
 

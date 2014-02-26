@@ -2,9 +2,15 @@
 
 ![](workshop_images/firmata.jpg)
 
-# First steps with Arduino
+# Tinkering with Arduino
 
-> lack of description! 
+> This tutorial teaches Arduino 101 and let's you make cool stuff using one of the simple, easy to learn and modern programming languages - Python, Javascript(Node) and Ruby. 
+
+>Parts of it are similiar to "Python, Ruby and Arduino sitting in the tree" because it also uses "Firmata" protocol. Do both workshops if you're really into it.
+
+>For more advanced there are some really special treats, just check the "Additional Tasks" section. 
+
+
 
 ### Authors
 

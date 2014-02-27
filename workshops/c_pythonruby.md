@@ -10,7 +10,7 @@
 
 ![](workshop_images/pythonruby.jpg)
 
-# Python and Ruby sitting in a tree
+\customtitlepage{Python and Ruby sitting in a tree}
 
 >Don't think of Python and Ruby as something you only make websites in. We'll show you how to start with Arduino and communicate with it using your favorite language. Blink the light, check the temperature or detect if someone is trying to break into your home! All this with only few lines of code. 
 
@@ -204,7 +204,7 @@ But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it w
 
 Now connect VCNL4000:
 
-![VCNL4000](workshops/pythonruby/4_meteo_bh_bb.jpg)
+![VCNL4000](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
 
 **Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
@@ -224,15 +224,15 @@ It’s Python time:
 		serial.write("H")
 		# Store the humidity
 		humidity = serial.readline().strip()
-		# Get light intensity
-		serial.write("L")
+		# Get ambient light
+		serial.write("A")
 		# Store it
 		light = serial.readline().strip()
 
 		# Print values
 		print "Temperature: %s°C" % temperature
 		print "Humidity: %s%%" % humidity
-		print "Light: %slx" % light
+		print "Light: %s" % light
 
 		# Wait a second
 		time.sleep(0.5)

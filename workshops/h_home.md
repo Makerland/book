@@ -2,7 +2,7 @@
 
 ![](workshop_images/home.jpg)
 
-# Hack Your House
+\customtitlepage{Hack Your House}
 
 >Have you ever wanted to live in a house like the Jetsons? We will be taking the first step into this inevitable future in our workshop! You will learn to build a system that notifies you immediately of an unexpected environmental change such as gas in the air or a strange loud noise in your house. We will teach you to make your home smarter by using just an Arduino, some awesome analog and digital sensors, and a set of powerful web APIs. 
 

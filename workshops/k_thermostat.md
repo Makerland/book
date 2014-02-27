@@ -6,7 +6,7 @@
 
 ![](workshop_images/thermostat.jpg)
 
-# Thermostat easy as pie
+\customtitlepage{Thermostat easy as pie}
 
 Have you ever tried to learn how to program advanced thermostat? That is a nice challenge. When it's possible to solve virtually any problem with technology, the real problem is how to adjust this solution to the minds, expectations and habits of people that will use it. With this tutorial you will analyze a few design problems with different modern tools like thermostat and similar common interfaces. You will also try to use User Centered Design process combined with some workshop methods to create another Nest. 
 

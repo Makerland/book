@@ -2,13 +2,13 @@
 
 ![](workshop_images/soldering.jpg)
 
-# Soldier, wire, glue!
+\customtitlepage{Soldier, wire, glue!}
 
 >Thoughts about using a tool that melt metal can be a little scary, right? Not anymore! After this tutorial, soldering things will become your new hobby, we promise. You'll learn all different techniques of building and making things stick. Our workshop leaders will make sure nothing goes wrong and after a half an hour, you won't believe you didn't touch soldering iron before.
 
 ### Authors
 
-> lack of bio
+__Szymon Kubicki__ is a power electronics engineer and a follower of Lean Hardware philosophy - build, measure, learn. He is also a co-creator of applications for drawing electrical diagrams, Schemes.io and Zenmakers hardware house. Szymon is a man of few words. Unless he talks about hardware.
 
 \newpage
 

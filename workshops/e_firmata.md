@@ -1,15 +1,16 @@
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 
 ![](workshop_images/firmata.jpg)
 
-# Tinkering with Arduino
+\customtitlepage{Tinkering with Arduino}
 
-> This tutorial teaches Arduino 101 and let's you make cool stuff using one of the simple, easy to learn and modern programming languages - Python, Javascript(Node) and Ruby. 
+> This tutorial teaches Arduino 101 and let's you make cool stuff using one of the simple and easy to learn programming languages - Python, Javascript (Node.js) and Ruby.
 
 >Parts of it are similiar to "Python, Ruby and Arduino sitting in the tree" because it also uses "Firmata" protocol. Do both workshops if you're really into it.
-
->For more advanced there are some really special treats, just check the "Additional Tasks" section. 
-
 
 
 ### Authors
@@ -18,6 +19,8 @@ __Meet Swift__ is a free-agent evangelist and mad scientist hacker. Swift has ma
 
 \newpage
 
+# Tinkering with Arduino
+
 ## Overview
 
 During this workshop you will learn the basics of communicating with an Arduino using your favorite scripting language (Python, Ruby, or Javascript).
@@ -25,8 +28,6 @@ During this workshop you will learn the basics of communicating with an Arduino 
 We’ll start with the basics like blinking an LED and reading data from a button, and by the end of the workshop we’ll work our way up to a fully functioning light switch that you can control from a simple Web Application.
 
 This workshop is open to hackers of all skill levels.  Even if you’ve never touched an Arduino before, we’ll help you get from zero to “Hello World” in no time flat.
-
-# First steps with Arduino
 
 ## Preparations
 

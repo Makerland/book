@@ -3,10 +3,14 @@
 \mbox{}
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 
 ![](workshop_images/hens.jpg)
 
-# Hacking Hens’ Happiness
+\customtitlepage{Hacking Hens’ Happiness}
 
 >Applying connected technology to improve your Hens' happiness & productivity. Remote laying surveillance to know when you can count your chickens before they've hatched. We will learn how to keep yourselves informed each time a feathery friend drops an "object" on a "nested loop". So which came first? The chicken or the egg? 
 
@@ -84,7 +88,7 @@ You should, at this point having entered your VNC password, find yourself in fro
 
 Now’s the time to familiarise yourself with this new world. Check out the menu from the bottom left corner to see the various program categories. Alongside is the File Manager.
 
-> The “Pi” in Raspberry Pi comes from the “Python” language. There are tools for programming - IDLE as well as some pre-created Python Games using the language. Scratch from MIT is a utility with education in mind, for learning and teaching the building blocks and basic logic of coding. Midori is a web browser.
+> The “Pi” in Raspberry Pi comes from the “Python” language. There are tools for programming - including IDLE as well as some pre-written Python Games using the language. Scratch from MIT is a utility with education in mind, for learning and teaching the building blocks and basic logic of coding. Midori is a web browser.
 
 Abundant information about the various packages are available through the site: <http://www.raspberrypi.org> (in particular via the Forums) and in the community documentation Hub via <http://elinux.org/RPi_Hub>
 
@@ -92,33 +96,33 @@ What we’re now interested in will involve the LXTerminal which you’ll find o
 
 ### Take some Photos.
 
-The command line can be daunting if you’re not familiar with it. If you only know a little or none of the “black screen with white (or coloured) writing” it can be hard to know where to start. Indeed the “prompt” itself (under Linux the “$”) is the computer waiting for you to tell it what you want it to do! But don’t worry, it’s easier than you think...and much more powerful than you think ! 
+The command line can be daunting if you’re not familiar with it. If you only know a little or none of the “black screen with white (or coloured) writing” it can be hard to know where to start. Indeed the “prompt” itself (under Linux the “$”) is the computer waiting for you to tell it what you want it to do! But don’t worry, it’s easier than you think...and much more powerful than you imagine! 
 
 So double click LXTerminal Icon and off we go.
 
 ![](workshops/hens/2.jpg)
 
-Command line is in many ways a language just like many others. As you gradually learn the terms and translate what you want to say so the computer understands you’ll feel more and more at ease. We can’t cover many details in this document as this is not a Linux/Command line “primer” but a few useful basics follow, with few more in the “cheat sheet” to get you started.
+Command line can be thought of as a language just like many others. As you gradually learn the terms and translate what you want to say so the computer understands you’ll feel more and more at ease. We can’t cover many details in this document as this is not a Linux/Command line “primer” but a couple of useful basics follow, with a few more in the “cheat sheet” to get you started.
 
 First question to the computer:
 
-Where am I ? → to ask this we type simply `pwd` (meaning print working directory) The computer replies __/home/pi__ (the complete path to our current “folder”)
+Where am I ? → to ask this we type simply `pwd` (meaning print working directory) and then press *Enter*. The computer replies __/home/pi__ (ie. the complete path to our current “folder”)
 
 Let’s create a folder for the images we’re about to take:
 
 - **M**a**k**e a **dir**ectory called funex → `mkdir funex`
 - **C**hange **d**irectory to funex → `cd funex`
--
+
 Get your egg ready for its “photo shoot”. Place it in front of the lens.
-Now comes the command to take a “still image” with the camera module and well save it as “egg1.jpg”:
+Now the command to take a “still image” with the camera module and save it as “egg1.jpg”:
 	
 	raspistill -o egg1.jpg
 
-If you now launch the File Manager from the toolbar of the desktop and navigate to */home/pi/funex/* we’ll find the photo file we just created and by double clicking we can view the photo.
+If you now launch the File Manager from the toolbar of the desktop and navigate to */home/pi/funex/* we’ll find the photo file we just created and by double clicking it opens in the Image Viewer.
 
-Now play around with some of the various options available. At any time you can see the manual of the app just by entering `raspistill` without any options after it.
+At any time you can see the manual of the app just by typing `raspistill` and *Enter*. Now play around with some of the various options available.
 
-More details can be found on <http://www.raspberrypi.org/camera> and comprehensive page is on <http://elinux.org/Rpi_Camera_Module>
+More information can be found on <http://www.raspberrypi.org/camera> and a further comprehensive page is on <http://elinux.org/Rpi_Camera_Module>
 
 ### Pick up those photos
 
@@ -128,25 +132,104 @@ We can easily use File Transfer Protocol to collect and transfer the photos from
 
 Install a utility such as Filezilla and connect to your IP address using a connection type “SFTP” (“S” being for “Secure”).
 
-In this case, as long as we haven’t changed the default details it should be:
+In this case, as long as we haven’t changed them, default details should be:
 
 - Login: **pi**
 - Password: **raspberry**
 
-If you’ve decided to play around with the video capture app **raspivid** you can then use a media player such as VLC Videolan to playback those high-definition recordings (format *.h264).
+You can change your password at any time from LXTerminal by `sudo raspi-config` or `passwd`.
+
+If you decide to play around with the video capture app **raspivid** you can then use a media player such as VLC on your laptopt to playback those high-definition recordings (format *.h264).
 
 ### Summary
 
 What we’ve just done may seem somewhat basic, but we have the building blocks to make various remote surveillance projects just by adapting and adding to what we’ve learnt. Nest box/bird-table observation, time-lapse photography, home security camera…
 
-A year ago BBC Click broadcast a TV section entitled “Can anyone do DIY tech?”. The answer is obviously “yes” as we’re all here today. So some encouraging words for us from Dominic Morrow (co-founder of Nottingham Hackspace): 
-> “It doesn’t matter if you don’t know everything. Don’t put obstacles in your way that say ‘Before I can make an electronics thing, I have to learn all of electronics’ or ‘before I can program something I need to know everything about computers’. It’s simply not true! Most people start out knowing nothing about what they’re doing, but by chipping away at a problem, they become, slowly, more and more adept at doing it.”
+A year ago BBC Click broadcast a TV report entitled “Can anyone do DIY tech?”. The answer is obviously “yes” as we’re all here today. So some encouraging words for us from Dominic Morrow (co-founder of Nottingham Hackspace): 
+> “It doesn’t matter if you don’t know everything. Don’t put obstacles in your way that say ‘before I can make an electronics thing, I have to learn all of electronics’ or ‘before I can program something I need to know everything about computers’. It’s simply not true! Most people start out knowing nothing about what they’re doing, but by chipping away at a problem, they become, slowly, more and more adept at doing it.”
 
 ## Second flow
 
-Maybe you already know your chmod from your chown and your ssh from your vnc? Or perhaps the Main Flow has whetted your appetite for more?
+Maybe you already know your `chmod` from your `chown` and your `ssh` from your `vnc`? Or perhaps the Main Flow has whetted your appetite for more?
 
-For you I’ve added in the next flow tasks based on Motion detection and Twitter notification.
+For you I’ve added in the next flow tasks based on Motion detection and Twitter notification. Keep an eagle eye continuously on that nest and be informed of the freshest produce!
+For this part we’ll need to be logged in to our RPi by SSH (e.g. using Putty or Terminal). 
+
+Default Login: __pi__
+Password: __raspberry__
+Default IP address (by ethernet): __169.254.0.2__
+
+(To work via wireless network check the additional IP address using `hostname -I` & connect)
+
+### Setting the Eggs in Motion
+
+We like automating. And we can do all sorts of fun things when we capture real life events and make things happen thanks to them. For this bit most of the setup has already been done for you in the OS image. The installed Motion package adds automatic movement detection for triggering of events & also an easy way of streaming in addition to the basic apps of raspistill & raspivid in our 1st flow.
+
+Big Rooster is always watching! So that our module will run in the background as a daemon, we activate the service at boot-up: 
+`sudo nano /etc/default/motion` and change the value of *“start_motion_daemon”* to *“yes”*.
+
+Now let’s get that running straight away without reboot: `sudo service motion start`
+
+We can now see our “Live (Chicken) feed” from the Camera by launching VLC Media player or Firefox or Safari browser on our Laptop and pointing it to our IP address on port 8080 eg. __169.254.0.2:8080__.
+
+![](workshops/hens/image06.jpg)
+
+At this point, play around with the many configurable options in Motion by editing the &/etc/motion.conf& file. A complete list of options can be found at <http://www.lavrsen.dk/foswiki/bin/view/Motion/ConfigFileOptions>
+
+Any changes made to the *.conf file can be applied by relaunching the daemon/service using: 
+
+	sudo service motion restart
+
+Our photos and videos in the initial config are saved to */home/pi/camMotion/*
+
+Some examples of what can be changed/played with: 
+
+- Sensitivity of the triggering (Threshold)
+- Text displayed on the image overlay
+- Boxing of the image area where movement is detected
+- Rotation of image (depending on your installation)
+- Usual image parameters of Brightness, Contrast, Saturation, Hue, etc
+- Password protection of the Video Stream/Feed
+
+### Tweeting Hens - Have you any Eggs?
+
+Hen’s aren’t always terribly communicative so let’s send a latest image by Twitter every time there is activity around the nest.
+
+The idea: to use our Motion configuration to trigger a Python script sending our newest image.
+
+To do this, we create a new dedicated Twitter account (with private rights if you don't want your hens being public!) on <https://twitter.com/>. Of course you’re free to use an existing account too.
+
+We log in to <https://dev.twitter.com>, going through *My Applications* and *Create New App*.
+
+We need to be able to authenticate securely and publish our feathered Tweets so adjust the Access level to be able to Write to Twitter. What we need now are the Consumer key, Consumer secret, Access token & Access token secret.
+
+![](workshops/hens/image01.jpg)
+
+Edit and update the “placeholders” in */home/pi/camMotion/eggTweet.py* script with your Consumer/Access keys & tokens.
+
+Best to check all’s ok before heading on, so let’s try testing the script at this point by running:
+
+	python /home/pi/camMotion/eggTweet.py
+
+If there are no errors, have a look at your Twitter account. You should find that you’ve just sent a message with your last recorded image in the camMotion directory.
+
+You can decide on what event you’d like to send your tweet. I’ve added an example to the */etc/motion.conf* file for triggering once a video has finished recording. To activate this example we just need to “uncomment” the following line in the *motion.conf* file by removing the “;”
+
+	; on_movie_end python /home/pi/camMotion/eggTweet.py
+
+As previously, when we’ve modified the configuration, relaunch motion with 
+
+	sudo service motion restart
+
+You should now automatically send a tweet as soon as your video has stopped being recorded.
+
+### Summary
+
+What I’ve been able to watch with a “bird’s-eye view”: the “pecking order” at work (up to 3 hens at once trying to get on the nest), surprise guests (regular visiting mice), when and by whom the eggs are laid & gathered, à whole lot of broody & bossy chucks. 
+
+I’ve learnt to play with and use all this thanks to other people’s hard work and the wealth of online resources. I hope it’s of some use to you in this station. Now it’s your turn to be creative and run on and build with this. Have fun and share with others ;) Raspberry Pi has its “raison d’être” in learning and teaching. Bonne continuation!
+
+![](workshops/hens/image02.jpg)
 
 
 ## FAQ

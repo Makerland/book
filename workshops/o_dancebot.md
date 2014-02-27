@@ -1,6 +1,10 @@
 \newpage
+\thispagestyle{empty}
+\mbox{}
 
-# Dancebot: The Dancing Robot
+\newpage
+
+\customtitlepage{Dancebot: The Dancing Robot}
 
 ## Overview
 

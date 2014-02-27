@@ -200,11 +200,11 @@ Along our sensors, you have DHT11 which can measure two things: temperature and 
 
 But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it will be required later):
 
-![DHT11](workshops/pythonruby/4_meteo_dht_bb.jpg)
+![](workshops/pythonruby/4_meteo_dht_bb.jpg)
 
 Now connect VCNL4000:
 
-![VCNL4000](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
+![](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
 
 **Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
@@ -246,6 +246,8 @@ Yay! You can now remove Weather app from your smartphone.
 You have one sensor left: HC-SR501 PIR motion detector. This sensor detects motion based on infrared light. It’s similar to ones used in public bathrooms to automatically turn on the light. As it works with infrared it only detects objects which exude heat (i.e. human body, running car). What is important, it detects **motion** not presence. So if you’ll hold still in front of it, you won’t be detected.
 
 Other quirk of this sensor is long lag after detecting motion. There’s potentiometer on a back of it which allows to change it, but event with minimal setting it’s about 3 seconds.
+
+\newpage
 
 Connect the wires like this:
 
@@ -380,6 +382,8 @@ You can stop this now, pressing `Ctrl+C`.
 
 You’ve just used your code to play with something already built, lets get to something more advanced.
 
+\newpage
+
 ### Time for some measurements
 
 Before you write anything lets have fun with wires. Grab HC-SR04 ultrasonic ranging module, Arduino, your breadboard, some wires and connect them all together this way:
@@ -418,7 +422,7 @@ Start with the wires. Don’t disconnect sonar, it will be required late. First 
 
 Now connect VCNL4000:
 
-![VCNL4000](workshops/pythonruby/4_meteo_bh_bb.jpg)
+![VCNL4000](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
 
 **Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
@@ -463,7 +467,7 @@ There is one sensor left: HC-SR501 PIR motion detector. Based on infrared light,
 
 Connect wires this way:
 
-![HC-SR501](workshops/pythonruby/5_alarm_bb.jpg)
+![](workshops/pythonruby/5_alarm_bb.jpg)
 
 Be sure to hold it like on the picture, so you won’t connect it in the wrong way.
 

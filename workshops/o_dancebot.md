@@ -4,7 +4,13 @@
 
 \newpage
 
+![](workshop_images/dancebot.jpg)
+
 \customtitlepage{Dancebot: The Dancing Robot}
+
+\newpage
+
+# Dancebot: The Dancing Robo
 
 ## Overview
 
@@ -77,6 +83,8 @@ Use 6-32 nuts and bolts to attach 2 Bitbeam servo mounts to the servo. After tha
 ## Arm number two
 
 Let's move on onto the next arm. You'll use the same parts you used for the first arm. Use 6-32 nuts and bolts to attach 2 Bitbeam servo mounts to the servo. After that, use 1-inch 10-32 nuts and bolts to attach 1x9 Bitbeam beams to Bitbeam servo mount.
+
+\newpage
 
 ![](workshops/dancebot/image006.jpg) 
 

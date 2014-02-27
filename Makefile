@@ -7,8 +7,15 @@ PDF_BUILDER_FLAGS = \
 	--template template.tex \
 	--toc
 
+NOTOC_PDF_BUILDER_FLAGS = \
+	--latex-engine xelatex \
+	--template template_notoc.tex
+
 makerland.pdf:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o pdf/$(BOOK_FILE_NAME).pdf
+
+intro:
+	$(PDF_BUILDER) $(NOTOC_PDF_BUILDER_FLAGS) introduction.md -o pdf/introduction.pdf
 
 3dmodeling:
 	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/a_3dmodeling.md -o pdf/3dmodeling.pdf

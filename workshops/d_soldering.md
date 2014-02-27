@@ -1,4 +1,7 @@
 \newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 
 ![](workshop_images/soldering.jpg)
 
@@ -111,8 +114,9 @@ Do you feel good with your skills? If so let’s get to the next step if not kee
 - plan the location of connectors through which you will connect to the Arduino Uno board. You should push your shield into the Arduino Uno.
 - connect the MCP23017 expander with the appropriate pin connectors to the Arduino Uno. Pay attention to: power supply and the I2C bus.
 
-![](workshops/soldering/10.jpg)
+\newpage
 
+![](workshops/soldering/10.jpg)
 
 2. A port expander is used to ensure that your microprocessor system has more available ports than a microcontroller does. It is not only LEDs and buttons that you can connect to the system plugs. You can connect any other element which works with the digital (two-state) port of the microcontroller. Through the expander you can control a transistor, a buzzer, a tilt sensor, a servo driver. You can even connect an LCD display.
 

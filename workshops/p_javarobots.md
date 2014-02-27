@@ -1,8 +1,4 @@
 \newpage
-\thispagestyle{empty}
-\mbox{}
-
-\newpage
 
 ![](workshop_images/javarobots.jpg)
 

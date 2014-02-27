@@ -6,7 +6,7 @@
 
 ![](workshop_images/bricksbots.jpg)
 
-\customtitlepage{Bricks & Bots}
+\customtitlepage{Bricks and Bots}
 
 >In this tutorial you will get a chance to learn how to build and program robots with Lego Mindstorms. Build your own arm, robot or car and program it without any programming knowledge or use language you already know as a weapon of choice! 
 

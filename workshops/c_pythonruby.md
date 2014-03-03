@@ -12,7 +12,7 @@
 
 \customtitlepage{Python and Ruby sitting in a tree}
 
->Don't think of Python and Ruby as something you only make websites in. We'll show you how to start with Arduino and communicate with it using your favorite language. Blink the light, check the temperature or detect if someone is trying to break into your home! All this with only few lines of code. 
+>Don't think of Python and Ruby as something you only make websites in. We'll show you how to start with Arduino and communicate with it using your favorite language. Blink the light, check the temperature or detect if someone is trying to break into your home! All this with only few lines of code.
 
 >Parts of this tutorial are similiar to "Tinkering with Arduino" because it also uses "Firmata" protocol. Do both workshops if you're really into it.
 
@@ -443,14 +443,14 @@ Now in Ruby shell:
 		# Store value in a variable
 		humidity  = serial.readline.strip
 		# Get a light intensity
-		serial.write(“L”)
+		serial.write(“A”)
 		# Store it
 		light = serial.readline.strip
 
 		# Print values
 		puts “Temperature: #{temperature} *C”
 		puts “Humidity: #{humidity}% “
-		puts “Light: #{light}lx “
+		puts “Light: #{light} “
 
 		# Wait a second before the next cycle
 		sleep(1)

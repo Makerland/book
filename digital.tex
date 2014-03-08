@@ -1,0 +1,125 @@
+\documentclass{book}
+
+% Fonts and typography
+
+%% Typography
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Mapping = tex-text, Scale = MatchLowercase}
+
+%% Fonts
+\usepackage{sectsty, xcolor}
+\usepackage[compact]{titlesec}
+\setmainfont{Minion Pro}
+\setsansfont{Bebas Neue}
+\setmonofont[Mapping=tex-ansi]{Monaco}
+\newfontfamily\sectionfont[Color=Black]{Bebas Neue}
+
+%% Colors
+\definecolor{SkyBlue}{cmyk}{0.72,0.16,0,0}
+\definecolor{Black}{cmyk}{0.75, 0.68, 0.67, 0.9}
+\definecolor{formalshade}{cmyk}{0.2,0,0.01,0}
+
+%% Quote
+\usepackage[strict]{changepage}
+\usepackage{framed}
+\renewenvironment{quote}{%
+  \def\FrameCommand{%
+    \hspace{1pt}%
+    {\color{SkyBlue}\vrule width 2pt}%
+    {\color{formalshade}\vrule width 4pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}% disable indenting first paragraph
+  \begin{adjustwidth}{}{7pt}%
+  \vspace{2pt}\vspace{2pt}%
+}
+{%
+  \vspace{7pt}\end{adjustwidth}\endMakeFramed%
+}
+
+%% Set Sans font in headings
+\allsectionsfont{\sffamily}
+\titleformat*{\section}{\fontsize{40}{40}\centering\sectionfont}
+\titleformat*{\subsection}{\fontsize{32}{32}\sffamily}
+\titleformat*{\subsubsection}{\fontsize{24}{24}\sffamily}
+\titleformat*{\paragraph}{\fontsize{16}{16}\sffamily}
+
+%% Set polyglossia language
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+% Page
+\usepackage[paperwidth=6.69in, paperheight=9.45in]{geometry}
+
+
+% Footer & Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[cm]{fullpage}
+
+% URL break lines
+\usepackage[hyphens]{url}
+
+% TOC style
+\renewcommand\contentsname{\fontsize{40}{40}\centering\sectionfont}
+
+%% Set line spacing
+\usepackage{setspace}
+\setstretch{1.1}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*2}{*0}
+\titlespacing{\subsubsection}{0pt}{*1}{*0}
+
+%% Disable paragraph indentation
+\usepackage{parskip}
+\setlength{\parskip}{7pt}
+
+
+
+%\let\stdsection\section
+%\renewcommand\section{\newpage\stdsection}
+
+
+% Links
+
+%% Hyperref
+\usepackage[colorlinks, breaklinks, bookmarks, xetex]{hyperref}
+
+\hypersetup {
+  linkcolor = SkyBlue,
+  citecolor = SkyBlue,
+  filecolor = SkyBlue,
+  urlcolor = SkyBlue
+}
+
+%% Don’t use Mono font for URLs
+\urlstyle{same}
+\def\UrlFont{\em}
+
+% Images
+\usepackage{graphicx}
+
+%\newcommand{\customtitlepage}[1]{\textsf{#1}}
+\newcommand{\customtitlepage}[1]{\begingroup\begin{center}\vspace*{0.2in}\fontsize{50}{70}\textsf{#1}\vspace*{0.2in}\end{center}\endgroup}
+
+% Pandoc hacks
+
+%% Normal enumerates processing
+\usepackage{enumerate}
+
+%% Disable section numbers
+\setcounter{secnumdepth}{0}
+
+
+\begin{document}
+  
+  % Book contents
+  $body$
+
+\end{document}

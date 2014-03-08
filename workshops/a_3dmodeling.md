@@ -91,7 +91,7 @@ Ok, so we have a cylinder with the dimensions set in the previous step. Now lets
 
 ![](workshops/3dmodeling/image02.jpg) \ ![](workshops/3dmodeling/image01.jpg)
 
-5. Select the horizontal thin cylinder and the big one and group* them together using either keyboard shortcut or command from the top menu bar. 
+5. Select the horizontal thin cylinder and the big one and group them together using either keyboard shortcut or command from the top menu bar. 
 
 > Group command in Tinkercad welds the objects together, you can unweld them simply by ungrouping them.
 

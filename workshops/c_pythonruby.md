@@ -14,7 +14,7 @@
 
 >Don't think of Python and Ruby as something you only make websites in. We'll show you how to start with Arduino and communicate with it using your favorite language. Blink the light, check the temperature or detect if someone is trying to break into your home! All this with only few lines of code. 
 
->Parts of this tutorial are similiar to "Tinkering with Arduino" because it also uses "Firmata" protocol. Do both workshops if you're really into it.
+>Parts of this tutorial are similiar to "Tinkering with Arduino" but it uses "Firmata" protocol. Do both workshops if you're really into it.
 
 ### Authors
 

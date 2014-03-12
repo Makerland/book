@@ -4,16 +4,16 @@ BOOK_FILE_NAME = makerland
 PDF_BUILDER = pandoc
 PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template template.tex \
+	--template templates/template.tex \
 	--toc
 
 NOTOC_PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template template_notoc.tex
+	--template templates/template_notoc.tex
 
 DIGITAL_PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template digital.tex \
+	--template templates/digital.tex \
 	--toc
 
 makerland.pdf:

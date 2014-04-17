@@ -4,7 +4,7 @@
 
 \newpage
 
-![](workshop_images/firmata.jpg)
+![](content/workshop_images/firmata.jpg)
 
 \customtitlepage{Tinkering with Arduino}
 

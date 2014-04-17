@@ -3,7 +3,7 @@
 \mbox{}
 \newpage
 
-![](workshop_images/soldering.jpg)
+![](content/workshop_images/soldering.jpg)
 
 \customtitlepage{Soldier, wire, glue!}
 
@@ -17,7 +17,7 @@ __Szymon Kubicki__ is a power electronics engineer and a follower of Lean Hardwa
 
 # Soldier, wire, glue!
 
-![](workshops/soldering/17.jpg)
+![](content/workshops/soldering/17.jpg)
 
 ## Overview
 
@@ -30,7 +30,7 @@ You'll think: a yet another breadboard and plenty of tangled wires. Far from it.
 
 ## Preparations
 
-![](workshops/soldering/1.jpg)
+![](content/workshops/soldering/1.jpg)
 
 In order to be able to focus on your work, you should prepare your workspace. You need:
 
@@ -54,7 +54,7 @@ You should solder all the elements onto the PCB.
 
 ### Plan your work
 
-![](workshops/soldering/2.jpg)
+![](content/workshops/soldering/2.jpg)
 
 If you don't know MCP23017, you must get acquainted with the datasheet. You'll learn from it about the capabilities of the circuit and the distribution of pins.
 
@@ -64,7 +64,7 @@ If you want to make a shield for the Arduino Uno, you must think of how to deplo
 
 ### Preparation for soldering
 
-![](workshops/soldering/11.jpg)
+![](content/workshops/soldering/11.jpg)
 
 Put the first elements into the board. You should solder the elements from below. The most frequent mistake at this stage is to put in too many elements, which are going to fall out of the board when you turn it upside down for soldering.
 
@@ -76,14 +76,14 @@ Solder the following way:
 - heat this spot up for about 3 seconds
 - quickly apply solder and flux to the soldered elements. Don't apply solder directly to the iron!
 
-![](workshops/soldering/4.jpg) \ ![](workshops/soldering/6.jpg)
+![](content/workshops/soldering/4.jpg) \ ![](content/workshops/soldering/6.jpg)
 
 
 - solder melts, flux removes oxides from metal surfaces, the elements are joined together with a joint
 - withdraw the iron and solder
 - solder solidifies to form a firm joint of the elements
 
-![](workshops/soldering/7.jpg) \ ![](workshops/soldering/8.jpg)
+![](content/workshops/soldering/7.jpg) \ ![](content/workshops/soldering/8.jpg)
 
 - cut the ends of long legs (LEDs) right at the joint
 
@@ -92,7 +92,7 @@ Solder the following way:
 
 1. A well made solder should be shiny and have a nice shape. Holes in the joint or a matte color are signs of a poorly made soldering. The elements were probably dirty (dust or glue) or greasy. Before you start soldering, it's a good idea to clean the elements with a spirit-soaked cloth.
 
-![](workshops/soldering/13.jpg)
+![](content/workshops/soldering/13.jpg)
 
 2. Not to overheat the components, try not to heat the legs of the elements up for too long. You'll come up with an optimum time as you practice.
 
@@ -102,7 +102,7 @@ Solder the following way:
 
 5. Put the soldered elements into the PCB and then turn it upside down for soldering. If you do not want such items as a resistor or a LED to fall out, you can gently bend their legs out when you insert them into the board.
 
-![](workshops/soldering/12.jpg)
+![](content/workshops/soldering/12.jpg)
 
 
 ## Additional tasks
@@ -116,13 +116,13 @@ Do you feel good with your skills? If so let’s get to the next step if not kee
 
 \newpage
 
-![](workshops/soldering/10.jpg)
+![](content/workshops/soldering/10.jpg)
 
 2. A port expander is used to ensure that your microprocessor system has more available ports than a microcontroller does. It is not only LEDs and buttons that you can connect to the system plugs. You can connect any other element which works with the digital (two-state) port of the microcontroller. Through the expander you can control a transistor, a buzzer, a tilt sensor, a servo driver. You can even connect an LCD display.
 
 You can get out of the box!
 
-![](workshops/soldering/15.jpg)
+![](content/workshops/soldering/15.jpg)
 
 
 ## Additional sources

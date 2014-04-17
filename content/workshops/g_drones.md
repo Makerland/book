@@ -4,7 +4,7 @@
 
 \newpage
 
-![](workshop_images/drones.jpg)
+![](content/workshop_images/drones.jpg)
 
 \customtitlepage{Flying robots}
 

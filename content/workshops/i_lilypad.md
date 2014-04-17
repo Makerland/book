@@ -8,7 +8,7 @@
 
 \newpage
 
-![](workshop_images/lilypad.jpg)
+![](content/workshop_images/lilypad.jpg)
 
 \customtitlepage{Build a smart watch with Lilypad}
 
@@ -41,38 +41,38 @@ __Make sure that you have collected:__
 
 Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
 
-![](workshops/lilypad/1.jpg) \
+![](content/workshops/lilypad/1.jpg) \
 
 or Arduino LilyPad USB and micro USB cable
 
-![](workshops/lilypad/2.jpg) \
+![](content/workshops/lilypad/2.jpg) \
 
 ###  
 
 Battery Holder and Cell batery
 
-![](workshops/lilypad/3.jpg) \ ![](workshops/lilypad/4.jpg)
+![](content/workshops/lilypad/3.jpg) \ ![](content/workshops/lilypad/4.jpg)
 
 Buzzer
 
-![](workshops/lilypad/5.jpg) \
+![](content/workshops/lilypad/5.jpg) \
 
 3 LEDs and 3 Photoresitors 
 
-![](workshops/lilypad/6.jpg) \ ![](workshops/lilypad/7.jpg)
+![](content/workshops/lilypad/6.jpg) \ ![](content/workshops/lilypad/7.jpg)
 
 Conductive thread, normal thread, needle and prepared material base
 
-![](workshops/lilypad/8.jpg) \
+![](content/workshops/lilypad/8.jpg) \
 
 2 Press-studs
 
-![](workshops/lilypad/9.jpg) \
+![](content/workshops/lilypad/9.jpg) \
 
 
 **Arduino LilyPad FTDI** and **Arduino LilyPad USB**
 
-![](workshops/lilypad/10.jpg) \ ![](workshops/lilypad/11.jpg)
+![](content/workshops/lilypad/10.jpg) \ ![](content/workshops/lilypad/11.jpg)
 
 
 ## Installing and configuring LilyPad Arduino on Windows
@@ -81,7 +81,7 @@ Get the latest version of arduino environment from the Arduino website: <http://
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer.
 
-![](workshops/lilypad/12.jpg)
+![](content/workshops/lilypad/12.jpg)
 
 ### Select your board
 
@@ -106,7 +106,7 @@ Get the latest version of LilyPad Arduino environment from the Arduino website: 
 
 Attach the FTDI board to your LilyPad Arduino board. Attach one end of the USB cable to your FTDI board and the other end to a USB port on your computer. 
 
-![](workshops/lilypad/15.jpg)
+![](content/workshops/lilypad/15.jpg)
 
 ### Install the FTDI Drivers
 
@@ -136,7 +136,7 @@ First of all we have to prepare our circuit. We will sew a bit, but don’t worr
  
 *Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-![Arduino LilyPad FTDI](workshops/lilypad/18.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/19.jpg)
+![Arduino LilyPad FTDI](content/workshops/lilypad/18.jpg) \ ![Arduino LilyPad USB](content/workshops/lilypad/19.jpg)
 
 Whole elements and thread paths are printed on. All you have to do is to follow the instructions. Each piece of LilyPad have adhesive tape at the back side to help you place Lilypad elements on the material. 
 
@@ -147,7 +147,7 @@ To make sawing easier, whole thread paths are dotted. Just to help you a bit, Li
 
 *Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-![Arduino LilyPad FTDI](workshops/lilypad/20.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/21.jpg) 
+![Arduino LilyPad FTDI](content/workshops/lilypad/20.jpg) \ ![Arduino LilyPad USB](content/workshops/lilypad/21.jpg) 
 
 
 Stick first LED on the proper place (start from the top one).  Sew (+) with pin 9 (blue line) on LilyPad board and (-) with ground (-) (green line). 
@@ -156,7 +156,7 @@ Stick first LED on the proper place (start from the top one).  Sew (+) with pin 
 
 *Arduino LilyPad FTDI* and *Arduino LilyPad USB*:
 
-![Arduino LilyPad FTDI](workshops/lilypad/22.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/23.jpg)
+![Arduino LilyPad FTDI](content/workshops/lilypad/22.jpg) \ ![Arduino LilyPad USB](content/workshops/lilypad/23.jpg)
 
 Congratulation! Your first circuit is done! Lets test it. Upload again Blink programme. Don’t forget to change pin number to 9. Does it work?
 
@@ -164,7 +164,7 @@ Let’s go further. Sew another two leds. Connect positive ends to pins 10 and 1
 
 *Arduino LilyPad FTDI* and *Arduino LilyPad USB*
 
-![a](workshops/lilypad/24.jpg) \ ![b](workshops/lilypad/25.jpg)
+![a](content/workshops/lilypad/24.jpg) \ ![b](content/workshops/lilypad/25.jpg)
 
 Try to test it now. Modificate “Blink” program by adding new leds. (If you need help, go to SmartWatch folder and run “Blink_three leds” file).
 
@@ -173,7 +173,7 @@ Let’s add sound. Stick buzzer in the right bottom corner. Sew negative end wit
 - with pin 4 at FTDI board
 - with pin 3 at USB board
 
-![Arduino LilyPad USB](workshops/lilypad/26.jpg)
+![Arduino LilyPad USB](content/workshops/lilypad/26.jpg)
 
 Check if it’s connected correctly. Go to SmartWatch folder and run `Simple_tone` file. If you hear tones, your buzzer is connected correctly.
 
@@ -294,7 +294,7 @@ It’s time to wear your new smart watch! Get things done, manage your time: pla
 
 If you still have some enthusiasm left, try to upgrade your smart stopwatch. We will create musical instrument by adding some analog inputs. For this purpose add photoresistors to our circuit. We will generate sound by fading out brightness.
 
-![Arduino LilyPad FTDI](workshops/lilypad/27.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/28.jpg)
+![Arduino LilyPad FTDI](content/workshops/lilypad/27.jpg) \ ![Arduino LilyPad USB](content/workshops/lilypad/28.jpg)
 
 Connect photoresistor to:
 
@@ -341,7 +341,7 @@ Finish keyboard for our smart watch instrument by Add two left photoresistor. Gr
 
 Our smart watch instrument keyboard is finished.
 
-![Arduino LilyPad FTDI](workshops/lilypad/29.jpg) \ ![Arduino LilyPad USB](workshops/lilypad/30.jpg)
+![Arduino LilyPad FTDI](content/workshops/lilypad/29.jpg) \ ![Arduino LilyPad USB](content/workshops/lilypad/30.jpg)
 
 Time to code:
 
@@ -425,7 +425,7 @@ But, it is not finished yet. Why not to add button to switch between two program
 
 We will use press-stud. Top part is already connected. Your job is to sew bottom part near pin 3 and connect it. 
 
-![](workshops/lilypad/31.jpg)
+![](content/workshops/lilypad/31.jpg)
 
 Try to modify code a bit – it’s simple! If little help is needed go to SmartWatch folder and run “Switch” file.
 

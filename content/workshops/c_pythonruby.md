@@ -8,7 +8,7 @@
 
 \newpage
 
-![](workshop_images/pythonruby.jpg)
+![](content/workshop_images/pythonruby.jpg)
 
 \customtitlepage{Python and Ruby sitting in a tree}
 
@@ -44,7 +44,7 @@ To install Arduino IDE, follow guides for your operating system:
 
 At the end of this workshop, your breadboard will look like this:
 
-![](workshops/pythonruby/complete_bb.jpg)
+![](content/workshops/pythonruby/complete_bb.jpg)
 
 Along with Arduino you will need:
 
@@ -60,7 +60,7 @@ You don’t have to connect all the wires right now, as we’ll explain everythi
 
 If you never used a breadboard before, you may wonder how all those holes are connected with each other. Here is a small cheat sheet for you:
 
-![Breadboard Cheat Sheet](workshops/pythonruby/breadboard_connections.jpg)
+![Breadboard Cheat Sheet](content/workshops/pythonruby/breadboard_connections.jpg)
 
 ### Installation of Python or Ruby
 
@@ -170,7 +170,7 @@ But this is child's play. Lets try something more advanced.
 
 First thing before writing code is to connect HC-SR04 ultrasonic ranging module with Arduino. Grab your breadboard, some cables and connect them like this:
 
-![Sonar](workshops/pythonruby/3_sonar_bb.jpg)
+![Sonar](content/workshops/pythonruby/3_sonar_bb.jpg)
 
 
 Colors are not important, but be concise when using them. This way you won’t make silly mistakes like connecting wrong wire to wrong hole.
@@ -200,11 +200,11 @@ Along our sensors, you have DHT11 which can measure two things: temperature and 
 
 But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it will be required later):
 
-![](workshops/pythonruby/4_meteo_dht_bb.jpg)
+![](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
 
 Now connect VCNL4000:
 
-![](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
+![](content/workshops/pythonruby/4_meteo_vcnl_bb.jpg)
 
 **Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
@@ -251,7 +251,7 @@ Other quirk of this sensor is long lag after detecting motion. There’s potenti
 
 Connect the wires like this:
 
-![HC-SR501](workshops/pythonruby/5_alarm_bb.jpg)
+![HC-SR501](content/workshops/pythonruby/5_alarm_bb.jpg)
 
 Your PIR may have wires with different colors or don’t have wires at all, so just hold it like in the picture above and number pins from left to right.
 
@@ -285,7 +285,7 @@ Now you know how to use all the sensors, you can use it to create a beautiful we
 
 To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![](workshops/pythonruby/dashboard.jpg)
+![](content/workshops/pythonruby/dashboard.jpg)
 
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 
@@ -388,7 +388,7 @@ You’ve just used your code to play with something already built, lets get to s
 
 Before you write anything lets have fun with wires. Grab HC-SR04 ultrasonic ranging module, Arduino, your breadboard, some wires and connect them all together this way:
 
-![Sonar_rb](workshops/pythonruby/3_sonar_bb.jpg)
+![Sonar_rb](content/workshops/pythonruby/3_sonar_bb.jpg)
 
 You don’t have to use the same colors as we do, but be meticulous while using them. By doing so you will avoid mistakes like connecting ground pin from module to Arduino power pin.
 
@@ -418,11 +418,11 @@ Among sensors you can find DHT11 which can measure temperature and humidity. Tog
 
 Start with the wires. Don’t disconnect sonar, it will be required late. First lets connect the DHT11:
 
-![DHT11](workshops/pythonruby/4_meteo_dht_bb.jpg)
+![DHT11](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
 
 Now connect VCNL4000:
 
-![VCNL4000](workshops/pythonruby/4_meteo_vcnl_bb.jpg)
+![VCNL4000](content/workshops/pythonruby/4_meteo_vcnl_bb.jpg)
 
 **Important:** connecting VCNL4000 requires restart of Arduino, so just unplug and plug USB cable again.
 
@@ -467,7 +467,7 @@ There is one sensor left: HC-SR501 PIR motion detector. Based on infrared light,
 
 Connect wires this way:
 
-![](workshops/pythonruby/5_alarm_bb.jpg)
+![](content/workshops/pythonruby/5_alarm_bb.jpg)
 
 Be sure to hold it like on the picture, so you won’t connect it in the wrong way.
 
@@ -501,7 +501,7 @@ Now you know how to use all the sensors, you can use it to create a beautiful we
 
 To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
 
-![](workshops/pythonruby/dashboard.jpg)
+![](content/workshops/pythonruby/dashboard.jpg)
 
 To send data to this dashboard you need to know which ID to use. It should be written on a sticker on your Arduino. If you’re not at Makerland, just use `arduino-X` where X is number from 1 to 20.
 

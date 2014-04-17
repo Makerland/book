@@ -1,122 +1,106 @@
-SOURCE_FILE_NAME = workshops/*.md
+SOURCE_FILE_NAME = content/workshops/*.md
+SOURCE_DIR = content/workshops/
+
+BUILD_PDF_DIR = build/pdf
+BUILD_PRINT_DIR = build/print
+
 BOOK_FILE_NAME = makerland
 
 PDF_BUILDER = pandoc
 PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template templates/template.tex \
+	--template templates/print.tex \
 	--toc
 
 NOTOC_PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template templates/template_notoc.tex
+	--template templates/print_notoc.tex
 
 DIGITAL_PDF_BUILDER_FLAGS = \
 	--latex-engine xelatex \
-	--template templates/digital.tex \
+	--template templates/pdf.tex \
 	--toc
 
-makerland.pdf:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o pdf/$(BOOK_FILE_NAME).pdf
+makerland print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BUILD_PRINT_DIR)/$(BOOK_FILE_NAME).pdf
+
+makerland pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BUILD_PDF_DIR)/$(BOOK_FILE_NAME).pdf
 
 intro:
-	$(PDF_BUILDER) $(NOTOC_PDF_BUILDER_FLAGS) introduction.md -o pdf/introduction.pdf
+	$(PDF_BUILDER) $(NOTOC_PDF_BUILDER_FLAGS) introduction.md -o $(BUILD_PDF_DIR)/introduction.pdf
 
-3dmodeling:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/a_3dmodeling.md -o pdf/3dmodeling.pdf
+3dmodeling print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)a_3dmodeling.md -o $(BUILD_PRINT_DIR)/3dmodeling.pdf
 
-3dmodeling_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) workshops/a_3dmodeling.md -o pdf/digital_3dmodeling.pdf
+3dmodeling pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)a_3dmodeling.md -o $(BUILD_PDF_DIR)/3dmodeling.pdf
 
-bricksbots:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/m_bricksbots.md" -o "pdf/bricksbots.pdf"
+buildbot print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)b_buildbot.md -o $(BUILD_PRINT_DIR)/buildbot.pdf
 
-bricksbots_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/m_bricksbots.md" -o "pdf/digital_bricksbots.pdf"
+buildbot pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)b_buildbot.md -o $(BUILD_PDF_DIR)/buildbot.pdf
 
-buildbot:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/b_buildbot.md" -o "pdf/buildbot.pdf"
+drones print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)g_drones.md -o $(BUILD_PRINT_DIR)/drones.pdf
 
-buildbot_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/b_buildbot.md" -o "pdf/digital_buildbot.pdf"
+drones pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)g_drones.md -o $(BUILD_PDF_DIR)/drones.pdf
 
-cirqoid:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/l_cirqoid.md -o pdf/cirqoid.pdf
+firmata print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)e_firmata.md -o $(BUILD_PRINT_DIR)/firmata.pdf
 
-cirqoid_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/l_cirqoid.md" -o "pdf/digital_cirqoid.pdf"
+firmata pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)e_firmata.md -o $(BUILD_PDF_DIR)/firmata.pdf
 
-dancebot:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/o_dancebot.md -o pdf/dancebot.pdf
+hens print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)j_hens.md -o $(BUILD_PRINT_DIR)/hens.pdf
 
-dancebot_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/o_dancebot.md" -o "pdf/digital_dancebot.pdf"
-
-drones:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/g_drones.md" -o pdf/drones.pdf
-
-drones_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/g_drones.md" -o "pdf/digital_drones.pdf"
-
-firmata:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/e_firmata.md -o pdf/firmata.pdf
-
-firmata_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/e_firmata.md" -o "pdf/digital_firmata.pdf"
-
-hens:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/j_hens.md -o pdf/hens.pdf
-
-hens_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/j_hens.md" -o "pdf/digital_hens.pdf"
+hens pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)j_hens.md -o $(BUILD_PDF_DIR)/hens.pdf
 	
-home:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/h_home.md" -o "pdf/home.pdf"
+home print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)h_home.md -o $(BUILD_PRINT_DIR)/home.pdf
 
-home_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/h_home.md" -o "pdf/digital_home.pdf"
+home pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)h_home.md -o $(BUILD_PDF_DIR)/home.pdf
 
-lights:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/n_lights.md" -o "pdf/lights.pdf"
+lights print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)n_lights.md -o $(BUILD_PRINT_DIR)/lights.pdf
 
-lights_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/n_lights.md" -o "pdf/digital_lights.pdf"
+lights pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)n_lights.md -o $(BUILD_PDF_DIR)/lights.pdf
 
-lilypad:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/i_lilypad.md" -o "pdf/lilypad.pdf"
+lilypad print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)i_lilypad.md -o $(BUILD_PRINT_DIR)/lilypad.pdf
 
-lilypad_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/i_lilypad.md" -o "pdf/digital_lilypad.pdf"
+lilypad pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)i_lilypad.md -o $(BUILD_PDF_DIR)/lilypad.pdf
 
-pythonruby:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/c_pythonruby.md -o pdf/pythonruby.pdf	
+pythonruby print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)c_pythonruby.md -o $(BUILD_PRINT_DIR)/pythonruby.pdf	
 
-pythonruby_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/c_pythonruby.md" -o "pdf/digital_pythonruby.pdf"
+pythonruby pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)c_pythonruby.md -o $(BUILD_PDF_DIR)/pythonruby.pdf
 
-soldering:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) workshops/d_soldering.md -o pdf/soldering.pdf	
+soldering print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)d_soldering.md -o $(BUILD_PRINT_DIR)/soldering.pdf	
 
-soldering_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/d_soldering.md" -o "pdf/digital_soldering.pdf"	
+soldering pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)d_soldering.md -o $(BUILD_PDF_DIR)/soldering.pdf
 
-thermostat:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/k_thermostat.md" -o "pdf/thermostat.pdf"
+underwater print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)f_underwater.md -o $(BUILD_PRINT_DIR)/underwater.pdf
 
-thermostat_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/k_thermostat.md" -o "pdf/digital_thermostat.pdf"
-
-underwater:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/f_underwater.md" -o "pdf/underwater.pdf"
-
-underwater_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/f_underwater.md" -o "pdf/digital_underwater.pdf"
+underwater pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)f_underwater.md -o $(BUILD_PDF_DIR)/underwater.pdf
 	
-javarobots:
-	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) "workshops/p_javarobots.md" -o "pdf/javarobots.pdf"
+javarobots print:
+	$(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_DIR)p_javarobots.md -o $(BUILD_PRINT_DIR)/javarobots.pdf
 
-javarobots_digital:
-	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) "workshops/p_javarobots.md" -o "pdf/digital_javarobots.pdf"
+javarobots pdf:
+	$(PDF_BUILDER) $(DIGITAL_PDF_BUILDER_FLAGS) $(SOURCE_DIR)p_javarobots.md -o $(BUILD_PDF_DIR)/javarobots.pdf
 
 clean:
 	rm -f pdf/$(BOOK_FILE_NAME).pdf

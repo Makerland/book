@@ -1,6 +1,6 @@
 \newpage
 
-![](workshop_images/home.jpg)
+![](content/workshop_images/home.jpg)
 
 \customtitlepage{Hack Your House}
 
@@ -30,7 +30,7 @@ We are going to start off by making sure that you are able to upload code to you
 
 Plug your LED power into pin 13 of your Arduino and ground into the GND pin next to it. The shorter pin is Ground (-) for LEDs. 
 
-![](workshops/home/image04.jpg)
+![](content/workshops/home/image04.jpg)
 
 Plug your Arduino into your computer via USB.
 
@@ -48,7 +48,7 @@ For now, we just want to connect our servo to our Arduino and make sure we are a
 
 A servo motor has three wires - power (red), ground (black), and control (frequently yellow or white). Connect the power wire to the 5V pinout on the Arduino and the ground wire to the GND pinout next to it. We can then connect the control wire to Digital Pin 12 on our Arduino as in the following diagram:
 
-![](workshops/home/image02.jpg)
+![](content/workshops/home/image02.jpg)
 
 Now that our servo is connected to the Arduino, we will need to write the software to control it. Let’s create a new file and start it off with the following code:
 
@@ -91,7 +91,7 @@ Now that we have programmed our Arduino to control a Servo, we can add our first
 
 The Parallax RFID Reader that we are using is actually fairly simple to program. It has four pins: GND, VCC (power), ENABLE, and SOUT.  The ENABLE pin takes a digital voltage - either high or low. When the voltage is low, the RFID reader is on and actively reading inputs. When it is high, it is deactivated. The SOUT pin is a Serial interface that outputs the RFID tag code as a series of 10 digits.
 
-![](workshops/home/image05.jpg)
+![](content/workshops/home/image05.jpg)
 
 You will need to wire the GND to your Arduino’s GND, VCC to Arduino’s +5V, ENABLE to Digital Pin 2 on the Arduino, and SOUT to Digital Pin 8 on the Arduino. I like to plug my RFID reader into a breadboard before wiring it to my Arduino, as it makes it easier to prototype.
 
@@ -185,7 +185,7 @@ In order for this to work, we will actually have to connect a separate power sup
 
 Take the provided battery, and re-wire the Servo to it. We connect all GND wires to the Arduino’s GND, but the RFID reader’s VCC goes to the Arduino’s +5V output and the Servo’s VCC goes to our external battery pack. This becomes much easier if you experiment with moving the Servo when you print out the Tag Code in our Serial Monitor. Note that since the Servo takes time to move, you may need a larger delay in your RFID reader code.
 
-![](workshops/home/image03.jpg)
+![](content/workshops/home/image03.jpg)
 
 The Servo library documentation is available here if you would like to dive deeper into it: <http://arduino.cc/en/reference/servo>
 
@@ -209,25 +209,25 @@ For the purpose of prototyping, we will be using cardboard and duct tape to moun
 
 Attach the two metal rods to your servo with screws and washers.
 
-![](workshops/home/image00.jpg)
+![](content/workshops/home/image00.jpg)
 
 Now use a piece of cardboard (or other stiff material) to make a tighter bond between the servo and the lock:
 
-![](workshops/home/image07.jpg) 
+![](content/workshops/home/image07.jpg) 
 
-![](workshops/home/image10.jpg)
+![](content/workshops/home/image10.jpg)
 
 Now you can tape the servo to the deadbolt lock. Make sure it is positioned on the correct side so that the direction that the servo turns in is aligned with the direction that the lock turns in:
 
-![](workshops/home/image11.jpg)
+![](content/workshops/home/image11.jpg)
 
 And last but not least, we will tape our servo’s arms to the deadbolt itself:
 
-![](workshops/home/image09.jpg)
+![](content/workshops/home/image09.jpg)
 
 Now you have your fully mounted (and fully impermanent) servo-controlled deadbolt:
 
-![](workshops/home/image06.jpg)
+![](content/workshops/home/image06.jpg)
 
 
 ## Second flow (optional)
@@ -240,7 +240,7 @@ This first experiment is the simplest (and most insecure) - we will unlock or lo
 
 Take the PIR motion sensor and wire it into your Arduino (VCC to +5V, GND to GND, and control to digital pin 2) - NOTE that the middle wire of the PIR sensor is GND, not the black wire. This is strange, but true. The red (+) wire is still VCC (the sensor should have a + and AL marking on it to distinguish this):
 
-![](workshops/home/image08.jpg)
+![](content/workshops/home/image08.jpg)
 
 You will need to use an internal pull-up to activate the motion sensor. This is done by setting digital pin 2 as an INPUT pin and then writing a HIGH value to it. Once you Arduino turns on, you need to wait a second or two for the PIR motion sensor to get a reading on a room without movement. Then you can start waving your arms all around!
 
@@ -254,7 +254,7 @@ If you get stuck you can find the solution here: <https://gist.github.com/jonmar
 
 For this experiment we only need our Servo connected to our Arduino. Most of the work will be on the Software side.
 
-![](workshops/home/image02.jpg)
+![](content/workshops/home/image02.jpg)
 
 Once your Arduino is wired up, you need to make sure you have node.js installed and that you have a Twilio account.
 

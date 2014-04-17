@@ -8,7 +8,7 @@
 
 \newpage
 
-![](workshop_images/hens.jpg)
+![](content/workshop_images/hens.jpg)
 
 \customtitlepage{Hacking Hens’ Happiness}
 
@@ -39,7 +39,7 @@ So here, if you’re a beginner we’ll set up our RPI & remotely control it to 
 
 ## Preparations
 
-![](workshops/hens/3.jpg)
+![](content/workshops/hens/3.jpg)
 
 All we need is easily available online and we’ve put much of it on the USB Stick to speed things up a bit. Copy the contents of our USB stick to your laptop (see the *Appendix* at the end for full list of sources and links).
 
@@ -78,13 +78,13 @@ Many VNC applications are available. With Windows we’ll use TightVNC Viewer. W
 If we connect directly via our Ethernet cable, the IP address and port which we’re using (i.e. the directions to find the door to our Desktop) are indicated thus: __168.254.0.2:1__
 The current password (i.e. the key to get in the door) is: __funexpi__
 
-![TightVNC Viewer connection page](workshops/hens/1.jpg)
+![TightVNC Viewer connection page](content/workshops/hens/1.jpg)
 
 ### Take a look around.
 
 You should, at this point having entered your VNC password, find yourself in front of your desktop interface emblazoned with the bright Raspberry Pi logo.
 
-![](workshops/hens/4.jpg)
+![](content/workshops/hens/4.jpg)
 
 Now’s the time to familiarise yourself with this new world. Check out the menu from the bottom left corner to see the various program categories. Alongside is the File Manager.
 
@@ -100,7 +100,7 @@ The command line can be daunting if you’re not familiar with it. If you only k
 
 So double click LXTerminal Icon and off we go.
 
-![](workshops/hens/2.jpg)
+![](content/workshops/hens/2.jpg)
 
 Command line can be thought of as a language just like many others. As you gradually learn the terms and translate what you want to say so the computer understands you’ll feel more and more at ease. We can’t cover many details in this document as this is not a Linux/Command line “primer” but a couple of useful basics follow, with a few more in the “cheat sheet” to get you started.
 
@@ -172,7 +172,7 @@ Now let’s get that running straight away without reboot: `sudo service motion 
 
 We can now see our “Live (Chicken) feed” from the Camera by launching VLC Media player or Firefox or Safari browser on our Laptop and pointing it to our IP address on port 8080 eg. __169.254.0.2:8080__.
 
-![](workshops/hens/image06.jpg)
+![](content/workshops/hens/image06.jpg)
 
 At this point, play around with the many configurable options in Motion by editing the &/etc/motion.conf& file. A complete list of options can be found at <http://www.lavrsen.dk/foswiki/bin/view/Motion/ConfigFileOptions>
 
@@ -203,7 +203,7 @@ We log in to <https://dev.twitter.com>, going through *My Applications* and *Cre
 
 We need to be able to authenticate securely and publish our feathered Tweets so adjust the Access level to be able to Write to Twitter. What we need now are the Consumer key, Consumer secret, Access token & Access token secret.
 
-![](workshops/hens/image01.jpg)
+![](content/workshops/hens/image01.jpg)
 
 Edit and update the “placeholders” in */home/pi/camMotion/eggTweet.py* script with your Consumer/Access keys & tokens.
 
@@ -229,7 +229,7 @@ What I’ve been able to watch with a “bird’s-eye view”: the “pecking or
 
 I’ve learnt to play with and use all this thanks to other people’s hard work and the wealth of online resources. I hope it’s of some use to you in this station. Now it’s your turn to be creative and run on and build with this. Have fun and share with others ;) Raspberry Pi has its “raison d’être” in learning and teaching. Bonne continuation!
 
-![](workshops/hens/image02.jpg)
+![](content/workshops/hens/image02.jpg)
 
 
 ## FAQ

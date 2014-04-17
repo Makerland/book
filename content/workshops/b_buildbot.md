@@ -4,7 +4,7 @@
 
 \newpage
 
-![](workshop_images/buildabot.jpg)
+![](content/workshop_images/buildabot.jpg)
 
 \customtitlepage{Build a bot}
 
@@ -32,7 +32,7 @@ Once you have installed Node.js, you can install Robotnik using npm. If you are 
 
 Once the install is complete, connect the Arduino to your laptop using the USB cable:
 
-![](workshops/buildbot/image03.jpg)
+![](content/workshops/buildbot/image03.jpg)
 
 
 Then you can start the program by typing:
@@ -49,17 +49,17 @@ Robotnik is a programming system that works like Lego™ or puzzle pieces. On th
 
 First, you’ll need to plug a LED (any color) into the Arduino. The short leg goes into GND and the long leg goes into 13.
 
-![](workshops/buildbot/image04.jpg)
+![](content/workshops/buildbot/image04.jpg)
 
 Next, find a block like this:
 
-![](workshops/buildbot/image00.jpg)
+![](content/workshops/buildbot/image00.jpg)
 
 and drag it on to the right side of the screen. As you can see, the block describes what it will do in English. It’s just up to us to finish the sentence now. If you wish, you can change ‘red’ to ‘blue’ to change the sentence to talk about a different button. Let’s leave it at ‘red’ for now.
 
 Next, look for the ‘turn LED on’ block and drag it inside of the first block next to ‘do’, so that it looks like this:
 
-![](workshops/buildbot/image02.jpg)
+![](content/workshops/buildbot/image02.jpg)
 
 Make sure the two pieces are connected - you’ll briefly see a yellow outline and hear a clicking noise if you did it right.
 
@@ -77,13 +77,13 @@ Don’t forget to ask for help if you need it!
 
 You now know the how to create programs by using Robotnik blocks and how to run programs. We are ready to move on to something more advanced. The first step is to assemble the robot. All of the wooden pieces are labeled and slot together - look at the example robot and ask questions if you need help. 
 
-![](workshops/buildbot/image05.jpg)
+![](content/workshops/buildbot/image05.jpg)
 
 Put all the pieces together, then pop the motors in through the sides and screw them in. Attach the Arduino to the top, plug the shield on to the top of the Arduino and plug the motors and batteries in to the labeled ports of the shield. Attach the wheels to the sides of the motors. Many Arduino shields add additional hardware, but ours is just used to connect everything  together in the right way. Under the shield and behind the scenes, the batteries are connected to the motors, and one pin from each motor called the ‘control pin’ goes to the appropriate numbered pin on the Arduino.
 
 When you’re done, your robot should look something like this:
 
-![](workshops/buildbot/image01.jpg)
+![](content/workshops/buildbot/image01.jpg)
 
 Good job! Our goal is now to make the robot move forward when we press the joystick forward, backward when we move backward and to turn left and right when we move that way. You can do this by assembling the blocks correctly. Remember that each motor moves independently, and when they move in the same direction, the robot will move in that direction. When they move in opposite directions, the robot will twist in place. When only one motor turns, the robot will pivot around the wheel that isn’t moving. Remember to think about the way the motors are facing.
 

@@ -6,7 +6,7 @@ This is a repo containing first Makerland Tutorials book and resouces to build i
 The book is written in [Markdown](http://daringfireball.net/projects/markdown/) and converted to PDF using [Pandoc](http://johnmacfarlane.net/pandoc/).
 
 
-Whats in this repo?
+What's in this repo?
 ===============
 
 You should see two folders here:

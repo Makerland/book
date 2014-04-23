@@ -3,10 +3,6 @@
 \mbox{}
 
 \newpage
-\thispagestyle{empty}
-\mbox{}
-
-\newpage
 
 ![](content/workshop_images/pythonruby.jpg)
 
@@ -202,6 +198,8 @@ But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it w
 
 ![](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
 
+\newpage
+
 Now connect VCNL4000:
 
 ![](content/workshops/pythonruby/4_meteo_vcnl_bb.jpg)
@@ -246,8 +244,6 @@ Yay! You can now remove Weather app from your smartphone.
 You have one sensor left: HC-SR501 PIR motion detector. This sensor detects motion based on infrared light. It’s similar to ones used in public bathrooms to automatically turn on the light. As it works with infrared it only detects objects which exude heat (i.e. human body, running car). What is important, it detects **motion** not presence. So if you’ll hold still in front of it, you won’t be detected.
 
 Other quirk of this sensor is long lag after detecting motion. There’s potentiometer on a back of it which allows to change it, but event with minimal setting it’s about 3 seconds.
-
-\newpage
 
 Connect the wires like this:
 
@@ -382,8 +378,6 @@ You can stop this now, pressing `Ctrl+C`.
 
 You’ve just used your code to play with something already built, lets get to something more advanced.
 
-\newpage
-
 ### Time for some measurements
 
 Before you write anything lets have fun with wires. Grab HC-SR04 ultrasonic ranging module, Arduino, your breadboard, some wires and connect them all together this way:
@@ -419,6 +413,8 @@ Among sensors you can find DHT11 which can measure temperature and humidity. Tog
 Start with the wires. Don’t disconnect sonar, it will be required late. First lets connect the DHT11:
 
 ![DHT11](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
+
+\newpage
 
 Now connect VCNL4000:
 
@@ -459,7 +455,6 @@ Now in Ruby shell:
 Now you have your own meteo station, hooray!
 
 **BTW:** you should find source to this exercise in `Python/4_meteo.py` file.
-
 
 ### INTRUDER ALERT
 

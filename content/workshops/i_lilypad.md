@@ -3,10 +3,6 @@
 \mbox{}
 
 \newpage
-\thispagestyle{empty}
-\mbox{}
-
-\newpage
 
 ![](content/workshop_images/lilypad.jpg)
 
@@ -25,19 +21,13 @@ spare time cutting, sewing, and experimenting with various materials to create i
 
 ## Overview
 
-Create your own multifunctional smart watch with the LilyPad Arduino, a microcontroller board designed for wearables and e-textiles. It can be sewn to fabric and similarly mounted power supplies, sensors and actuators with conductive thread.
-
-During this workshop you will learn how to sew and connect whole elements. 
+Create your own multifunctional smart watch with the LilyPad Arduino, a microcontroller board designed for wearables and e-textiles. It can be sewn to fabric and similarly mounted power supplies, sensors and actuators with conductive thread. During this workshop you will learn how to sew and connect whole elements. 
 
 Have you ever heard about pomodoro technique? When whole leds are bright, that means you are very busy and nobody should disturb you. When leds are off, buzzer sound tells you that this is brake time. This management method uses a timer to break down work into intervals and it is based on the idea that frequent breaks can improve mental agility. 
 
-Blinking leds measuring our time is the first goal. Then we will upgrade our circuit to create light piano instrument and memory game.
-
 ## Preparations
 
-We have two different Lilypad boards available: Arduino LilyPad FTDI and Arduino LilyPad USB. The difference is that Arduino LilyPad USB is simpler: it connects directly with computer by micro-USB cable and have less pins. Arduino LilyPad FTDI  needs to be connected through FTDI Breakout (drivers are needed). Feel free to choose one of them and follow appropriate instruction.
-
-__Make sure that you have collected:__
+We have two different Lilypad boards available: Arduino LilyPad FTDI and Arduino LilyPad USB. The difference is that Arduino LilyPad USB is simpler: it connects directly with computer by micro-USB cable and have less pins. Arduino LilyPad FTDI  needs to be connected through FTDI Breakout (drivers are needed). Feel free to choose one of them and follow appropriate instruction. __Make sure that you have collected:__
 
 Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
 
@@ -47,7 +37,7 @@ or Arduino LilyPad USB and micro USB cable
 
 ![](content/workshops/lilypad/2.jpg) \
 
-###  
+\newpage
 
 Battery Holder and Cell batery
 

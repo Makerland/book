@@ -1,4 +1,12 @@
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 
 ![](content/workshop_images/home.jpg)
 
@@ -209,6 +217,8 @@ For the purpose of prototyping, we will be using cardboard and duct tape to moun
 
 Attach the two metal rods to your servo with screws and washers.
 
+\newpage
+
 ![](content/workshops/home/image00.jpg)
 
 Now use a piece of cardboard (or other stiff material) to make a tighter bond between the servo and the lock:
@@ -218,6 +228,8 @@ Now use a piece of cardboard (or other stiff material) to make a tighter bond be
 ![](content/workshops/home/image10.jpg)
 
 Now you can tape the servo to the deadbolt lock. Make sure it is positioned on the correct side so that the direction that the servo turns in is aligned with the direction that the lock turns in:
+
+\newpage
 
 ![](content/workshops/home/image11.jpg)
 

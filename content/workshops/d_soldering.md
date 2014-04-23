@@ -1,6 +1,11 @@
 \newpage
 \thispagestyle{empty}
 \mbox{}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
 \newpage
 
 ![](content/workshop_images/soldering.jpg)
@@ -113,8 +118,6 @@ Do you feel good with your skills? If so let’s get to the next step if not kee
 
 - plan the location of connectors through which you will connect to the Arduino Uno board. You should push your shield into the Arduino Uno.
 - connect the MCP23017 expander with the appropriate pin connectors to the Arduino Uno. Pay attention to: power supply and the I2C bus.
-
-\newpage
 
 ![](content/workshops/soldering/10.jpg)
 

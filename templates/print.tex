@@ -50,7 +50,7 @@
 \setdefaultlanguage{english}
 
 % Page
-\usepackage[paperwidth=6.69in, paperheight=9.45in, top=0.5in, bottom=0.7in, left=1.1in, right=0.6in]{geometry}
+\usepackage[paperwidth=6in, paperheight=9in, top=0.5in, bottom=0.5in, left=1in, right=0.5in]{geometry}
 
 % Footer & Header
 \usepackage{fancyhdr}
@@ -118,6 +118,20 @@
 
 
 \begin{document}
+
+
+\thispagestyle{empty}
+
+  \vspace*{\fill}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{content/title.png}
+    \end{center}
+  \vspace*{\fill}
+
+\newpage
+\thispagestyle{empty}
+
+\setcounter{page}{0}
 
 \begingroup
 \hypersetup{linkcolor=black}

@@ -3,10 +3,6 @@
 \mbox{}
 
 \newpage
-\thispagestyle{empty}
-\mbox{}
-
-\newpage
 
 ![](content/workshop_images/hens.jpg)
 
@@ -228,9 +224,6 @@ You should now automatically send a tweet as soon as your video has stopped bein
 What I’ve been able to watch with a “bird’s-eye view”: the “pecking order” at work (up to 3 hens at once trying to get on the nest), surprise guests (regular visiting mice), when and by whom the eggs are laid & gathered, à whole lot of broody & bossy chucks. 
 
 I’ve learnt to play with and use all this thanks to other people’s hard work and the wealth of online resources. I hope it’s of some use to you in this station. Now it’s your turn to be creative and run on and build with this. Have fun and share with others ;) Raspberry Pi has its “raison d’être” in learning and teaching. Bonne continuation!
-
-![](content/workshops/hens/image02.jpg)
-
 
 ## FAQ
 

@@ -3,6 +3,11 @@
 \mbox{}
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+
+\newpage
 
 ![](content/workshop_images/firmata.jpg)
 

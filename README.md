@@ -6,12 +6,11 @@ This is a repo containing first Makerland Tutorials book and resouces to build i
 The book is written in [Markdown](http://daringfireball.net/projects/markdown/) and converted to PDF using [Pandoc](http://johnmacfarlane.net/pandoc/).
 
 
-Whats in this repo?
+What's in this repo?
 ===============
 
-You should see three folders here:
+You should see two folders here:
 
-- __build__ - this contains all generated formats of the book - html, print and pdfs. Content of this folder is added to gitignore to avoid merge conflicts.
 - __content__ - this is the book content. If you want to edit the content of the book - images or text, go here. It contains Markdown and image files.
 - __templates__ - these are latex templates used by Pandoc to design PDF files generated from Markdown.  
 
@@ -46,6 +45,8 @@ You can also build just one tutorial, by running this:
 
 - Print version: run `make [tutorial] print` in your terminal (for example `make pythonruby print`)
 - PDF version: run `make [tutorial pdf`
+
+Yay! Your book should now be ready in __build__ folder.
 
 Licence
 ===============

@@ -38,13 +38,13 @@ Fonts are included here, but make sure you have them too:
 
 There are two ways of builing a book:
 
-- Print version: run `make makerland print` in your terminal
-- PDF version: run `make makerland pdf`
+- Print version: run `make makerland_print` in your terminal
+- PDF version: run `make makerland_pdf`
 
 You can also build just one tutorial, by running this:
 
-- Print version: run `make [tutorial] print` in your terminal (for example `make pythonruby print`)
-- PDF version: run `make [tutorial pdf`
+- Print version: run `make [tutorial]_print` in your terminal (for example `make pythonruby print`)
+- PDF version: run `make [tutorial_pdf`
 
 Yay! Your book should now be ready in __build__ folder.
 

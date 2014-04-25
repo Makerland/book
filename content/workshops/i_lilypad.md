@@ -3,6 +3,10 @@
 \mbox{}
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 
 ![](content/workshop_images/lilypad.jpg)
 
@@ -36,8 +40,6 @@ Arduino LilyPad FTDI, FTDI Breakout and mini USB cable
 or Arduino LilyPad USB and micro USB cable
 
 ![](content/workshops/lilypad/2.jpg) \
-
-\newpage
 
 Battery Holder and Cell batery
 
@@ -221,10 +223,12 @@ Generates a tone (square wave) on the provided `speakerPin`.
 The tone will last for `timeInMilliseconds` and have the `frequencyInHertz`.
 
 ~~~~ {.numberLines}
-void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMilliseconds) {
+void beep (unsigned char speakerPin, int frequencyInHertz, 
+  long timeInMilliseconds) {
   int x;
   long halfCycleDelay = (long) (1000000 / frequencyInHertz / 2);
-  long cycleRepeats = (long) ((timeInMilliseconds * 1000) / (halfCycleDelay * 2));
+  long cycleRepeats = (long) ((timeInMilliseconds * 1000);
+  cycleRepeats = cycleRepeats / (halfCycleDelay * 2));
   for (x = 0; x < cycleRepeats; x++) {
     digitalWrite(speakerPin,HIGH);
     delayMicroseconds(halfCycleDelay);
@@ -362,7 +366,8 @@ void setup(void) {
   pinMode(photo0Pin, INPUT);
 }
 
-// the photo cell sensor has major noise. We will use a variation of a moving window average.
+// the photo cell sensor has major noise. 
+// We will use a variation of a moving window average.
 int photoAvg = 100;
 const int photoAvgSamples = 5;
 
@@ -372,11 +377,13 @@ void loop(void) {
   // read the photo cell value (ADC read value has a range of 0-1024)
   int photo0value = analogRead(photo0Pin);
  
-  // normalize the raw sensor value. 0 is a covered sensor. 100 and above is a uncovered sensor.
+  // normalize the raw sensor value. 0 is a covered sensor. 
+  // 100 and above is a uncovered sensor.
   photo0value = map(max(photo0value, photoMin), photoMin, photoMax, 0, 100);
  
   // calculate our moving avarage variant
-  photoAvg = (photoAvg * (photoAvgSamples-1) + photo0value) / photoAvgSamples;
+  photoAvg = (photoAvg * (photoAvgSamples-1) + photo0value);
+  photoAvg = photoAvg / photoAvgSamples;
  
   // output debuging information
   Serial.println(photoAvg);
@@ -395,10 +402,12 @@ void loop(void) {
 // Generates a tone (square wave) on the provided speakerPin. 
 // The tone will last for timeInMilliseconds and have the frequencyInHertz. 
 //The method will block for the output time
-void beep (unsigned char speakerPin, int frequencyInHertz, long timeInMilliseconds) {
+void beep (unsigned char speakerPin, int frequencyInHertz, 
+  long timeInMilliseconds) {
   int x;
   long halfCycleDelay = (long) (1000000 / frequencyInHertz / 2);
-  long cycleRepeats = (long) ((timeInMilliseconds * 1000) / (halfCycleDelay * 2));
+  long cycleRepeats = (long) (timeInMilliseconds * 1000);
+  cycleRepeats = cycleRepeats / (halfCycleDelay * 2);
   for (x = 0; x < cycleRepeats; x++) {
     digitalWrite(speakerPin, HIGH);
     delayMicroseconds(halfCycleDelay);

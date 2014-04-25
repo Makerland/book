@@ -166,8 +166,9 @@ But this is child's play. Lets try something more advanced.
 
 First thing before writing code is to connect HC-SR04 ultrasonic ranging module with Arduino. Grab your breadboard, some cables and connect them like this:
 
-![Sonar](content/workshops/pythonruby/3_sonar_bb.jpg)
+\newpage
 
+![Sonar](content/workshops/pythonruby/3_sonar_bb.jpg)
 
 Colors are not important, but be concise when using them. This way you won’t make silly mistakes like connecting wrong wire to wrong hole.
 
@@ -197,8 +198,6 @@ Along our sensors, you have DHT11 which can measure two things: temperature and 
 But firstly the wires. Lets start with DHT11 (don’t disconnect the sonar, it will be required later):
 
 ![](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
-
-\newpage
 
 Now connect VCNL4000:
 
@@ -247,7 +246,7 @@ Other quirk of this sensor is long lag after detecting motion. There’s potenti
 
 Connect the wires like this:
 
-![HC-SR501](content/workshops/pythonruby/5_alarm_bb.jpg)
+![](content/workshops/pythonruby/5_alarm_bb.jpg) \
 
 Your PIR may have wires with different colors or don’t have wires at all, so just hold it like in the picture above and number pins from left to right.
 
@@ -255,7 +254,7 @@ Supporting code is easy as pie:
 
 	# Use motion sensor
 	serial.write("M")
-	# After first start, sensor needs about 15 seconds to calibrate, just wait for it
+	# After first start sensor needs 15 seconds to calibrate, just wait
 	serial.readline()
 	# Loop
 	while True:
@@ -280,6 +279,8 @@ Downloaded sources contain `5_alarm.py` file which is even cooler as it plays a 
 Now you know how to use all the sensors, you can use it to create a beautiful web dashboard with all the data.
 
 To make it easier, we’ve prepared custom dashboard using Dashing: <http://shopify.github.io/dashing/>. It’s super easy to set up and host i.e. on Heroku. Our dashboard looks like this:
+
+\newpage
 
 ![](content/workshops/pythonruby/dashboard.jpg)
 
@@ -382,6 +383,8 @@ You’ve just used your code to play with something already built, lets get to s
 
 Before you write anything lets have fun with wires. Grab HC-SR04 ultrasonic ranging module, Arduino, your breadboard, some wires and connect them all together this way:
 
+\newpage
+
 ![Sonar_rb](content/workshops/pythonruby/3_sonar_bb.jpg)
 
 You don’t have to use the same colors as we do, but be meticulous while using them. By doing so you will avoid mistakes like connecting ground pin from module to Arduino power pin.
@@ -414,8 +417,6 @@ Start with the wires. Don’t disconnect sonar, it will be required late. First 
 
 ![DHT11](content/workshops/pythonruby/4_meteo_dht_bb.jpg)
 
-\newpage
-
 Now connect VCNL4000:
 
 ![VCNL4000](content/workshops/pythonruby/4_meteo_vcnl_bb.jpg)
@@ -424,7 +425,7 @@ Now connect VCNL4000:
 
 Now in Ruby shell:
 
-	# You have reconnected your Arduino, so you have to initialize serial port again
+	# You have reconnected your Arduino, initialize serial port again
 	serial = SerialPort.new("YOUR_SERIAL_PORT", 9600, 8, 1)
 	# Loop
 	loop do
@@ -461,6 +462,8 @@ Now you have your own meteo station, hooray!
 There is one sensor left: HC-SR501 PIR motion detector. Based on infrared light, this sensor, similar to those used in public bathrooms to turn the lights on, detects moves. As it works with infrared it only detects objects which exude heat (i.e. human body, running car). What is important, it detects **motion** not presence. So if you’ll hold still in front of it, it won’t detect you
 
 Connect wires this way:
+
+\newpage
 
 ![](content/workshops/pythonruby/5_alarm_bb.jpg)
 

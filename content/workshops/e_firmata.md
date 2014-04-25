@@ -2,10 +2,6 @@
 \thispagestyle{empty}
 \mbox{}
 
-\newpage
-\thispagestyle{empty}
-\mbox{}
-
 
 \newpage
 
@@ -194,7 +190,8 @@ Our new button object has methods like “down”, “up”, and “hold”, whi
 
 	button.hold(play_some_sound)
 
-When ever someone presses and holds the button down, a function called “play_some_sound” is called.
+When ever someone presses and holds the button down, a function called 
+`play some sound` is called.
 
 Now write a program that prints out “Button Pressed” whenever someone presses your button.
 

@@ -67,7 +67,7 @@ Now plug in your power supply with the micro-USB connection (like most recent mo
 
 ### Take control and see what’s going on!
 
-For this we’re going to use a system called VNC (Virtual Network Computing) which is similar to (though somewhat less secure than) tools like Remote Desktop/Teamviewer/LogMeIn etc. It is simply a way of remotely accessing your Graphical User Interface (Desktop Environment). When you’re more at ease you can always use command line to make the Pi do your every bidding.
+For this we’re going to use a system called VNC (Virtual Network Computing) which is similar to (though somewhat less secure than) tools like Remote Desktop / Teamviewer / LogMeIn etc. It is simply a way of remotely accessing your Graphical User Interface (Desktop Environment). When you’re more at ease you can always use command line to make the Pi do your every bidding.
 
 Many VNC applications are available. With Windows we’ll use TightVNC Viewer. With Mac, Real VNC Viewer can be used. For Linux we can use Remmina (with Ubuntu) for example.
 
@@ -267,11 +267,10 @@ Useful online tutorial resources used in the making of this workshop:
 
 Surveillance Camera Tutorials:
 
-- <http://www.instructables.com/id/Raspberry-Pi-as-low-cost-HD-surveillance-camera/>
-- Triggering events from Motion using Python: <https://medium.com/p/2d5a2d61da3d>
+- Triggering events from Motion using Python: 
+- <https://medium.com/p/2d5a2d61da3d>
 - RPi Twitter Bot: <http://www.makeuseof.com/tag/how-to-build-a-raspberry-pi-twitter-bot/>
 - Tweeting using Python (Twython application): <https://twython.readthedocs.org/en/latest/>
-- Quick guide to Nano Text Editor on RPI - Raspberry Pi Spy: <http://www.raspberrypi-spy.co.uk/2013/11/quick-guide-to-nano-text-editor-on-the-raspberry-pi/>
 
 Going Further:
 
@@ -292,7 +291,8 @@ Contents of project and useful files:
 - SD Formater 4.0 - <https://www.sdcard.org/downloads/formatter_4/>
 - Win32 Disk Imager - <http://sourceforge.net/projects/win32diskimager/>
 - Lastest Raspbian OS Image - <http://www.raspberrypi.org/downloads>
-- Raspberry Pi® Quick Start Guide - <http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf>
+- Raspberry Pi® Quick Start Guide - 
+- <http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf>
 - Putty - Tools for SSH - <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>
 - Filezilla - FTP Client - <https://filezilla-project.org/download.php?type=client>
 - VLC Videolan - Media player - <http://www.videolan.org/vlc/>

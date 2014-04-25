@@ -30,7 +30,7 @@ Make sure you have brought your RaspberryPi and a power connector for it. You wi
 
 For installing Node.js, please go to <http://nodejs.org/>, click *Install* and follow the instructions.
 
-*Optionally:* To make Node.js available outside the main installation folder (e.g., `/home/node`) you can make symbolic links to node and npm as follows:
+*Optionally:* To make Node.js available outside the main installation folder (e.g., ` /home /node` ) you can make symbolic links to node and npm as follows:
 
 	$ sudo ln -s -f /home/node/bin/node /usr/bin/node
 	$ sudo ln -s -f /home/node/bin/npm /usr/bin/npm

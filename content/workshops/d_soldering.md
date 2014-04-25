@@ -22,8 +22,6 @@ __Szymon Kubicki__ is a power electronics engineer and a follower of Lean Hardwa
 
 # Soldier, wire, glue!
 
-![](content/workshops/soldering/17.jpg)
-
 ## Overview
 
 Imagine your Arduino or RaspberryPi.  Imagine you are building your dream project and there comes a moment when you have to compromise with the device's functionalities because you have run out of ports in the microcontroller.

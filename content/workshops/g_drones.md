@@ -3,6 +3,10 @@
 \mbox{}
 
 \newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
 
 ![](content/workshop_images/drones.jpg)
 
@@ -32,7 +36,8 @@ We'll start writing basic programs to take off and land, and before you know it 
 
 First, if you’ve not already played with an AR Drone before then download the FreeFlight app for your iOS or Android device and take one of the drones for a flight:
 
-* Plug in the battery of your drone <https://www.youtube.com/watch?v=QdFsd9R3vJ8#t=25s> 
+* Plug in the battery of your drone:
+* <https://www.youtube.com/watch?v=QdFsd9R3vJ8#t=25s> 
 * Connect your device to the wifi labeled on the drone, i.e. D1
 * Open the FreeFlight app and tap “Piloting”
 * Hit "Takeoff" and enjoy flying your robot around the room
@@ -362,10 +367,11 @@ Now we have data that we can use to display what is happening inside the drone, 
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  var socket = io.connect('http://localhost:8080');
-  socket.on('navdata', function (data) {
-    document.getElementById("battery").innerHTML = data.demo.batteryPercentage;
-  });
+var socket = io.connect('http://localhost:8080');
+socket.on('navdata', function (data) {
+  var $battery = document.getElementById("battery").innerHTML;
+  $battery = data.demo.batteryPercentage;
+});
 </script>
 
 </head>
@@ -469,4 +475,5 @@ Try out some of these more advanced nodecopter projects:
 
 - Nodecopter website - <http://nodecopter.com/hack>
 - Nodecopter modules on NPM - <https://npmjs.org/browse/keyword/nodecopter>
-- AR Drone SDK documentation: <https://projects.ardrone.org/projects/show/ardrone-api>
+- AR Drone SDK documentation - 
+- <https://projects.ardrone.org/projects/show/ardrone-api>

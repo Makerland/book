@@ -1,6 +1,3 @@
-\newpage
-\thispagestyle{empty}
-\mbox{}
 
 \newpage
 \thispagestyle{empty}
@@ -341,7 +338,8 @@ In the block for a verified number, we can now add the handler to send and respo
 
 ~~~~ {.numberLines}
   serialPort.once('data', function(data) {
-    if (data.toString().indexOf('U') > -1) { //check if the Arduino returned a U for unlocking
+    //check if the Arduino returned a U for unlocking:
+    if (data.toString().indexOf('U') > -1) { 
       sendMessage(res, 'Unlocking!');
     }
     else if (data.toString().indexOf('L') > -1) {
